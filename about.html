@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html>
 
 <head>
@@ -6,19 +6,39 @@
     <link href="https://cdn.jsdelivr.net/npm/beercss@3.7.8/dist/cdn/beer.min.css" rel="stylesheet" />
     <script type="module" src="https://cdn.jsdelivr.net/npm/beercss@3.7.8/dist/cdn/beer.min.js"></script>
     <script type="module"
-        src="https://cdn.jsdelivr.net/npm/material-dynamic-colors@1.1.2/dist/cdn/material-dynamic-colors.min.js"></script>
-    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/@mdi/font@7.4.47/css/materialdesignicons.min.css" />
+        src="https://cdn.jsdelivr.net/npm/material-dynamic-colors@1.1.2/dist/cdn/material-dynamic-colors.min.js">
+    </script>
+    <link rel="stylesheet" type="text/css"
+        href="https://cdn.jsdelivr.net/npm/@mdi/font@7.4.47/css/materialdesignicons.min.css" />
     <link rel="stylesheet" type="text/css" href="static/css/style.css" />
     <link rel="stylesheet" type="text/css" href="static/css/theme.css" />
     <script src="static/js/index.js"></script>
+    <title>Jared Gross's Resume</title>
+    <meta content="Jared Gross" property="og:title">
+    <meta content="My personal website" property="og:description">
+    <meta content="https://jared-gross.github.io" property="og:url">
+    <meta
+        content="https://media.licdn.com/dms/image/v2/D4D03AQG1qdcb-bgwbQ/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1720126626999?e=1730937600&v=beta&t=pEodUlc1B77PWBcawRh-U--aTCNQsvVNnwBT3BEKiKg"
+        property="og:image">
+    <meta content="#44d8f1" data-react-helmet="true" name="theme-color">
+    <link rel="icon" type="image/x-icon"
+        href="https://media.licdn.com/dms/image/v2/D4D03AQG1qdcb-bgwbQ/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1720126626999?e=1730937600&v=beta&t=pEodUlc1B77PWBcawRh-U--aTCNQsvVNnwBT3BEKiKg">
 </head>
+
 <body lang="en" class="light">
     <header class="fixed primary">
         <nav>
-            <img src="https://media.licdn.com/dms/image/v2/D4D03AQG1qdcb-bgwbQ/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1720126626999?e=1730937600&v=beta&t=pEodUlc1B77PWBcawRh-U--aTCNQsvVNnwBT3BEKiKg" width="30" height="30" class="circle border" />
+            <button class="circle transparent" onclick="window.location.href='/';">
+                <i class="mdi mdi-arrow-left"></i>
+            </button>
             <h5 id="header-title" class="max">Jared Gross</h5>
             <button class="circle transparent" id="picture-as-pdf">
                 <i class="mdi mdi-file-pdf-box"></i>
+                <div class="tooltip left">
+                    <p>
+                        Set scale to 90%
+                    </p>
+                </div>
             </button>
             <button class="circle transparent" id="theme-toggle">
                 <i id="theme-icon">dark_mode</i>
@@ -28,297 +48,434 @@
     <main class="responsive">
         <div class="grid center-align no-space">
             <div class="s12">
-                <h4 id="document-title">Jared Gross</h4>
+                <h1 id="document-title">Jared Gross</h1>
             </div>
-            <p class="s12">
-                <span><i class="mdi mdi-map-marker"></i> Pineland Colony, Piney, MB. R0A 1K0</span>
-            </p>
-            <a class="link s12" href="tel:+1-204-782-1038">
-                <span><i class="mdi mdi-phone"></i> (204) 782-1038</span>
-            </a>
-            <a class="link s12" href="mailto:jared@pinelandfarms.ca">
-                <span><i class="mdi mdi-email"></i> jared@pinelandfarms.ca</span>
-            </a>
-            <a class="link s12" href="https://jared-gross.github.io" target="_blank">
-                <span><i class="mdi mdi-web"></i> jared-gross.github.io</span>
-            </a>
-            <a class="link s12" href="https://thecodingjsoftware.github.io" target="_blank">
-                <span><i class="mdi mdi-web"></i> thecodingjsoftware.github.io</span>
-            </a>
-            <a class="link s12" href="https://github.com/Jared-Gross" target="_blank">
-                <span><i class="mdi mdi-github"></i> github.com/Jared-Gross</span>
-            </a>
-            <a class="link s12" href="https://www.linkedin.com/in/jaredgross12418" target="_blank">
-                <span><i class="mdi mdi-linkedin"></i> in/jaredgross12418</span>
-            </a>
         </div>
-        <br>
-        <div>
-            <details class="small-round small-margin" open>
-                <summary class="none primary">
-                    <a class="row wave">
-                        <i class="mdi mdi-school"></i>
-                        <span>Education</span>
-                    </a>
-                </summary>
-                <div class="grid no-margin no-padding no-space">
-                    <article class="small-round small-margin border s6 m6 l4">
-                        <h6>Bachelor of Education</h6>
-                        <div class="row">
-                            <span class="max">Brandon University</span>
-                            <span><i class="mdi mdi-map-marker"></i> Brandon, MB</span>
+        <nav class="fade-in small tabbed primary">
+            <a href="tel:+1-204-782-1038">
+                <i class="mdi mdi-phone"></i>
+                <span class="small-text">(204) 782-1038</span>
+            </a>
+            <a href="mailto:jared@pinelandfarms.ca">
+                <i class="mdi mdi-email"></i>
+                <span class="small-text">jared@pinelandfarms.ca</span>
+            </a>
+            <a href="https://thecodingjsoftware.github.io" target="_blank">
+                <i class="mdi mdi-web"></i>
+                <span class="small-text">thecodingjsoftware.github.io</span>
+            </a>
+            <a>
+                <i class="mdi mdi-home"></i>
+                <span class="small-text no-line">Pineland Colony. Piney, MB</span>
+            </a>
+        </nav>
+        <div class="grid no-space small-margin">
+            <div class="s4">
+                <details class="small-round small-margin" open>
+                        <summary class="none primary">
+                            <a class="row wave">
+                                <i class="mdi mdi-school"></i>
+                                <span>Education</span>
+                            </a>
+                        </summary>
+                    <div class="content">
+                        <div class="no-margin no-padding no-space">
+                            <details id="bachelor-of-science-3-year" open>
+                                <summary class="none">
+                                    <a class="grid small-padding wave no-space">
+                                        <div class="s8">
+                                            <h6 class="small">B.ED.(AD)</h6>
+                                        </div>
+                                        <label class="right-align s4">2024 - 2026</label>
+                                        <div class="s12"><i class="tiny mdi mdi-map-marker"></i>Brandon University. Brandon, MB
+                                        </div>
+                                    </a>
+                                </summary>
+                                <div class="small-margin">
+                                    <p class="no-line no-margin">Early Years Stream</p>
+                                </div>
+                            </details>
+                            <hr>
+                            <details id="bachelor-of-science-3-year" open>
+                                <summary class="none">
+                                    <a class="grid small-padding wave no-space">
+                                        <div class="s8">
+                                            <h6 class="small">B.SC. 3 YR.</h6>
+                                        </div>
+                                        <label class="right-align s4">2020 - 2024</label>
+                                        <div class="s12"><i class="tiny mdi mdi-map-marker"></i>Brandon University. Brandon, MB
+                                        </div>
+                                    </a>
+                                </summary>
+                                <div class="small-margin">
+                                    <p class="no-line no-margin">Major in Mathematics: GPA: 4.0</p>
+                                    <p class="no-line no-margin">Minor in History: GPA: 3.6</p>
+                                    <p class="no-line no-margin">Overall GPA: 3.85</p>
+                                </div>
+                            </details>
+                            <hr>
+                            <a class="grid small-padding wave no-space">
+                                <div class="s8">
+                                    <h6 class="small">High School</h6>
+                                </div>
+                                <label class="right-align s4">2007 - 2020</label>
+                                <div class="s12"><i class="tiny mdi mdi-map-marker"></i>Pineland Colony School. Piney, MB
+                                </div>
+                            </a>
                         </div>
-                        <span>2024 - present (will graduate May 2026)</span>
-                    </article>
-                    <article class="small-round small-margin border s6 m6 l4">
-                        <h6>Bachelor of Science, 3 Year</h6>
-                        <div class="row">
-                            <span class="max">Brandon University</span>
-                            <span><i class="mdi mdi-map-marker"></i> Brandon, MB</span>
-                        </div>
-                        <span>2020 - 2024</span>
-                        <p>
-                            <li>Major in Mathematics: GPA: 4.0</li>
-                            <li>Minor in History: GPA: 3.6</li>
-                            <li>Overall GPA: 3.85</li>
-                        </p>
-                    </article>
-                    <article class="small-round small-margin border s12 m6 l4">
-                        <h6>High School Diploma</h6>
-                        <div class="row">
-                            <span class="max">Pineland Colony School</span>
-                            <span><i class="mdi mdi-map-marker"></i> Piney, MB</span>
-                        </div>
-                        <span>2007 - 2020</span>
-                    </article>
-                </div>
-            </details>
-            <div class="grid no-space no-margin">
-                <details class="small-round small-margin s6" open>
-                    <summary class="none primary">
-                        <a class="row wave">
-                            <i class="mdi mdi-medal"></i>
-                            <span>Awards</span>
-                        </a>
-                    </summary>
-                    <div class="small-margin">
-                        <p>2024 - Silver Medal in Mathematics (Brandon University)</p>
-                        <p>2020 - Governor General's Academic Medal (Pineland Colony School)</p>
-                        <p>2019 - Third Place in Judges Choice (Manitoba Robot Games)</p>
                     </div>
                 </details>
-                <details class="small-round small-margin s6" open>
+                <details class="small-round small-margin" open>
                     <summary class="none primary">
                         <a class="row wave">
-                            <i class="mdi mdi-certificate"></i>
-                            <span>Assessments</span>
+                            <i class="mdi mdi-account-tie"></i>
+                            <span>Professional Development</span>
                         </a>
                     </summary>
-                    <div class="small-margin">
-                        <p>2024 - Graduated with Great Distinction (Brandon University)</p>
-                        <p>2023-2024 - Inducted into the President's Honour Society (Brandon University)</p>
-                        <p>2021-2023 - Dean's Honour list (Brandon University)</p>
+                    <div class="content">
+                        <div class="no-margin small-padding">
+                            <p class="no-line no-margin">1. Play-based Outdoor Learning</p>
+                            <p class="no-line no-margin">2. Intentional Designs</p>
+                        </div>
+                    </div>
+                </details>
+                <details class="small-round small-margin" open>
+                    <summary class="none primary">
+                        <a class="row wave">
+                            <i class="mdi mdi-heart"></i>
+                            <span>Interests</span>
+                        </a>
+                    </summary>
+                    <div class="content">
+                        <div class="no-space">
+                            <div class="small-padding">
+                                <p class="no-line">
+                                    Enjoy playing (beach) volleyball and pickleball.
+                                </p>
+                                <p class="no-line">
+                                    Enjoy outdoor activities such as cycling, jogging and walking.
+                                </p>
+                                <p class="no-line">
+                                    Love to learn about different cultures and new mathematical, computer science, and psychological concepts and theories.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </details>
+                <details class="small-round small-margin" open>
+                    <summary class="none primary">
+                        <a class="row wave">
+                            <i class="mdi mdi-translate"></i>
+                            <span>Language</span>
+                        </a>
+                    </summary>
+                    <div class="content">
+                        <p class="no-margin small-padding">English & German</p>
                     </div>
                 </details>
             </div>
-            <details class="small-round small-margin" open>
-                <summary class="none primary">
-                    <a class="row wave">
-                        <i class="mdi mdi-bulletin-board"></i>
-                        <span>Professional Development</span>
-                    </a>
-                </summary>
-                <div class="small-margin">
-                    <ol>
-                        <li>Play-based Outdoor Learning (K-3)</li>
-                    </ol>
-                </div>
-            </details>
-            <details class="small-round small-margin" open>
-                <summary class="none primary">
-                    <a class="row wave">
-                        <i class="mdi mdi-puzzle"></i>
-                        <span>Demonstrated Skills</span>
-                    </a>
-                </summary>
-                <div class="grid no-margin tiny-padding no-space">
-                    <article class="border small-round tiny-margin tiny-padding s6 m4 l3">
-                        Calm, patient, and empathetic demeanor, effectively supporting students as they grasp complex concepts while fostering a positive learning environment through an encouraging and understanding approach to teaching.
-                    </article>
-                    <article class="border small-round tiny-margin tiny-padding s6 m4 l3">
-                        Strong work ethic by immediately addressing tasks upon assignment, consistently completing work efficiently and ahead of schedule.
-                    </article>
-                    <article class="border small-round tiny-margin tiny-padding s6 m4 l3">
-                        Strict punctuality and time management, resulting in a consistent and predictable teaching style that benefits student learning.
-                    </article>
-                    <article class="border small-round tiny-margin tiny-padding s6 m4 l3">
-                        Unwavering dedication by going the extra mile to ensure students achieve their full potential.
-                    </article>
-                    <article class="border small-round tiny-margin tiny-padding s6 m4 l3">
-                        Proficient in working with computers and an experienced software and web developer with a portfolio of significant projects.
-                    </article>
-                    <article class="border small-round tiny-margin tiny-padding s6 m4 l3">
-                        Effective communication skills developed through public speaking, presentations, and writing. Fluent in english and german.
-                    </article>
-                    <article class="border small-round tiny-margin tiny-padding s6 m4 l3">
-                        Strong critical thinking to develop innovative teaching strategies that enhance problem-solving skills.
-                    </article>
-                </div>
-            </details>
-            <details class="small-round small-margin" open>
-                <summary class="none primary">
-                    <a class="row wave">
-                        <i class="mdi mdi-briefcase"></i>
-                        <span>Experience</span>
-                    </a>
-                </summary>
-                <div class="grid no-margin no-padding no-space">
-                    <div class=" s6 m6 l6">
-                        <article class="small-round small-margin small-padding border">
-                            <h6>Teaching Assistant & Marker</h6>
-                            <div class="row">
-                                <span class="max">Pineland Colony School</span>
-                                <span><i class="mdi mdi-map-marker"></i> Piney, MB</span>
+            <div class="s8">
+                <div class="grid no-space no-margin">
+                    <details class="small-round small-margin s12" open>
+                        <summary class="none primary">
+                            <a class="row wave">
+                                <i class="mdi mdi-account"></i>
+                                <span>About Me</span>
+                            </a>
+                        </summary>
+                        <div class="content">
+                            <div class="no-margin no-padding no-space">
+                                <p class="tiny-line no-margin small-padding">
+                                    An aspiring educator with a deep passion for fostering growth and understanding. My aim is to design lessons and activities that address the diverse educational and social needs of each student, ensuring a personalized approach to their academic journey.
+                                </p>
                             </div>
-                            <span>2020-09 - 2021-06</span>
-                            <p>
-                                <li>
-                                    Taught grade 11 and 12 mathematics.
-                                </li>
-                                <li>
-                                    Provided one-on-one support to students in grades ranging from 6 through 12 who were struggling with mathematics.
-                                </li>
-                                <li>
-                                    Facilitated the development of social andmathematical skills in students from grades 1 to 3.
-                                </li>
-                            </p>
-                        </article>
-                    </div>
-                    <div class=" s6 m6 l6">
-                        <article class="small-round small-margin small-padding border">
-                            <h6>Undergraduate Teaching Assistant & Marker</h6>
-                            <div class="row">
-                                <span class="max">Brandon University</span>
-                                <span><i class="mdi mdi-map-marker"></i> Brandon, MB</span>
+                        </div>
+                    </details>
+                    <details class="small-round small-margin s12" open>
+                        <summary class="none primary">
+                            <a class="row wave">
+                                <i class="mdi mdi-briefcase"></i>
+                                <span>Experience</span>
+                            </a>
+                        </summary>
+                        <div class="content">
+                            <div class="no-margin small-padding no-space">
+                                <div class="row">
+                                    <h6 class="small max">Undergraduate Teaching Assistant & Marker</h6>
+                                    <label class="right-align">2022-09 - 2024-04</label>
+                                </div>
+                                <span><i class="tiny mdi mdi-map-marker"></i>Brandon University. Brandon, MB</span>
+                                <p class="tiny-line">
+                                    Assisted with a total of four mathematics courses and two computer science courses each
+                                    of which ranged from 50-100+ students. Developed strong relationships with students,
+                                    colleagues, and faculty. Supported faculty members with administrative tasks including
+                                    grading assignments and exams, updating class records, and tracking attendance.
+                                </p>
                             </div>
-                            <span>2022-09 - 2024-04</span>
-                            <p>
-                                <li>
-                                    Assisted with a total of four mathematics courses and two computer science courses each of which ranged from 50-100+ students.
-                                </li>
-                                <li>
-                                    Developed strong relationships with students, colleagues, and faculty.
-                                </li>
-                                <li>
-                                    Supported faculty members with administrative tasks including grading assignments and exams, updating class records, and tracking attendance.
-                                </li>
-                            </p>
-                        </article>
+                            <hr>
+                            <div class="small-margin no-space">
+                                <div class="row">
+                                    <h6 class="small max">Teaching Assistant & Marker</h6>
+                                    <label class="right-align">2020-09 - 2021-06</label>
+                                </div>
+                                <span><i class="tiny mdi mdi-map-marker"></i>Pineland Colony School. Piney, MB</span>
+                                <p class="tiny-line">
+                                    Taught grade 11 and 12 mathematics. Provided one-on-one support to students in grades
+                                    ranging from 6 through 12 who were struggling with mathematics. Facilitated the
+                                    development of social and mathematical skills in students from grades 1 to 3.
+                                </p>
+                            </div>
+                        </div>
+                    </details>
+                    <details class="small-round small-margin s12" open>
+                        <summary class="none primary">
+                            <a class="row wave">
+                                <i class="mdi mdi-puzzle"></i>
+                                <span>Demonstrated Skills</span>
+                            </a>
+                        </summary>
+                        <div class="content">
+                            <div class="grid no-margin tiny-padding no-space">
+                                <article class="border small-round tiny-margin small-padding s8">
+                                    <p class="tiny-line no-margin">
+                                        Maintains a calm, patient, and empathetic demeanor, supporting students in grasping complex concepts while fostering a positive and encouraging learning environment. Consistently addresses tasks promptly and completes work ahead of schedule, ensuring dedication to student success.
+                                    </p>
+                                </article>
+                                <article class="border small-round tiny-margin small-padding s4">
+                                    <p class="tiny-line no-margin">
+                                        Possesses strong communication skills developed through public speaking, presentations, and writing.
+                                    </p>
+                                </article>
+                                <article class="border small-round tiny-margin small-padding s6">
+                                    <p class="tiny-line no-margin">
+                                        Demonstrates strict punctuality and effective time management, creating a consistent and predictable teaching style that enhances student learning outcomes.
+                                    </p>
+                                </article>
+                                <article class="border small-round tiny-margin small-padding s6">
+                                    <p class="tiny-line no-margin">
+                                        Proficient in computer technology, with over seven years of experience as a software, web developer and game developer.
+                                    </p>
+                                </article>
+                            </div>
+                        </div>
+                    </details>
+                </div>
+            </div>
+            <div class="s12">
+                <div class="grid no-space no-margin">
+                    <details class="small-round small-margin s6" open>
+                        <summary class="none primary">
+                            <a class="row wave">
+                                <i class="mdi mdi-medal"></i>
+                                <span>Awards</span>
+                            </a>
+                        </summary>
+                        <div class="content">
+                            <div class="no-margin">
+                                <a class="row small-padding wave" onclick="ui('#silver-medal-dialog');">
+                                    <img src="/static/mathematics-silver-medal.png" alt="robot games medal" class="round"
+                                        id="mathematics-silver-medal">
+                                    <div class="max">
+                                        <h6 class="small">Silver Medal in Mathematics</h6>
+                                        <div><i class="tiny mdi mdi-map-marker"></i>Brandon University. Brandon, MB</div>
+                                    </div>
+                                    <label>2024</label>
+                                </a>
+                                <hr>
+                                <a class="row small-padding wave" onclick="ui('#governor-general-academic-medal-dialog');">
+                                    <img src="/static/governor-general-academic-medal.png" alt="robot games medal"
+                                        class="round" id="governor-general-academic-medal">
+                                    <div class="max">
+                                        <h6 class="small">Governor General's Academic Medal</h6>
+                                        <div><i class="tiny mdi mdi-map-marker"></i>Pineland Colony School. Piney, MB</div>
+                                    </div>
+                                    <label>2020</label>
+                                </a>
+                                <hr>
+                                <a class="row small-padding wave" onclick="ui('#manitoba-robot-games-medal-dialog');">
+                                    <img src="/static/manitoba-robot-games.png" alt="robot games medal" class="round"
+                                        id="manitoba-robot-games-medal">
+                                    <div class="max">
+                                        <h6 class="small">Third Place in Judges Choice</h6>
+                                        <div><i class="tiny mdi mdi-map-marker"></i>Tec Voc School. Winnipeg, MB</div>
+                                    </div>
+                                    <label>2019</label>
+                                </a>
+                            </div>
+                        </div>
+                    </details>
+                    <details class="small-round small-margin s6" open>
+                        <summary class="none primary">
+                            <a class="row wave">
+                                <i class="mdi mdi-certificate"></i>
+                                <span>Assessments</span>
+                            </a>
+                        </summary>
+                        <div class="content">
+                            <div class="no-margin">
+                                <a class="row small-padding wave">
+                                    <div class="max">
+                                        <h6 class="small">Graduated with Great Distinction</h6>
+                                        <div><i class="tiny mdi mdi-map-marker"></i>Brandon University. Brandon, MB</div>
+                                    </div>
+                                    <label>2024</label>
+                                </a>
+                                <hr>
+                                <a class="row small-padding wave">
+                                    <div class="max">
+                                        <h6 class="small">Inducted into the President's Honour Society</h6>
+                                        <div><i class="tiny mdi mdi-map-marker"></i>Brandon University. Brandon, MB</div>
+                                    </div>
+                                    <label>2023-2024</label>
+                                </a>
+                                <hr>
+                                <a class="row small-padding wave">
+                                    <div class="max">
+                                        <h6 class="small">Dean's Honour list</h6>
+                                        <div><i class="tiny mdi mdi-map-marker"></i>Brandon University. Brandon, MB</div>
+                                    </div>
+                                    <label>2021-2024</label>
+                                </a>
+                            </div>
+                        </div>
+                    </details>
+                </div>
+                <details class="small-round small-margin" open>
+                    <summary class="none primary">
+                        <a class="row wave">
+                            <i class="mdi mdi-account-group"></i>
+                            <span>References</span>
+                        </a>
+                    </summary>
+                    <div class="content">
+                        <div id="skills-container" class="grid no-space">
+                            <article class="small-round small-margin border s6 m6 l3">
+                                <h6>Susan Squires</h6>
+                                <span>Principle & Certified Teacher</span>
+                                <p class="tiny-line">
+                                    Susan was my early and middle years teacher. I worked with her
+                                    as a teaching assistant for mathematics by providing one-on-one
+                                    support to students in grades 6 through 12 who
+                                    were struggling with mathematics.
+                                </p>
+                                <nav>
+                                    <a class="link left-align" href="mailto:squiress@blsd.ca">
+                                        <span><i class="mdi mdi-email"></i> squiress@blsd.ca</span>
+                                    </a>
+                                </nav>
+                            </article>
+                            <article class="small-round small-margin border s6 m6 l4">
+                                <h6>Leah Friesen</h6>
+                                <span>Teacher</span>
+                                <p class="tiny-line">
+                                    Leah assisted me in highschool with english and mathematics.
+                                    She was a very caring and supportive teacher who always went
+                                    above and beyond to help students succeed.
+                                </p>
+                                <nav>
+                                    <a class="link left-align" href="mailto:leahms@xplornet.ca">
+                                        <span><i class="mdi mdi-email"></i> leahms@xplornet.ca</span>
+                                    </a>
+                                    <a class="link left-align" href="tel:+1-204-371-2933">
+                                        <span><i class="mdi mdi-phone"></i> (204) 371-2933</span>
+                                    </a>
+                                </nav>
+                            </article>
+                            <article class="small-round small-margin border s12 m12 l5">
+                                <h6>Maryann Derewianchuk</h6>
+                                <span>Certified Teacher</span>
+                                <p class="tiny-line">
+                                    Maryann was my elementary teacher for ELA. I also worked with
+                                    her as a teaching assistant for grade 3 mathematics. She is a
+                                    very dedicated, professional, and caring teacher.
+                                </p>
+                                <nav>
+                                    <a class="link left-align" href="mailto:derewianchukm@gmail.com">
+                                        <span><i class="mdi mdi-email"></i> derewianchukm@gmail.com</span>
+                                    </a>
+                                    <a class="link left-align" href="tel:+1-204-371-0646">
+                                        <span><i class="mdi mdi-phone"></i> (204) 371-0646</span>
+                                    </a>
+                                </nav>
+                            </article>
+                        </div>
                     </div>
-                </div>
-            </details>
-            <details class="small-round small-margin" open>
-                <summary class="none primary">
-                    <a class="row wave">
-                        <i class="mdi mdi-star-box"></i>
-                        <span>Interests</span>
-                    </a>
-                </summary>
-                <div class="no-space">
-                    <div class="small-padding">
-                        <li>Enjoy playing (beach) volleyball and pickleball.</li>
-                        <li>Enjoy outdoor activities such as cycling, jogging and walking.</li>
-                        <li>Enjoy learning about new mathematical, computer science, and psychological concepts and theories.</li>
-                        <li>Learning about different cultures. Currently learning Korean.</li>
-                    </div>
-                </div>
-            </details>
-            <details class="small-round small-margin" open>
-                <summary class="none primary">
-                    <a class="row wave">
-                        <i class="mdi mdi-account-box"></i>
-                        <span>References</span>
-                    </a>
-                </summary>
-                <div id="skills-container" class="grid no-space">
-                    <article class="small-round small-margin border s6 m6 l4">
-                        <h6>Susan Squires</h6>
-                        <span>Principle & Professional Teacher</span>
-                        <div class="grid no-space">
-                            <a class="link left-align s12" href="mailto:squiress@blsd.ca">
-                                <span><i class="mdi mdi-email"></i> squiress@blsd.ca</span>
-                            </a>
-                        </div>
-                        <p>
-                            Susan was my early and middle years teacher. I worked with her as a teacher assistant for mathematics by providing one-on-one support to students in grades ranging from 6 through 12 who were struggling with mathematics.
-                        </p>
-                    </article>
-                    <article class="small-round small-margin border s6 m6 l4">
-                        <h6>Leah Friesen</h6>
-                        <span>Teacher</span>
-                        <div class="grid no-space">
-                            <a class="link left-align s12" href="mailto:leahms@xplornet.ca">
-                                <span><i class="mdi mdi-email"></i> leahms@xplornet.ca</span>
-                            </a>
-                            <a class="link left-align s12" href="tel:+1-204-371-2933">
-                                <span><i class="mdi mdi-phone"></i> (204) 371-2933</span>
-                            </a>
-                        </div>
-                        <p>
-                            Leah assisted me in highschool with english and mathematics. She was a very caring and supportive teacher who always went above and beyond to help students succeed.
-                        </p>
-                    </article>
-                    <article class="small-round small-margin border s6 m6 l4">
-                        <h6>Maryann Derewianchuk</h6>
-                        <span>Professional Teacher</span>
-                        <div class="grid no-space">
-                            <a class="link left-align s12" href="mailto:derewianchukm@gmail.com">
-                                <span><i class="mdi mdi-email"></i> derewianchukm@gmail.com</span>
-                            </a>
-                            <a class="link left-align s12" href="tel:+1-204-371-0646">
-                                <span><i class="mdi mdi-phone"></i> (204) 371-0646</span>
-                            </a>
-                        </div>
-                        <p>
-                            Maryann was my elementary teacher for ELA. I also worked with her as a teacher assistant for grade 3 mathematics. She is a very dedicated, professional, and caring teacher.
-                        </p>
-                    </article>
-                </div>
-            </details>
+                </details>
+            </div>
         </div>
     </main>
+    <div class="overlay blur"></div>
+    <dialog id="silver-medal-dialog">
+        <nav class="row">
+            <h3 class="max">Mathematics Silver Medal</h3>
+            <button class="square round transparent" onclick="ui('#silver-medal-dialog');">
+                <i class="mdi mdi-close"></i>
+            </button>
+        </nav>
+        <br>
+        <img src="/static/mathematics-silver-medal.png" alt="robot games medal" class="responsive">
+        <p class="center-align">2024 - Highest GPA graduating with major in Mathematics.</p>
+    </dialog>
+    <div class="overlay blur"></div>
+    <dialog id="governor-general-academic-medal-dialog">
+        <nav class="row">
+            <h3 class="max">Governor General's Academic Medal</h3>
+            <button class="square round transparent" onclick="ui('#governor-general-academic-medal-dialog');">
+                <i class="mdi mdi-close"></i>
+            </button>
+        </nav>
+        <br>
+        <img src="/static/governor-general-academic-medal.png" alt="robot games medal" class="responsive">
+        <p class="center-align">2020 - Awarded by Ted Falk for a signficant academic achievement.</p>
+    </dialog>
+    <div class="overlay blur"></div>
+    <dialog id="manitoba-robot-games-medal-dialog">
+        <nav class="row">
+            <h3 class="max">Manitoba Robot Games Medal</h3>
+            <button class="square round transparent" onclick="ui('#manitoba-robot-games-medal-dialog');">
+                <i class="mdi mdi-close"></i>
+            </button>
+        </nav>
+        <br>
+        <img src="/static/manitoba-robot-games.png" alt="robot games medal" class="responsive">
+        <p class="center-align">Awarded by Phil Hossack during the 2019 Manitoba Robot Games.</p>
+    </dialog>
 </body>
 <script>
-    document.addEventListener('DOMContentLoaded', function() {
+    document.addEventListener("DOMContentLoaded", function () {
         function setTheme(theme) {
-            document.body.classList.remove('light', 'dark');
+            document.body.classList.remove("light", "dark");
             document.body.classList.add(theme);
-            localStorage.setItem('theme', theme);
+            localStorage.setItem("theme", theme);
 
-            const themeIcon = document.getElementById('theme-icon');
-            themeIcon.innerText = theme === 'dark' ? 'light_mode' : 'dark_mode';
+            const themeIcon = document.getElementById("theme-icon");
+            themeIcon.innerText = theme === "dark" ? "light_mode" : "dark_mode";
         }
 
-        document.getElementById('picture-as-pdf').addEventListener('click', () => {
-            window.print();
-        });
-        const savedTheme = localStorage.getItem('theme') || 'light';
+        document
+            .getElementById("picture-as-pdf")
+            .addEventListener("click", () => {
+                window.print();
+            });
+        const savedTheme = localStorage.getItem("theme") || "light";
         setTheme(savedTheme);
 
-        const themeToggle = document.getElementById('theme-toggle');
-        themeToggle.addEventListener('click', () => {
-            const currentTheme = document.body.classList.contains('dark') ? 'dark' : 'light';
-            const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
+        const themeToggle = document.getElementById("theme-toggle");
+        themeToggle.addEventListener("click", () => {
+            const currentTheme = document.body.classList.contains("dark") ?
+                "dark" :
+                "light";
+            const newTheme = currentTheme === "dark" ? "light" : "dark";
             setTheme(newTheme);
         });
 
         // Set theme to light when printing
-        window.onbeforeprint = function() {
-            document.body.classList.remove('light', 'dark');
-            document.body.classList.add('light');
+        window.onbeforeprint = function () {
+            document.body.classList.remove("light", "dark");
+            document.body.classList.add("light");
         };
-        window.onafterprint = function() {
-            setTheme(localStorage.getItem('theme') || 'light');
+        window.onafterprint = function () {
+            setTheme(localStorage.getItem("theme") || "light");
         };
     });
 </script>

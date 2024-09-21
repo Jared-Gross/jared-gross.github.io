@@ -20,8 +20,51 @@ select,
 details,
 summary,
 footer,
+header,
+div::before,
+div::after,
 nav {
-    transition: background-color 0.3s ease-in-out, color 0.1s ease;
+    transition: background-color 0.3s ease-in-out, font-color 0.1s ease, box-shadow 0.3s ease-in-out, text-color 0.1s ease;
+}
+
+#index-main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Full height of the viewport */
+}
+
+.img-container img{
+    box-shadow: var(--elevate2);
+}
+
+.img-container {
+    background-color: var(--primary);
+    border-radius: 2rem 0 3rem 0 !important;
+    box-shadow: var(--elevate1);
+    width: 240px;
+    max-width: 240px;
+}
+
+.img-container::before, .img-container::after {
+  content: "";
+  position: absolute;
+  height: 50px;
+  width: 50px;
+}
+
+.img-container::before {
+    top: 0px;
+    right: -50px;
+    border-radius: 50% 0 0 0;
+    box-shadow: -25px -1px 0 -1px var(--primary);
+}
+
+.img-container::after {
+    bottom: -50px;
+    left: -0px;
+    border-radius: 50% 0 0 0;
+    box-shadow: 0 -25px 0 0 var(--primary);
 }
 
 ::selection {
@@ -31,7 +74,6 @@ nav {
 
 .fade-in {
     opacity: 0;
-    transform: translateY(-30px);
     animation: fadeInFromTop ease 1.5s;
     animation-fill-mode: forwards;
 }
@@ -42,47 +84,86 @@ nav {
         transform: translateY(-2000px);
     }
     50% {
-        transform: translateY(0);
+        transform: translateY(10px);
     }
     100% {
+        transform: translateY(0px);
         opacity: 1;
     }
 }
+.slide-in{
+    transform: translateX(-2000px); /* Start from the right */
+    animation: fadeInFromRight 0.5s forwards; /* Added animation */
+}
 
-details {
+.tooltip img{
+    z-index: 999999 !important;
+}
+article {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+article nav {
+    margin-top: auto; /* Pushes the nav to the bottom */
+}
+
+details:not(#bachelor-of-science-3-year) {
     position: relative;
     width: auto;
     height: auto;
-    overflow: hidden;
-    max-height: 5rem !important;
-    transition: all 0.3s ease;
 
     ::-webkit-details-marker {
         display: none;
     }
     page-break-inside: avoid;
-    transform: translateX(200%); /* Start from the right */
+    transform: translateX(-2000px); /* Start from the right */
     animation: fadeInFromRight 0.5s forwards; /* Added animation */
 }
 
+details:not(#bachelor-of-science-3-year) div.content{
+    position: relative;
+    width: auto;
+    height: auto;
+}
+
+details:not(#bachelor-of-science-3-year)[open] .content {
+    border-radius: 10px;
+    box-shadow: 0 -10px 0 0 var(--primary);
+
+}
 @keyframes fadeInFromRight {
     0% {
-        transform: translateX(200%); /* Start from the right */
+        transform: translateX(-2000px); /* Start from the right */
     }
     100% {
         transform: translateX(0); /* End at original position */
     }
 }
 
-details[open] {
-    max-height: 99em !important;
+details:not(#bachelor-of-science-3-year)[open] {
     border: 0.0625rem solid var(--primary) !important;
 }
+
+summary {
+    border-radius: 0.4rem;
+}
+
+details:not(#bachelor-of-science-3-year)[open] summary {
+    border-radius: 0.4rem 0.4rem 0 0;
+}
+
+
 #document-title{
     display: none;
 }
+
 @media print {
-    details:not([open]) {
+    #manitoba-robot-games-medal, #governor-general-academic-medal, #mathematics-silver-medal{
+        display: none;
+    }
+    details:not(#bachelor-of-science-3-year):not([open]) {
         display: none !important;
     }
     #document-title{
