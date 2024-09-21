@@ -1,4 +1,43 @@
 :root,
+body.light {
+    --primary:#006876;
+    --on-primary:#ffffff;
+    --primary-container:#a1efff;
+    --on-primary-container:#001f25;
+    --secondary:#4a6268;
+    --on-secondary:#ffffff;
+    --secondary-container:#cde7ed;
+    --on-secondary-container:#051f23;
+    --tertiary:#545d7e;
+    --on-tertiary:#ffffff;
+    --tertiary-container:#dbe1ff;
+    --on-tertiary-container:#101a37;
+    --error:#ba1a1a;
+    --on-error:#ffffff;
+    --error-container:#ffdad6;
+    --on-error-container:#410002;
+    --background:#fbfcfd;
+    --on-background:#191c1d;
+    --surface:#ffffff;
+    --on-surface:#191c1d;
+    --surface-variant:#dbe4e6;
+    --on-surface-variant:#3f484a;
+    --outline:#6f797b;
+    --outline-variant:#bfc8ca;
+    --shadow:#000000;
+    --scrim:#000000;
+    --inverse-surface:#2e3132;
+    --inverse-on-surface:#eff1f2;
+    --inverse-primary:#44d8f1;
+    --surface-dim:#d8dadb;
+    --surface-bright:#f8fafa;
+    --surface-container-lowest:#ffffff;
+    --surface-container-low:#f2f4f4;
+    --surface-container:#eceeef;
+    --surface-container-high:#e6e8e9;
+    --surface-container-highest:#e1e3e3;
+}
+
 body.dark {
     --primary:#44d8f1;
     --on-primary:#00363e;
@@ -36,43 +75,4 @@ body.dark {
     --surface-container:#1d2021;
     --surface-container-high:#272b2b;
     --surface-container-highest:#323536;
-}
-
-body.light {
-    --primary:#006876;
-    --on-primary:#ffffff;
-    --primary-container:#a1efff;
-    --on-primary-container:#001f25;
-    --secondary:#4a6268;
-    --on-secondary:#ffffff;
-    --secondary-container:#cde7ed;
-    --on-secondary-container:#051f23;
-    --tertiary:#545d7e;
-    --on-tertiary:#ffffff;
-    --tertiary-container:#dbe1ff;
-    --on-tertiary-container:#101a37;
-    --error:#ba1a1a;
-    --on-error:#ffffff;
-    --error-container:#ffdad6;
-    --on-error-container:#410002;
-    --background:#fbfcfd;
-    --on-background:#191c1d;
-    --surface:#f8fafa;
-    --on-surface:#191c1d;
-    --surface-variant:#dbe4e6;
-    --on-surface-variant:#3f484a;
-    --outline:#6f797b;
-    --outline-variant:#bfc8ca;
-    --shadow:#000000;
-    --scrim:#000000;
-    --inverse-surface:#2e3132;
-    --inverse-on-surface:#eff1f2;
-    --inverse-primary:#44d8f1;
-    --surface-dim:#d8dadb;
-    --surface-bright:#f8fafa;
-    --surface-container-lowest:#ffffff;
-    --surface-container-low:#f2f4f4;
-    --surface-container:#eceeef;
-    --surface-container-high:#e6e8e9;
-    --surface-container-highest:#e1e3e3;
 }
