@@ -31,40 +31,43 @@ nav {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh; /* Full height of the viewport */
+    height: 100vh;
 }
 
 .img-container img{
     box-shadow: var(--elevate2);
+    z-index: 999999 !important;
 }
 
 .img-container {
     background-color: var(--primary);
     border-radius: 2rem 0 3rem 0 !important;
     box-shadow: var(--elevate1);
-    width: 240px;
-    max-width: 240px;
+    width: calc(200px + 16px + 16px);
+    max-width: calc(200px + 16px + 16px);
 }
 
 .img-container::before, .img-container::after {
   content: "";
   position: absolute;
-  height: 50px;
-  width: 50px;
 }
 
 .img-container::before {
+    height: 100px;
+    width: 100px;
     top: 0px;
-    right: -50px;
+    right: -100px;
     border-radius: 50% 0 0 0;
-    box-shadow: -25px -1px 0 -1px var(--primary);
+    box-shadow: -50px -0.2px 0 -0.2px var(--primary);
 }
 
 .img-container::after {
+    height: 50px;
+    width: 50px;
     bottom: -50px;
     left: -0px;
     border-radius: 50% 0 0 0;
-    box-shadow: 0 -25px 0 0 var(--primary);
+    box-shadow: -0.4px -25px 0 -0.2px var(--primary);
 }
 
 ::selection {
@@ -73,14 +76,12 @@ nav {
 }
 
 .fade-in {
-    opacity: 0;
     animation: fadeInFromTop ease 1.5s;
     animation-fill-mode: forwards;
 }
 
 @keyframes fadeInFromTop {
     0% {
-        opacity: 0;
         transform: translateY(-2000px);
     }
     50% {
@@ -88,7 +89,6 @@ nav {
     }
     100% {
         transform: translateY(0px);
-        opacity: 1;
     }
 }
 .slide-in{

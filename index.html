@@ -1,23 +1,27 @@
-<!DOCTYPE html>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html lang="en">
 
 <head>
     <meta charset="UTF-8">
+    <meta name="author" content="Jared Gross">
+    <meta name="description" content="My personal website.">
+    <meta name="keywords" content="jared, gross, teacher, software, developer">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta content="Jared Gross" property="og:title">
+    <meta content="My personal website." property="og:description">
+    <meta content="https://jared-gross.github.io" property="og:url">
+    <meta content="https://media.licdn.com/dms/image/v2/D4D03AQG1qdcb-bgwbQ/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1720126626999?e=1730937600&v=beta&t=pEodUlc1B77PWBcawRh-U--aTCNQsvVNnwBT3BEKiKg" property="og:image">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta name="google" content="notranslate">
-    <link href="https://cdn.jsdelivr.net/npm/beercss@3.7.7/dist/cdn/beer.min.css" rel="stylesheet">
-    <script type="module" src="https://cdn.jsdelivr.net/npm/beercss@3.7.7/dist/cdn/beer.min.js"></script></script>
+    <link rel="icon" type="image/x-icon" href="https://media.licdn.com/dms/image/v2/D4D03AQG1qdcb-bgwbQ/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1720126626999?e=1730937600&v=beta&t=pEodUlc1B77PWBcawRh-U--aTCNQsvVNnwBT3BEKiKg">
+    <link href="https://cdn.jsdelivr.net/npm/beercss@3.7.8/dist/cdn/beer.min.css" rel="stylesheet">
+    <script type="module" src="https://cdn.jsdelivr.net/npm/beercss@3.7.8/dist/cdn/beer.min.js"></script></script>
     <link href="https://cdn.jsdelivr.net/npm/@mdi/font@7.4.47/css/materialdesignicons.min.css" rel="stylesheet">
     <link href="/static/css/theme.css" rel="stylesheet">
     <link href="/static/css/style.css" rel="stylesheet">
+    <script src="/static/js/index.js"></script>
     <title>Jared Gross</title>
-    <meta content="Jared Gross" property="og:title">
-    <meta content="My personal website" property="og:description">
-    <meta content="https://jared-gross.github.io" property="og:url">
-    <meta content="https://media.licdn.com/dms/image/v2/D4D03AQG1qdcb-bgwbQ/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1720126626999?e=1730937600&v=beta&t=pEodUlc1B77PWBcawRh-U--aTCNQsvVNnwBT3BEKiKg" property="og:image">
     <meta content="#44d8f1" data-react-helmet="true" name="theme-color">
-    <link rel="icon" type="image/x-icon" href="https://media.licdn.com/dms/image/v2/D4D03AQG1qdcb-bgwbQ/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1720126626999?e=1730937600&v=beta&t=pEodUlc1B77PWBcawRh-U--aTCNQsvVNnwBT3BEKiKg">
 </head>
 
 <body class="dark">
@@ -26,9 +30,9 @@
         <article class="fade-in no-padding medium-round">
             <div class="grid">
                 <div class="medium-round img-container s12 m5 l3">
-                    <img class="circle margin" src="https://media.licdn.com/dms/image/v2/D4D03AQG1qdcb-bgwbQ/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1720126626999?e=1730937600&v=beta&t=pEodUlc1B77PWBcawRh-U--aTCNQsvVNnwBT3BEKiKg" style="height: auto; width: 200px;">
+                    <img class="medium-round margin" src="https://media.licdn.com/dms/image/v2/D4D03AQG1qdcb-bgwbQ/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1720126626999?e=1730937600&v=beta&t=pEodUlc1B77PWBcawRh-U--aTCNQsvVNnwBT3BEKiKg" style="height: auto; width: 200px;">
                 </div>
-                <div class="small-padding left-align s10 m7 l9" style="margin-top: auto; margin-bottom: auto;">
+                <div class="small-padding left-align s12 m7 l9" style="margin-top: auto; margin-bottom: auto;">
                     <h2 class="no-margin">Jared Gross</h2>
                     <p class="no-margin">Aspiring Teacher & Software Developer</p>
                 </div>
@@ -76,24 +80,26 @@
                     <br>
                     As of September 2, 2024 my main focus is on being a student at <a class="link" href="https://www.brandonu.ca">Brandon University</a> doing my <a class="link" href="https://www.brandonu.ca/future-students/programs/degrees/education/">Bachelor of Education</a>. I am working on <a class="link" href="https://github.com/TheCodingJsoftware/Invigo" target="_blank">Invigo</a>, <a class="link" href="https://github.com/TheCodingJsoftware/Gradiance" target="_blank">Gradiance</a> and <a class="link" href="https://github.com/TheCodingJsoftware/Hutterite-Bookshelf" target="_blank">Hutterite Bookshelf</a> in my spare time.
                 </blockquote>
-                <nav class="row">
-                    <button class="small-round border" onclick="window.location.href='/about.html';">
+            </div>
+            <nav class="row">
+                <div class="row margin no-padding">
+                    <button onclick="window.location.href='/about.html';">
                         <i class="mdi mdi-file-account"></i>
                         <span>Resume</span>
                     </button>
-                    <button class="small-round border" onclick="window.location='https://www.linkedin.com/in/jaredgross12418/';">
+                    <button onclick="window.location='https://www.linkedin.com/in/jaredgross12418/';">
                         <i class="mdi mdi-linkedin"></i>
                         <span>LinkedIn</span>
                     </button>
-                    <div class="max"></div>
-                    <label class="switch icon top-align s1 m2 l1" style="margin-top: 2rem;">
-                        <input type="checkbox" id="theme-toggle">
-                        <span>
-                          <i>dark_mode</i>
-                        </span>
-                    </label>
-                </nav>
-            </div>
+                </div>
+                <div class="max"></div>
+                <label class="switch icon margin" style="margin-top: 2rem;">
+                    <input type="checkbox" id="theme-toggle">
+                    <span>
+                      <i id="theme-icon">dark_mode</i>
+                    </span>
+                </label>
+            </nav>
         </article>
     </main>
 </body>
@@ -105,7 +111,7 @@
             localStorage.setItem("theme", theme);
 
             const themeIcon = document.getElementById("theme-icon");
-            themeIcon.innerText = theme === "dark" ? "light_mode" : "dark_mode";
+            themeIcon.innerText = theme === "dark" ? "dark_mode" : "light_mode";
         }
 
         const themeToggle = document.getElementById("theme-toggle");
