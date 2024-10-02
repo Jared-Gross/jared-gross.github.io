@@ -15,9 +15,10 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta name="google" content="notranslate">
     <link rel="icon" type="image/x-icon" href="https://media.licdn.com/dms/image/v2/D4D03AQHXBGExVw7LHQ/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1727455192897?e=1732752000&v=beta&t=pfQThHZHD_TkQ1JpksoP2rO9ke0KU0Jobc395P0aC8o">
-    <link href="https://cdn.jsdelivr.net/npm/beercss@3.7.8/dist/cdn/beer.min.css" rel="stylesheet">
-    <script type="module" src="https://cdn.jsdelivr.net/npm/beercss@3.7.8/dist/cdn/beer.min.js"></script></script>
+    <link href="https://cdn.jsdelivr.net/npm/beercss@3.7.10/dist/cdn/beer.min.css" rel="stylesheet">
+    <script type="module" src="https://cdn.jsdelivr.net/npm/beercss@3.7.10/dist/cdn/beer.min.js"></script></script>
     <link href="https://cdn.jsdelivr.net/npm/@mdi/font@7.4.47/css/materialdesignicons.min.css" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/2.10.377/pdf.min.js"></script>
     <link href="/static/css/theme.css" rel="stylesheet">
     <link href="/static/css/style.css" rel="stylesheet">
     <script src="/static/js/index.js"></script>
@@ -36,7 +37,7 @@
                 <i class="mdi mdi-file-pdf-box"></i>
                 <div class="tooltip left">
                     <p>
-                        Set scale to 90%
+                        Set scale to 80%
                     </p>
                 </div>
             </button>
@@ -72,7 +73,7 @@
         <div class="grid no-space small-margin">
             <div class="s4">
                 <details class="small-round small-margin" open>
-                        <summary class="none primary">
+                        <summary class="none">
                             <a class="row wave">
                                 <i class="mdi mdi-school"></i>
                                 <span>Education</span>
@@ -80,7 +81,7 @@
                         </summary>
                     <div class="content">
                         <div class="no-margin no-padding no-space">
-                            <details id="bachelor-of-science-3-year" open>
+                            <details id="summary-details" open>
                                 <summary class="none">
                                     <a class="grid small-padding wave no-space">
                                         <div class="s8">
@@ -96,7 +97,7 @@
                                 </div>
                             </details>
                             <hr>
-                            <details id="bachelor-of-science-3-year" open>
+                            <details id="summary-details" open>
                                 <summary class="none">
                                     <a class="grid small-padding wave no-space">
                                         <div class="s8">
@@ -114,34 +115,43 @@
                                 </div>
                             </details>
                             <hr>
-                            <a class="grid small-padding wave no-space">
-                                <div class="s8">
-                                    <h6 class="small">High School</h6>
+                            <details id="summary-details" open>
+                                <summary class="none">
+                                    <a class="grid small-padding wave no-space">
+                                        <div class="s8">
+                                            <h6 class="small">High School.</h6>
+                                        </div>
+                                        <label class="right-align s4">2007 - 2020</label>
+                                        <div class="s12">
+                                            <i class="tiny mdi mdi-map-marker"></i>Pineland Colony School. Piney, MB
+                                        </div>
+                                    </a>
+                                </summary>
+                                <div class="small-margin">
+                                    <p class="no-line no-margin">Did a robotics course.</p>
                                 </div>
-                                <label class="right-align s4">2007 - 2020</label>
-                                <div class="s12"><i class="tiny mdi mdi-map-marker"></i>Pineland Colony School. Piney, MB
-                                </div>
-                            </a>
+                            </details>
                         </div>
                     </div>
                 </details>
                 <details class="small-round small-margin" open>
-                    <summary class="none primary">
+                    <summary class="none">
                         <a class="row wave">
                             <i class="mdi mdi-account-tie"></i>
                             <span>Professional Development</span>
                         </a>
                     </summary>
                     <div class="content">
-                        <div class="no-margin small-padding">
-                            <p class="no-line no-margin">1. Play-based Outdoor Learning with Carole McCurry and Kyla Yanick (K-3)</p>
-                            <p class="no-line no-margin">2. Intentional Designs with Shawna Philpott</p>
-                            <p class="no-line no-margin">3. Ungrading with Chris Sarkonak</p>
+                        <div class="no-margin no-padding grid no-space">
+                            <a class="no-line left-align no-round small-padding wave s12" onclick="ui('#pd1')">1. Play-based Outdoor Learning with Carole McCurry and Kyla Yanick (K-3)</a>
+                            <a class="no-line left-align no-round small-padding wave s12" onclick="ui('#pd2')">2. Intentional Designs with Shawna Philpott. September 20, 2024</a>
+                            <a class="no-line left-align no-round small-padding wave s12" onclick="ui('#pd3')">3. Ungrading (Part I) with Chris Sarkonak</a>
+                            <a class="no-line left-align no-round small-padding wave s12" onclick="ui('#pd4')">4. Assessment in Physical Education with Derek Richels</a>
                         </div>
                     </div>
                 </details>
                 <details class="small-round small-margin" open>
-                    <summary class="none primary">
+                    <summary class="none">
                         <a class="row wave">
                             <i class="mdi mdi-heart"></i>
                             <span>Interests</span>
@@ -164,7 +174,7 @@
                     </div>
                 </details>
                 <details class="small-round small-margin" open>
-                    <summary class="none primary">
+                    <summary class="none">
                         <a class="row wave">
                             <i class="mdi mdi-translate"></i>
                             <span>Language</span>
@@ -178,7 +188,7 @@
             <div class="s8">
                 <div class="grid no-space no-margin">
                     <details class="small-round small-margin s12" open>
-                        <summary class="none primary">
+                        <summary class="none">
                             <a class="row wave">
                                 <i class="mdi mdi-account"></i>
                                 <span>About Me</span>
@@ -193,43 +203,59 @@
                         </div>
                     </details>
                     <details class="small-round small-margin s12" open>
-                        <summary class="none primary">
+                        <summary class="none">
                             <a class="row wave">
                                 <i class="mdi mdi-briefcase"></i>
                                 <span>Experience</span>
                             </a>
                         </summary>
                         <div class="content">
-                            <div class="no-margin small-padding no-space">
-                                <div class="row">
-                                    <h6 class="small max">Undergraduate Teaching Assistant & Marker</h6>
-                                    <label class="right-align">2022-09 - 2024-04</label>
+                            <details id="summary-details" open>
+                                <summary class="none">
+                                    <a class="grid small-padding wave no-space">
+                                        <div class="s8">
+                                            <h6 class="small">Undergraduate Teaching Assistant & Marker</h6>
+                                        </div>
+                                        <label class="right-align s4">2022-09 - 2024-04</label>
+                                        <div class="s12">
+                                            <i class="tiny mdi mdi-map-marker"></i>Brandon University. Brandon, MB
+                                        </div>
+                                    </a>
+                                </summary>
+                                <div class="small-margin">
+                                    <p class="tiny-line no-margin">
+                                        Assisted with a total of four mathematics courses and two computer science courses each
+                                        of which ranged from 50-100+ students. Developed strong relationships with students,
+                                        colleagues, and faculty. Supported faculty members with administrative tasks including
+                                        grading assignments and exams, updating class records, and tracking attendance.
+                                    </p>
                                 </div>
-                                <span><i class="tiny mdi mdi-map-marker"></i>Brandon University. Brandon, MB</span>
-                                <p class="tiny-line">
-                                    Assisted with a total of four mathematics courses and two computer science courses each
-                                    of which ranged from 50-100+ students. Developed strong relationships with students,
-                                    colleagues, and faculty. Supported faculty members with administrative tasks including
-                                    grading assignments and exams, updating class records, and tracking attendance.
-                                </p>
-                            </div>
+                            </details>
                             <hr>
-                            <div class="small-margin no-space">
-                                <div class="row">
-                                    <h6 class="small max">Teaching Assistant & Marker</h6>
-                                    <label class="right-align">2020-09 - 2021-06</label>
+                            <details id="summary-details" open>
+                                <summary class="none">
+                                    <a class="grid small-padding wave no-space">
+                                        <div class="s8">
+                                            <h6 class="small">Teaching Assistant & Marker</h6>
+                                        </div>
+                                        <label class="right-align s4">2020-09 - 2021-06</label>
+                                        <div class="s12">
+                                            <i class="tiny mdi mdi-map-marker"></i>Pineland Colony School. Piney, MB
+                                        </div>
+                                    </a>
+                                </summary>
+                                <div class="small-margin">
+                                    <p class="tiny-line no-margin">
+                                        Taught grade 11 and 12 mathematics. Provided one-on-one support to students in grades
+                                        ranging from 6 through 12 who were struggling with mathematics. Facilitated the
+                                        development of social and mathematical skills in students from grades 1 to 3.
+                                    </p>
                                 </div>
-                                <span><i class="tiny mdi mdi-map-marker"></i>Pineland Colony School. Piney, MB</span>
-                                <p class="tiny-line">
-                                    Taught grade 11 and 12 mathematics. Provided one-on-one support to students in grades
-                                    ranging from 6 through 12 who were struggling with mathematics. Facilitated the
-                                    development of social and mathematical skills in students from grades 1 to 3.
-                                </p>
-                            </div>
+                            </details>
                         </div>
                     </details>
                     <details class="small-round small-margin s12" open>
-                        <summary class="none primary">
+                        <summary class="none">
                             <a class="row wave">
                                 <i class="mdi mdi-puzzle"></i>
                                 <span>Demonstrated Skills</span>
@@ -254,7 +280,7 @@
                                 </article>
                                 <article class="border small-round tiny-margin small-padding s6">
                                     <p class="tiny-line no-margin">
-                                        Proficient with computers and technology with over seven years of programming experience in software, web, mobile, and game development.
+                                        Proficient with computers and technology with over seven years of programming experience in software, server, web, mobile, and game development.
                                     </p>
                                 </article>
                             </div>
@@ -262,87 +288,84 @@
                     </details>
                 </div>
             </div>
-            <div class="s12">
-                <div class="grid no-space no-margin">
-                    <details class="small-round small-margin s6" open>
-                        <summary class="none primary">
-                            <a class="row wave">
-                                <i class="mdi mdi-medal"></i>
-                                <span>Awards</span>
+                <details class="small-round small-margin s6" open>
+                    <summary class="none">
+                        <a class="row wave">
+                            <i class="mdi mdi-medal"></i>
+                            <span>Awards</span>
+                        </a>
+                    </summary>
+                    <div class="content">
+                        <div class="no-margin">
+                            <a class="row small-padding wave" onclick="ui('#silver-medal-dialog');">
+                                <img src="/static/awards/mathematics-silver-medal.png" alt="robot games medal" class="round"
+                                    id="mathematics-silver-medal">
+                                <div class="max">
+                                    <h6 class="small">Silver Medal in Mathematics</h6>
+                                    <div><i class="tiny mdi mdi-map-marker"></i>Brandon University. Brandon, MB</div>
+                                </div>
+                                <label>2024</label>
                             </a>
-                        </summary>
-                        <div class="content">
-                            <div class="no-margin">
-                                <a class="row small-padding wave" onclick="ui('#silver-medal-dialog');">
-                                    <img src="/static/mathematics-silver-medal.png" alt="robot games medal" class="round"
-                                        id="mathematics-silver-medal">
-                                    <div class="max">
-                                        <h6 class="small">Silver Medal in Mathematics</h6>
-                                        <div><i class="tiny mdi mdi-map-marker"></i>Brandon University. Brandon, MB</div>
-                                    </div>
-                                    <label>2024</label>
-                                </a>
-                                <hr>
-                                <a class="row small-padding wave" onclick="ui('#governor-general-academic-medal-dialog');">
-                                    <img src="/static/governor-general-academic-medal.png" alt="robot games medal"
-                                        class="round" id="governor-general-academic-medal">
-                                    <div class="max">
-                                        <h6 class="small">Governor General's Academic Medal</h6>
-                                        <div><i class="tiny mdi mdi-map-marker"></i>Pineland Colony School. Piney, MB</div>
-                                    </div>
-                                    <label>2020</label>
-                                </a>
-                                <hr>
-                                <a class="row small-padding wave" onclick="ui('#manitoba-robot-games-medal-dialog');">
-                                    <img src="/static/manitoba-robot-games.png" alt="robot games medal" class="round"
-                                        id="manitoba-robot-games-medal">
-                                    <div class="max">
-                                        <h6 class="small">Third Place in Judges Choice</h6>
-                                        <div><i class="tiny mdi mdi-map-marker"></i>Tec Voc School. Winnipeg, MB</div>
-                                    </div>
-                                    <label>2019</label>
-                                </a>
-                            </div>
-                        </div>
-                    </details>
-                    <details class="small-round small-margin s6" open>
-                        <summary class="none primary">
-                            <a class="row wave">
-                                <i class="mdi mdi-certificate"></i>
-                                <span>Assessments</span>
+                            <hr>
+                            <a class="row small-padding wave" onclick="ui('#governor-general-academic-medal-dialog');">
+                                <img src="/static/awards/governor-general-academic-medal.png" alt="robot games medal"
+                                    class="round" id="governor-general-academic-medal">
+                                <div class="max">
+                                    <h6 class="small">Governor General's Academic Medal</h6>
+                                    <div><i class="tiny mdi mdi-map-marker"></i>Pineland Colony School. Piney, MB</div>
+                                </div>
+                                <label>2020</label>
                             </a>
-                        </summary>
-                        <div class="content">
-                            <div class="no-margin">
-                                <a class="row small-padding wave">
-                                    <div class="max">
-                                        <h6 class="small">Graduated with Great Distinction</h6>
-                                        <div><i class="tiny mdi mdi-map-marker"></i>Brandon University. Brandon, MB</div>
-                                    </div>
-                                    <label>2024</label>
-                                </a>
-                                <hr>
-                                <a class="row small-padding wave">
-                                    <div class="max">
-                                        <h6 class="small">Inducted into the President's Honour Society</h6>
-                                        <div><i class="tiny mdi mdi-map-marker"></i>Brandon University. Brandon, MB</div>
-                                    </div>
-                                    <label>2023-2024</label>
-                                </a>
-                                <hr>
-                                <a class="row small-padding wave">
-                                    <div class="max">
-                                        <h6 class="small">Dean's Honour list</h6>
-                                        <div><i class="tiny mdi mdi-map-marker"></i>Brandon University. Brandon, MB</div>
-                                    </div>
-                                    <label>2021-2024</label>
-                                </a>
-                            </div>
+                            <hr>
+                            <a class="row small-padding wave" onclick="ui('#manitoba-robot-games-medal-dialog');">
+                                <img src="/static/awards/manitoba-robot-games.png" alt="robot games medal" class="round"
+                                    id="manitoba-robot-games-medal">
+                                <div class="max">
+                                    <h6 class="small">Third Place in Judges Choice</h6>
+                                    <div><i class="tiny mdi mdi-map-marker"></i>Tec Voc School. Winnipeg, MB</div>
+                                </div>
+                                <label>2019</label>
+                            </a>
                         </div>
-                    </details>
-                </div>
-                <details class="small-round small-margin" open>
-                    <summary class="none primary">
+                    </div>
+                </details>
+                <details class="small-round small-margin s6" open>
+                    <summary class="none">
+                        <a class="row wave">
+                            <i class="mdi mdi-certificate"></i>
+                            <span>Assessments</span>
+                        </a>
+                    </summary>
+                    <div class="content">
+                        <div class="no-margin">
+                            <a class="row small-padding wave">
+                                <div class="max">
+                                    <h6 class="small">Graduated with Great Distinction</h6>
+                                    <div><i class="tiny mdi mdi-map-marker"></i>Brandon University. Brandon, MB</div>
+                                </div>
+                                <label>2024</label>
+                            </a>
+                            <hr>
+                            <a class="row small-padding wave">
+                                <div class="max">
+                                    <h6 class="small">Inducted into the President's Honour Society</h6>
+                                    <div><i class="tiny mdi mdi-map-marker"></i>Brandon University. Brandon, MB</div>
+                                </div>
+                                <label>2023-2024</label>
+                            </a>
+                            <hr>
+                            <a class="row small-padding wave">
+                                <div class="max">
+                                    <h6 class="small">Dean's Honour list</h6>
+                                    <div><i class="tiny mdi mdi-map-marker"></i>Brandon University. Brandon, MB</div>
+                                </div>
+                                <label>2021-2024</label>
+                            </a>
+                        </div>
+                    </div>
+                </details>
+                <details class="small-round small-margin s12" open>
+                    <summary class="none">
                         <a class="row wave">
                             <i class="mdi mdi-account-group"></i>
                             <span>References</span>
@@ -350,7 +373,7 @@
                     </summary>
                     <div class="content">
                         <div id="skills-container" class="grid no-space">
-                            <article class="small-round small-margin border s6 m6 l3">
+                            <article class="small-round small-margin border s6 m6 l6">
                                 <h6>Susan Squires</h6>
                                 <span>Principle & Certified Teacher</span>
                                 <p class="tiny-line">
@@ -365,7 +388,7 @@
                                     </a>
                                 </nav>
                             </article>
-                            <article class="small-round small-margin border s6 m6 l4">
+                            <article class="small-round small-margin border s6 m6 l6">
                                 <h6>Leah Friesen</h6>
                                 <span>Teacher</span>
                                 <p class="tiny-line">
@@ -382,7 +405,7 @@
                                     </a>
                                 </nav>
                             </article>
-                            <article class="small-round small-margin border s12 m12 l5">
+                            <article class="small-round small-margin border s12 m12 l12">
                                 <h6>Maryann Derewianchuk</h6>
                                 <span>Certified Teacher</span>
                                 <p class="tiny-line">
@@ -402,7 +425,6 @@
                         </div>
                     </div>
                 </details>
-            </div>
         </div>
     </main>
     <div class="overlay blur"></div>
@@ -414,7 +436,7 @@
             </button>
         </nav>
         <br>
-        <img src="/static/mathematics-silver-medal.png" alt="robot games medal" class="responsive">
+        <img src="/static/awards/mathematics-silver-medal.png" alt="robot games medal" class="responsive">
         <p class="center-align">2024 - Highest GPA graduating with major in Mathematics.</p>
     </dialog>
     <div class="overlay blur"></div>
@@ -426,7 +448,7 @@
             </button>
         </nav>
         <br>
-        <img src="/static/governor-general-academic-medal.png" alt="robot games medal" class="responsive">
+        <img src="/static/awards/governor-general-academic-medal.png" alt="robot games medal" class="responsive">
         <p class="center-align">2020 - Awarded by Ted Falk for a signficant academic achievement.</p>
     </dialog>
     <div class="overlay blur"></div>
@@ -438,12 +460,102 @@
             </button>
         </nav>
         <br>
-        <img src="/static/manitoba-robot-games.png" alt="robot games medal" class="responsive">
+        <img src="/static/awards/manitoba-robot-games.png" alt="robot games medal" class="responsive">
         <p class="center-align">Awarded by Phil Hossack during the 2019 Manitoba Robot Games.</p>
+    </dialog>
+    <div class="overlay blur"></div>
+    <dialog id="pd1">
+        <nav class="row">
+            <h3 class="max">Play-based Outdoor Learning</h3>
+            <button class="square round transparent" onclick="ui('#pd1');">
+                <i class="mdi mdi-close"></i>
+            </button>
+        </nav>
+        <br>
+        <p class="left-align">
+            Focuses on engaging young learners through outdoor activities that promote physical, cognitive, and social development, using play-based methods suited for Kindergarten to Grade 3 students.
+        </p>
+    </dialog>
+    <div class="overlay blur"></div>
+    <dialog id="pd2">
+        <nav class="row">
+            <h3 class="max">Intentional Designs</h3>
+            <button class="square round transparent" onclick="ui('#pd2');">
+                <i class="mdi mdi-close"></i>
+            </button>
+        </nav>
+        <br>
+        <div class="pd-image" data-path="/static/PDs/intentional-spaces.pdf"></div>
+        <p class="left-align">
+            Explores the strategic planning and organization of learning spaces to enhance student engagement and foster a productive learning environment through thoughtful, intentional design.
+        </p>
+    </dialog>
+    <div class="overlay blur"></div>
+    <dialog id="pd3">
+        <nav class="row">
+            <h3 class="max">Ungrading (Part I)</h3>
+            <button class="square round transparent" onclick="ui('#pd3');">
+                <i class="mdi mdi-close"></i>
+            </button>
+        </nav>
+        <br>
+        <p class="left-align">
+            Introduces the philosophy of ungrading, a method of assessment that emphasizes feedback over traditional grades, encouraging student growth and self-reflection in the learning process.
+        </p>
+    </dialog>
+    <div class="overlay blur"></div>
+    <dialog id="pd4">
+        <nav class="row">
+            <h3 class="max">Assessment in Physical Education</h3>
+            <button class="square round transparent" onclick="ui('#pd4');">
+                <i class="mdi mdi-close"></i>
+            </button>
+        </nav>
+        <br>
+        <p class="left-align">
+            Covers effective strategies for assessing student performance in physical education, focusing on how to measure both physical skills and overall student participation.
+        </p>
     </dialog>
 </body>
 <script>
     document.addEventListener("DOMContentLoaded", function () {
+        async function convertPdfToImage(pdfUrl, targetDiv) {
+            const pdfjsLib = window['pdfjs-dist/build/pdf'];
+            pdfjsLib.GlobalWorkerOptions.workerSrc = 'https://cdnjs.cloudflare.com/ajax/libs/pdf.js/2.10.377/pdf.worker.min.js';
+
+            const loadingTask = pdfjsLib.getDocument(pdfUrl);
+            const pdf = await loadingTask.promise;
+
+            const page = await pdf.getPage(1);
+            const scale = 1.5;
+            const viewport = page.getViewport({ scale: scale });
+
+            const canvas = document.createElement("canvas");
+            const context = canvas.getContext("2d");
+            canvas.height = viewport.height;
+            canvas.width = viewport.width;
+
+            const renderContext = {
+                canvasContext: context,
+                viewport: viewport
+            };
+            await page.render(renderContext).promise;
+
+            const img = document.createElement("img");
+            img.classList = "responsive";
+            img.src = canvas.toDataURL("image/png");
+            img.alt = "PDF Image";
+            targetDiv.appendChild(img);
+        }
+
+        const pdImages = document.querySelectorAll('.pd-image');
+        pdImages.forEach(function (pdImageDiv) {
+            const pdfPath = pdImageDiv.getAttribute('data-path');
+            if (pdfPath) {
+                convertPdfToImage(pdfPath, pdImageDiv);
+            }
+        });
+
         function setTheme(theme) {
             document.body.classList.remove("light", "dark");
             document.body.classList.add(theme);
@@ -453,11 +565,10 @@
             themeIcon.innerText = theme === "dark" ? "light_mode" : "dark_mode";
         }
 
-        document
-            .getElementById("picture-as-pdf")
-            .addEventListener("click", () => {
+        document.getElementById("picture-as-pdf").addEventListener("click", () => {
                 window.print();
             });
+
         const savedTheme = localStorage.getItem("theme") || "light";
         setTheme(savedTheme);
 

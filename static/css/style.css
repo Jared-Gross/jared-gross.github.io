@@ -109,7 +109,7 @@ article nav {
     margin-top: auto; /* Pushes the nav to the bottom */
 }
 
-details:not(#bachelor-of-science-3-year) {
+details:not(#summary-details) {
     position: relative;
     width: auto;
     height: auto;
@@ -122,16 +122,15 @@ details:not(#bachelor-of-science-3-year) {
     animation: fadeInFromRight 0.5s forwards; /* Added animation */
 }
 
-details:not(#bachelor-of-science-3-year) div.content{
+details:not(#summary-details) div.content{
     position: relative;
     width: auto;
     height: auto;
 }
 
-details:not(#bachelor-of-science-3-year)[open] .content {
+details:not(#summary-details)[open] .content {
     border-radius: 10px;
     box-shadow: 0 -10px 0 0 var(--primary);
-
 }
 @keyframes fadeInFromRight {
     0% {
@@ -142,7 +141,7 @@ details:not(#bachelor-of-science-3-year)[open] .content {
     }
 }
 
-details:not(#bachelor-of-science-3-year)[open] {
+details:not(#summary-details)[open] {
     border: 0.0625rem solid var(--primary) !important;
 }
 
@@ -150,11 +149,44 @@ summary {
     border-radius: 0.4rem;
 }
 
-details:not(#bachelor-of-science-3-year)[open] summary {
+details:not(#summary-details)[open] summary {
     border-radius: 0.4rem 0.4rem 0 0;
 }
 
+details:not(#summary-details):not([open]) summary {
+    background-color: var(--surface-variant);
+    color: var(--on-surface-variant);
+    border-color: var(--surface-variant);
+    border-radius: 0.4rem;
+}
 
+details:not(#summary-details):not([open]) summary a {
+    background-color: var(--surface-variant);
+    color: var(--on-surface-variant);
+    border-color: var(--surface-variant);
+    border-radius: 0.4rem;
+}
+
+details:not(#summary-details)[open] summary a {
+    background-color: var(--primary);
+    color: var(--on-primary);
+    border-color: var(--primary);
+    border-radius: 0.4rem 0.4rem 0 0;
+}
+
+details #summary-details[open] summary a {
+    background-color: transparent;
+    color: var(--on-surface);
+    margin: 1px;
+    border-radius: 0;
+}
+
+details#summary-details:not([open]) summary a {
+    background-color: transparent;
+    color: var(--on-surface);
+    margin: 1px;
+    border-radius: 0;
+}
 #document-title{
     display: none;
 }
@@ -163,7 +195,7 @@ details:not(#bachelor-of-science-3-year)[open] summary {
     #manitoba-robot-games-medal, #governor-general-academic-medal, #mathematics-silver-medal{
         display: none;
     }
-    details:not(#bachelor-of-science-3-year):not([open]) {
+    details:not(#summary-details):not([open]) {
         display: none !important;
     }
     #document-title{
