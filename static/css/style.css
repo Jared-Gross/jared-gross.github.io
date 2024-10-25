@@ -201,7 +201,7 @@ details#summary-details:not([open]) summary a {
     #document-title{
         display: block !important;
     }
-    header{
+    .header-nav{
         display: none !important;
     }
 }
