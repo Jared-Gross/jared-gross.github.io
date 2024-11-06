@@ -24,19 +24,14 @@ header,
 div::before,
 div::after,
 nav {
-    transition: background-color 0.3s ease-in-out, font-color 0.1s ease, box-shadow 0.3s ease-in-out, text-color 0.1s ease;
+    transition: background-color 0.3s ease-in-out, font-color 0.1s ease, box-shadow 0.3s ease-in-out, text-color 0.1s ease, border-color 0.3s ease-in-out;
 }
 
-#index-main {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-}
-
-.img-container img{
-    box-shadow: var(--elevate2);
-    z-index: 999999 !important;
+.img-container img {
+    box-shadow: var(--elevate3);
+    z-index: 1 !important;
+    height: auto;
+    width: 200px;
 }
 
 .img-container {
@@ -47,9 +42,43 @@ nav {
     max-width: calc(200px + 16px + 16px);
 }
 
-.img-container::before, .img-container::after {
-  content: "";
-  position: absolute;
+.profile-image-wrapper {
+    position: relative;
+    display: inline-block;
+}
+
+.profile-image-wrapper::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 200px;
+    height: 100px;
+    margin: 1rem;
+    border-radius: 2rem 2rem 50% 50%;
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 0) 100%);
+    filter: blur(5px);
+    z-index: 2;
+}
+
+.profile-image-wrapper::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 200px;
+    height: 50px;
+    margin: 1rem;
+    border-radius: 2rem 2rem 50% 50%;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.649) 0%, rgba(255, 255, 255, 0) 100%);
+    filter: blur(5px);
+    transform: rotate(180deg);
+    z-index: 2;
+}
+.img-container::before,
+.img-container::after {
+    content: "";
+    position: absolute;
 }
 
 .img-container::before {
@@ -84,21 +113,27 @@ nav {
     0% {
         transform: translateY(-2000px);
     }
+
     50% {
         transform: translateY(10px);
     }
+
     100% {
         transform: translateY(0px);
     }
 }
-.slide-in{
-    transform: translateX(-2000px); /* Start from the right */
-    animation: fadeInFromRight 0.5s forwards; /* Added animation */
+
+.slide-in {
+    transform: translateX(-2000px);
+    /* Start from the right */
+    animation: fadeInFromRight 0.5s forwards;
+    /* Added animation */
 }
 
-.tooltip img{
+.tooltip img {
     z-index: 999999 !important;
 }
+
 article {
     display: flex;
     flex-direction: column;
@@ -106,7 +141,8 @@ article {
 }
 
 article nav {
-    margin-top: auto; /* Pushes the nav to the bottom */
+    margin-top: auto;
+    /* Pushes the nav to the bottom */
 }
 
 details:not(#summary-details) {
@@ -117,12 +153,15 @@ details:not(#summary-details) {
     ::-webkit-details-marker {
         display: none;
     }
+
     page-break-inside: avoid;
-    transform: translateX(-2000px); /* Start from the right */
-    animation: fadeInFromRight 0.5s forwards; /* Added animation */
+    transform: translateX(-2000px);
+    /* Start from the right */
+    animation: fadeInFromRight 0.5s forwards;
+    /* Added animation */
 }
 
-details:not(#summary-details) div.content{
+details:not(#summary-details) div.content {
     position: relative;
     width: auto;
     height: auto;
@@ -132,12 +171,16 @@ details:not(#summary-details)[open] .content {
     border-radius: 10px;
     box-shadow: 0 -10px 0 0 var(--primary);
 }
+
 @keyframes fadeInFromRight {
     0% {
-        transform: translateX(-2000px); /* Start from the right */
+        transform: translateX(-2000px);
+        /* Start from the right */
     }
+
     100% {
-        transform: translateX(0); /* End at original position */
+        transform: translateX(0);
+        /* End at original position */
     }
 }
 
@@ -187,21 +230,28 @@ details#summary-details:not([open]) summary a {
     margin: 1px;
     border-radius: 0;
 }
-#document-title{
+
+#document-title {
     display: none;
 }
 
 @media print {
-    #manitoba-robot-games-medal, #governor-general-academic-medal, #mathematics-silver-medal{
+
+    #manitoba-robot-games-medal,
+    #governor-general-academic-medal,
+    #mathematics-silver-medal {
         display: none;
     }
+
     details:not(#summary-details):not([open]) {
         display: none !important;
     }
-    #document-title{
+
+    #document-title {
         display: block !important;
     }
-    .header-nav{
+
+    .header-nav {
         display: none !important;
     }
 }
