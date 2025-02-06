@@ -30,46 +30,43 @@
     <meta content="#44d8f1" data-react-helmet="true" name="theme-color">
 </head>
 
+<header class="fixed no-padding">
+    <nav class="primary padding header-nav">
+        <button class="circle transparent" onclick="window.location.href='/';">
+            <i class="mdi mdi-arrow-left"></i>
+        </button>
+        <h5 id="header-title" class="max">Jared Gross</h5>
+        <button class="circle transparent" id="picture-as-pdf">
+            <i class="mdi mdi-file-pdf-box"></i>
+            <div class="tooltip left">
+                <p>
+                    Set scale to 80%
+                </p>
+            </div>
+        </button>
+        <button class="circle transparent" id="theme-toggle">
+            <i id="theme-icon">dark_mode</i>
+        </button>
+    </nav>
+    <h1 class="center-align" id="document-title">Jared Gross</h1>
+    <nav class="fade-in margin no-padding tabbed primary">
+        <a href="tel:+1-204-782-1038">
+            <i class="mdi mdi-phone"></i>
+            <span class="small-text">(204) 782-1038</span>
+        </a>
+        <a href="mailto:jared@pinelandfarms.ca">
+            <i class="mdi mdi-email"></i>
+            <span class="small-text">jared@pinelandfarms.ca</span>
+        </a>
+        <a>
+            <i class="mdi mdi-home"></i>
+            <span class="small-text no-line">Pineland Colony. Piney, MB</span>
+        </a>
+    </nav>
+    <hr class="fade-in">
+</header>
+
 <body class="light">
-    <header class="fixed no-padding">
-        <nav class="primary padding header-nav">
-            <button class="circle transparent" onclick="window.location.href='/';">
-                <i class="mdi mdi-arrow-left"></i>
-            </button>
-            <h5 id="header-title" class="max">Jared Gross</h5>
-            <button class="circle transparent" id="picture-as-pdf">
-                <i class="mdi mdi-file-pdf-box"></i>
-                <div class="tooltip left">
-                    <p>
-                        Set scale to 80%
-                    </p>
-                </div>
-            </button>
-            <button class="circle transparent" id="theme-toggle">
-                <i id="theme-icon">dark_mode</i>
-            </button>
-        </nav>
-        <h1 class="center-align" id="document-title">Jared Gross</h1>
-        <nav class="fade-in margin no-padding tabbed primary">
-            <a href="tel:+1-204-782-1038">
-                <i class="mdi mdi-phone"></i>
-                <span class="small-text">(204) 782-1038</span>
-            </a>
-            <a href="mailto:jared@pinelandfarms.ca">
-                <i class="mdi mdi-email"></i>
-                <span class="small-text">jared@pinelandfarms.ca</span>
-            </a>
-            <a href="https://thecodingjsoftware.github.io" target="_blank">
-                <i class="mdi mdi-web"></i>
-                <span class="small-text">thecodingjsoftware.github.io</span>
-            </a>
-            <a>
-                <i class="mdi mdi-home"></i>
-                <span class="small-text no-line">Pineland Colony. Piney, MB</span>
-            </a>
-        </nav>
-        <hr class="fade-in">
-    </header>
     <main class="responsive">
         <div class="grid no-space small-margin">
             <div class="s4">
@@ -112,6 +109,7 @@
                                     </a>
                                 </summary>
                                 <div class="small-margin">
+                                    <p class="no-line no-margin">Graduated with Great Distinction</p>
                                     <p class="no-line no-margin">Major in Mathematics: GPA: 4.0</p>
                                     <p class="no-line no-margin">Minor in History: GPA: 3.6</p>
                                     <p class="no-line no-margin">Overall GPA: 3.85</p>
@@ -394,14 +392,6 @@
                     <div class="no-margin">
                         <a class="row small-padding wave">
                             <div class="max">
-                                <h6 class="small">Graduated with Great Distinction</h6>
-                                <div><i class="tiny mdi mdi-map-marker"></i>Brandon University. Brandon, MB</div>
-                            </div>
-                            <label>2024</label>
-                        </a>
-                        <hr>
-                        <a class="row small-padding wave">
-                            <div class="max">
                                 <h6 class="small">Inducted into the President's Honour Society</h6>
                                 <div><i class="tiny mdi mdi-map-marker"></i>Brandon University. Brandon, MB</div>
                             </div>
@@ -481,152 +471,153 @@
                 </div>
             </details>
         </div>
-        <div class="overlay blur"></div>
-        <dialog id="silver-medal-dialog">
-            <nav class="row">
-                <h3 class="max">Mathematics Silver Medal</h3>
-                <button class="square round transparent" onclick="ui('#silver-medal-dialog');">
-                    <i class="mdi mdi-close"></i>
-                </button>
-            </nav>
-            <br>
-            <img src="/static/awards/mathematics-silver-medal.png" alt="robot games medal" class="responsive">
-            <p class="center-align">2024 - Highest GPA graduating with major in Mathematics.</p>
-        </dialog>
-        <div class="overlay blur"></div>
-        <dialog id="governor-general-academic-medal-dialog">
-            <nav class="row">
-                <h3 class="max">Governor General's Academic Medal</h3>
-                <button class="square round transparent" onclick="ui('#governor-general-academic-medal-dialog');">
-                    <i class="mdi mdi-close"></i>
-                </button>
-            </nav>
-            <br>
-            <img src="/static/awards/governor-general-academic-medal.png" alt="robot games medal" class="responsive">
-            <p class="center-align">2020 - Awarded by Ted Falk for a signficant academic achievement.</p>
-        </dialog>
-        <div class="overlay blur"></div>
-        <dialog id="manitoba-robot-games-medal-dialog">
-            <nav class="row">
-                <h3 class="max">Manitoba Robot Games Medal</h3>
-                <button class="square round transparent" onclick="ui('#manitoba-robot-games-medal-dialog');">
-                    <i class="mdi mdi-close"></i>
-                </button>
-            </nav>
-            <br>
-            <img src="/static/awards/manitoba-robot-games.png" alt="robot games medal" class="responsive">
-            <p class="center-align">Awarded by Phil Hossack during the 2019 Manitoba Robot Games.</p>
-        </dialog>
-        <div class="overlay blur"></div>
-        <dialog class="" id="pd1">
-            <nav class="row">
-                <h3 class="max">Play-based Outdoor Learning</h3>
-                <button class="square round transparent" onclick="ui('#pd1');">
-                    <i class="mdi mdi-close"></i>
-                </button>
-            </nav>
-            <br>
-            <p class="left-align">
-                Focuses on engaging young learners through outdoor activities that promote physical, cognitive, and
-                social
-                development, using play-based methods suited for Kindergarten to Grade 3 students.
-            </p>
-        </dialog>
-        <div class="overlay blur"></div>
-        <dialog class="" id="pd2">
-            <nav class="row">
-                <h3 class="max">Intentional Designs</h3>
-                <button class="square round transparent" onclick="ui('#pd2');">
-                    <i class="mdi mdi-close"></i>
-                </button>
-            </nav>
-            <br>
-            <div class="pd-image" data-path="/static/PDs/intentional-spaces.pdf"></div>
-            <p class="left-align">
-                Explores the strategic planning and organization of learning spaces to enhance student engagement and
-                foster
-                a productive learning environment through thoughtful, intentional design.
-            </p>
-        </dialog>
-        <div class="overlay blur"></div>
-        <dialog class="" id="pd3">
-            <nav class="row">
-                <h3 class="max">Ungrading (Part I)</h3>
-                <button class="square round transparent" onclick="ui('#pd3');">
-                    <i class="mdi mdi-close"></i>
-                </button>
-            </nav>
-            <br>
-            <p class="left-align">
-                Introduces the philosophy of ungrading, a method of assessment that emphasizes feedback over traditional
-                grades, encouraging student growth and self-reflection in the learning process.
-            </p>
-        </dialog>
-        <div class="overlay blur"></div>
-        <dialog class="" id="pd4">
-            <nav class="row">
-                <h3 class="max">Assessment in Physical Education</h3>
-                <button class="square round transparent" onclick="ui('#pd4');">
-                    <i class="mdi mdi-close"></i>
-                </button>
-            </nav>
-            <br>
-            <p class="left-align">
-                Covers effective strategies for assessing student performance in physical education, focusing on how to
-                measure both physical skills and overall student participation.
-            </p>
-        </dialog>
-        <div class="overlay blur"></div>
-        <dialog class="" id="pd6">
-            <nav class="row">
-                <h3 class="max">Lesson Planning Workshop</h3>
-                <button class="square round transparent" onclick="ui('#pd6');">
-                    <i class="mdi mdi-close"></i>
-                </button>
-            </nav>
-            <br>
-            <p class="left-align">
-                This workshop provided a framework for planning lessons and activities.
-            </p>
-        </dialog>
-        <div class="overlay blur"></div>
-        <dialog class="" id="pd7">
-            <nav class="row">
-                <h3 class="max">MTS PD Day 2024: Manitoba Teachers for Students with Learning Disabilities</h3>
-                <button class="square round transparent" onclick="ui('#pd7');">
-                    <i class="mdi mdi-close"></i>
-                </button>
-            </nav>
-            <br>
-            <p class="left-align">
-                This professional development session covered foundational strategies in numeracy, math, and early
-                literacy
-                detection, alongside structured literacy approaches for vocabulary and grammar, aimed at enhancing
-                support
-                for students with learning disabilities.
-            </p>
-        </dialog>
-        <div class="overlay blur"></div>
-        <dialog class="" id="pd8">
-            <nav class="row">
-                <h3 class="max">PD in Portage la Prairie: Understanding the True History between Indigenous and
-                    Hutterite Peoples</h3>
-                <button class="square round transparent" onclick="ui('#pd8');">
-                    <i class="mdi mdi-close"></i>
-                </button>
-            </nav>
-            <br>
-            <p class="left-align">
-                This professional development session focused on student-centered learning approaches, emphasizing the
-                use of portfolios and inquiry-based learning to strike a delicate balance. It also explored the
-                importance of student self-reflections, whether oral or written, in the assessment process.
-                Additionally, the session delved into understanding perspectives on Hutterite-Indigenous relations,
-                particularly in the context of river colonies. The discussion covered the history of Hutterites in
-                Canada, the significance of Treaty education for Hutterites, and the importance of presenting a balanced
-                narrative that acknowledges both emotional and factual aspects of the true history.
-            </p>
-        </dialog>
     </main>
+
+    <div class="overlay blur"></div>
+    <dialog id="silver-medal-dialog">
+        <nav class="row">
+            <h3 class="max">Mathematics Silver Medal</h3>
+            <button class="square round transparent" onclick="ui('#silver-medal-dialog');">
+                <i class="mdi mdi-close"></i>
+            </button>
+        </nav>
+        <br>
+        <img src="/static/awards/mathematics-silver-medal.png" alt="robot games medal" class="responsive">
+        <p class="center-align">2024 - Highest GPA graduating with major in Mathematics.</p>
+    </dialog>
+    <div class="overlay blur"></div>
+    <dialog id="governor-general-academic-medal-dialog">
+        <nav class="row">
+            <h3 class="max">Governor General's Academic Medal</h3>
+            <button class="square round transparent" onclick="ui('#governor-general-academic-medal-dialog');">
+                <i class="mdi mdi-close"></i>
+            </button>
+        </nav>
+        <br>
+        <img src="/static/awards/governor-general-academic-medal.png" alt="robot games medal" class="responsive">
+        <p class="center-align">2020 - Awarded by Ted Falk for a signficant academic achievement.</p>
+    </dialog>
+    <div class="overlay blur"></div>
+    <dialog id="manitoba-robot-games-medal-dialog">
+        <nav class="row">
+            <h3 class="max">Manitoba Robot Games Medal</h3>
+            <button class="square round transparent" onclick="ui('#manitoba-robot-games-medal-dialog');">
+                <i class="mdi mdi-close"></i>
+            </button>
+        </nav>
+        <br>
+        <img src="/static/awards/manitoba-robot-games.png" alt="robot games medal" class="responsive">
+        <p class="center-align">Awarded by Phil Hossack during the 2019 Manitoba Robot Games.</p>
+    </dialog>
+    <div class="overlay blur"></div>
+    <dialog id="pd1">
+        <nav class="row">
+            <h3 class="max">Play-based Outdoor Learning</h3>
+            <button class="square round transparent" onclick="ui('#pd1');">
+                <i class="mdi mdi-close"></i>
+            </button>
+        </nav>
+        <br>
+        <p class="left-align">
+            Focuses on engaging young learners through outdoor activities that promote physical, cognitive, and
+            social
+            development, using play-based methods suited for Kindergarten to Grade 3 students.
+        </p>
+    </dialog>
+    <div class="overlay blur"></div>
+    <dialog id="pd2">
+        <nav class="row">
+            <h3 class="max">Intentional Designs</h3>
+            <button class="square round transparent" onclick="ui('#pd2');">
+                <i class="mdi mdi-close"></i>
+            </button>
+        </nav>
+        <br>
+        <div class="pd-image" data-path="/static/PDs/intentional-spaces.pdf"></div>
+        <p class="left-align">
+            Explores the strategic planning and organization of learning spaces to enhance student engagement and
+            foster
+            a productive learning environment through thoughtful, intentional design.
+        </p>
+    </dialog>
+    <div class="overlay blur"></div>
+    <dialog id="pd3">
+        <nav class="row">
+            <h3 class="max">Ungrading (Part I)</h3>
+            <button class="square round transparent" onclick="ui('#pd3');">
+                <i class="mdi mdi-close"></i>
+            </button>
+        </nav>
+        <br>
+        <p class="left-align">
+            Introduces the philosophy of ungrading, a method of assessment that emphasizes feedback over traditional
+            grades, encouraging student growth and self-reflection in the learning process.
+        </p>
+    </dialog>
+    <div class="overlay blur"></div>
+    <dialog id="pd4">
+        <nav class="row">
+            <h3 class="max">Assessment in Physical Education</h3>
+            <button class="square round transparent" onclick="ui('#pd4');">
+                <i class="mdi mdi-close"></i>
+            </button>
+        </nav>
+        <br>
+        <p class="left-align">
+            Covers effective strategies for assessing student performance in physical education, focusing on how to
+            measure both physical skills and overall student participation.
+        </p>
+    </dialog>
+    <div class="overlay blur"></div>
+    <dialog id="pd6">
+        <nav class="row">
+            <h3 class="max">Lesson Planning Workshop</h3>
+            <button class="square round transparent" onclick="ui('#pd6');">
+                <i class="mdi mdi-close"></i>
+            </button>
+        </nav>
+        <br>
+        <p class="left-align">
+            This workshop provided a framework for planning lessons and activities.
+        </p>
+    </dialog>
+    <div class="overlay blur"></div>
+    <dialog id="pd7">
+        <nav class="row">
+            <h3 class="max">MTS PD Day 2024: Manitoba Teachers for Students with Learning Disabilities</h3>
+            <button class="square round transparent" onclick="ui('#pd7');">
+                <i class="mdi mdi-close"></i>
+            </button>
+        </nav>
+        <br>
+        <p class="left-align">
+            This professional development session covered foundational strategies in numeracy, math, and early
+            literacy
+            detection, alongside structured literacy approaches for vocabulary and grammar, aimed at enhancing
+            support
+            for students with learning disabilities.
+        </p>
+    </dialog>
+    <div class="overlay blur"></div>
+    <dialog id="pd8">
+        <nav class="row">
+            <h3 class="max">PD in Portage la Prairie: Understanding the True History between Indigenous and
+                Hutterite Peoples</h3>
+            <button class="square round transparent" onclick="ui('#pd8');">
+                <i class="mdi mdi-close"></i>
+            </button>
+        </nav>
+        <br>
+        <p class="left-align">
+            This professional development session focused on student-centered learning approaches, emphasizing the
+            use of portfolios and inquiry-based learning to strike a delicate balance. It also explored the
+            importance of student self-reflections, whether oral or written, in the assessment process.
+            Additionally, the session delved into understanding perspectives on Hutterite-Indigenous relations,
+            particularly in the context of river colonies. The discussion covered the history of Hutterites in
+            Canada, the significance of Treaty education for Hutterites, and the importance of presenting a balanced
+            narrative that acknowledges both emotional and factual aspects of the true history.
+        </p>
+    </dialog>
 </body>
 <script>
     document.addEventListener("DOMContentLoaded", function () {
