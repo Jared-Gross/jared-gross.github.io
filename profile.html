@@ -82,9 +82,10 @@
         <div class="page padding active" id="introduction">
             <div class="round elevate no-padding surface-container">
                 <aside class="left padding primary right-margin">
-                    <img loading="eager" class="large-elevate" style="max-width: 256px;"
-                        src="/static/picture/headshot.jpg">
-                    </img>
+                    <picture>
+                        <source srcset="/static/picture/Gross Jared.webp" type="image/webp">
+                        <img fetchpriority="high" style="max-width: 256px;" decoding="async" class="large-elevate" src="/static/picture/headshot.jpg" alt="Jared Gross">
+                    </picture>
                     <div class="round center surface-container padding top-margin">
                         <p class="no-margin no-line no-padding center-align">Teach people, not subjects.</p>
                     </div>
@@ -213,75 +214,58 @@
             </article>
         </div>
         <div class="page padding" id="gallery">
-            <details class="round summary-details" open>
-                <summary class="none padding round">
-                    <h4>First Practicum</h4>
-                </summary>
-                <div class="padding">
-                    <article class="round grid">
-                        <img class="s12 m12 l12 responsive" loading="eager"
-                            src="/static/picture/practicum_one/IMG-20250207-WA0011.jpg" />
-                        <p class="s12">
-                            Brennan School at Elm River Colony school photo.
-                        </p>
-                    </article>
-                    <article class="round grid">
-                        <img class="s12 m12 l12 responsive" loading="eager"
-                            src="/static/picture/practicum_one/IMG-20250207-WA0010.jpg" />
-                        <p class="s12">
-                            Portage School Division donated Terrier jerseys.
-                        </p>
-                    </article>
-                    <article class="round grid">
-                        <img class="s12 m6 l6 responsive" loading="eager"
-                            src="/static/picture/practicum_one/IMG-20250207-WA0009.jpg" />
-                        <img class="s12 m6 l6 responsive" loading="eager"
-                            src="/static/picture/practicum_one/IMG-20250210-WA0001.jpg" />
-                        <p class="s12">
-                            Kindergarten math class busy working on puzzles and number sequences.
-                        </p>
-                    </article>
-                    <article class="round grid">
-                        <img class="s12 m12 l12 responsive" loading="eager"
-                            src="/static/picture/practicum_one/IMG-20250207-WA0013.jpg" />
-                        <p class="s12">
-                            Annual evening lantern walk with Brennan School.
-                        </p>
-                    </article>
-                    <article class="round grid">
-                        <img class="s12 m12 l12 responsive" loading="eager"
-                            src="/static/picture/practicum_one/IMG-20250207-WA0012.jpg" />
-                        <p class="s12">
-                            The first art class I attended at Brennan School with Elma Maendel.
-                        </p>
-                    </article>
-                    <article class="round grid">
-                        <img class="s12 m6 l6 responsive" loading="eager"
-                            src="/static/picture/practicum_one/IMG-20250207-WA0007.jpg" />
-                        <img class="s12 m6 l6 responsive" loading="eager"
-                            src="/static/picture/practicum_one/IMG-20250207-WA0008.jpg" />
-                        <img class="s12 m12 l12 responsive" loading="eager"
-                            src="/static/picture/practicum_one/IMG-20250207-WA0006.jpg" />
-                        <p class="s12">
-                            Indigenous people donated trees to the school that we planted before winter.
-                        </p>
-                    </article>
-                    <article class="round grid">
-                        <img class="s12 m6 l6 responsive" loading="eager"
-                            src="/static/picture/practicum_one/IMG-20250207-WA0002.jpg" />
-                        <img class="s12 m6 l6 responsive" loading="eager"
-                            src="/static/picture/practicum_one/IMG-20250207-WA0003.jpg" />
-                        <img class="s12 m6 l6 responsive" loading="eager"
-                            src="/static/picture/practicum_one/IMG-20250207-WA0004.jpg" />
-                        <img class="s12 m6 l6 responsive" loading="eager"
-                            src="/static/picture/practicum_one/IMG-20250207-WA0005.jpg" />
-                        <p class="s12">
-                            When I finishd my practicum they had farewell party for me that started with a sharing circle, games,
-                            and ended with snacks.
-                        </p>
-                    </article>
-                </div>
-            </details>
+            <h4>First Practicum</h4>
+            <div class="padding">
+                <article class="round grid">
+                    <img class="s12 m12 l12 responsive" loading="eager" fetchpriority="high" decoding="async" src="/static/picture/practicum_one/IMG-20250207-WA0011.jpg" />
+                    <p class="s12">
+                        Brennan School at Elm River Colony school photo.
+                    </p>
+                </article>
+                <article class="round grid">
+                    <img class="s12 m12 l12 responsive" loading="eager" fetchpriority="high" decoding="async" src="/static/picture/practicum_one/IMG-20250207-WA0010.jpg" />
+                    <p class="s12">
+                        Portage School Division donated Terrier jerseys.
+                    </p>
+                </article>
+                <article class="round grid">
+                    <img class="s12 m6 l6 responsive" loading="eager" fetchpriority="high" decoding="async" src="/static/picture/practicum_one/IMG-20250207-WA0009.jpg" />
+                    <img class="s12 m6 l6 responsive" loading="eager" fetchpriority="high" decoding="async" src="/static/picture/practicum_one/IMG-20250210-WA0001.jpg" />
+                    <p class="s12">
+                        Kindergarten math class busy working on puzzles and number sequences.
+                    </p>
+                </article>
+                <article class="round grid">
+                    <img class="s12 m12 l12 responsive" loading="eager" fetchpriority="high" decoding="async" src="/static/picture/practicum_one/IMG-20250207-WA0013.jpg" />
+                    <p class="s12">
+                        Annual evening lantern walk with Brennan School.
+                    </p>
+                </article>
+                <article class="round grid">
+                    <img class="s12 m12 l12 responsive" loading="eager" fetchpriority="high" decoding="async" src="/static/picture/practicum_one/IMG-20250207-WA0012.jpg" />
+                    <p class="s12">
+                        The first art class I attended at Brennan School with Elma Maendel.
+                    </p>
+                </article>
+                <article class="round grid">
+                    <img class="s12 m6 l6 responsive" loading="eager" fetchpriority="high" decoding="async" src="/static/picture/practicum_one/IMG-20250207-WA0007.jpg" />
+                    <img class="s12 m6 l6 responsive" loading="eager" fetchpriority="high" decoding="async" src="/static/picture/practicum_one/IMG-20250207-WA0008.jpg" />
+                    <img class="s12 m12 l12 responsive" loading="eager" fetchpriority="high" decoding="async" src="/static/picture/practicum_one/IMG-20250207-WA0006.jpg" />
+                    <p class="s12">
+                        Indigenous people donated trees to the school that we planted before winter.
+                    </p>
+                </article>
+                <article class="round grid">
+                    <img class="s12 m6 l6 responsive" loading="eager" fetchpriority="high" decoding="async" src="/static/picture/practicum_one/IMG-20250207-WA0002.jpg" />
+                    <img class="s12 m6 l6 responsive" loading="eager" fetchpriority="high" decoding="async" src="/static/picture/practicum_one/IMG-20250207-WA0003.jpg" />
+                    <img class="s12 m6 l6 responsive" loading="eager" fetchpriority="high" decoding="async" src="/static/picture/practicum_one/IMG-20250207-WA0004.jpg" />
+                    <img class="s12 m6 l6 responsive" loading="eager" fetchpriority="high" decoding="async" src="/static/picture/practicum_one/IMG-20250207-WA0005.jpg" />
+                    <p class="s12">
+                        When I finishd my practicum they had farewell party for me that started with a sharing circle, games,
+                        and ended with snacks.
+                    </p>
+                </article>
+            </div>
         </div>
         <div class="page padding" id="contributions">
             <article class="round">
@@ -361,6 +345,13 @@
 </body>
 <script>
     document.addEventListener("DOMContentLoaded", function () {
+        if (document.startViewTransition) {
+            document.startViewTransition(() => {
+                document.body.style.opacity = "1"; // Ensure it becomes visible after transition
+            });
+        } else {
+            document.body.style.opacity = "1"; // Fallback for unsupported browsers
+        }
         function setTheme(theme) {
             document.body.classList.remove("light", "dark");
             document.body.classList.add(theme);

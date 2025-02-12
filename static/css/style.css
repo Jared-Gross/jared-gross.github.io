@@ -29,6 +29,31 @@ blockquote,
 nav {
     transition: background-color 0.3s ease-in-out, font-color 0.1s ease, box-shadow 0.3s ease-in-out, text-color 0.1s ease, border-color 0.3s ease-in-out;
 }
+
+body {
+    opacity: 0;
+}
+
+@keyframes fade-in {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+::view-transition-old(root),
+::view-transition-new(root) {
+    animation-duration: 0.5s;
+    animation-timing-function: ease-in-out;
+}
+
+::view-transition-new(root) {
+    animation-name: fade-in;
+}
+
+
 .cursive{
     font-family: 'Dancing Script', cursive;
 }

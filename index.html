@@ -29,7 +29,10 @@
         <article class="fade-in no-padding medium-round">
             <div class="grid">
                 <div class="medium-round img-container s12 m5 l3">
-                    <img loading="eager" class="medium-round margin large-elevate" src="/static/picture/Gross Jared.jpg">
+                    <picture>
+                        <source srcset="/static/picture/Gross Jared.webp" type="image/webp">
+                        <img fetchpriority="high" decoding="async" class="medium-round margin large-elevate fade-in" src="/static/picture/Gross Jared.jpg" alt="Jared Gross">
+                    </picture>
                 </div>
                 <div class="small-padding left-align s12 m7 l9" style="margin-top: auto; margin-bottom: auto;">
                     <h2 class="no-margin">Jared Gross</h2>
@@ -74,11 +77,11 @@
             </div>
             <nav class="row scroll">
                 <div class="margin no-padding">
-                    <a class="wave link transparent small-padding round" href='/resume.html'>
+                    <a class="wave link transparent small-padding round" onclick="transitionTo(event, '/resume.html')">
                         <i class="mdi mdi-file-account"></i>
                         <span>Resume</span>
                     </a>
-                    <a class="wave link transparent small-padding round" href='/profile.html'>
+                    <a class="wave link transparent small-padding round" onclick="transitionTo(event, '/profile.html')">
                         <i class="mdi mdi-file-certificate"></i>
                         <span>Teaching Portfolio</span>
                     </a>
@@ -103,7 +106,25 @@
     </main>
 </body>
 <script>
+    function transitionTo(event, url) {
+        event.preventDefault(); // Prevent full reload
+
+        if (document.startViewTransition) {
+            document.startViewTransition(() => {
+                window.location.href = url; // Navigate with animation
+            });
+        } else {
+            window.location.href = url; // Fallback
+        }
+    }
     document.addEventListener("DOMContentLoaded", function () {
+        if (document.startViewTransition) {
+            document.startViewTransition(() => {
+                document.body.style.opacity = "1"; // Ensure it becomes visible after transition
+            });
+        } else {
+            document.body.style.opacity = "1"; // Fallback for unsupported browsers
+        }
         function setTheme(theme) {
             document.body.classList.remove("light", "dark");
             document.body.classList.add(theme);
