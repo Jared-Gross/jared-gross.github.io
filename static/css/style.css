@@ -31,7 +31,7 @@ nav {
 }
 
 * {
-    font: Roboto, "Helvetica Neue", "Arial Nova", "Nimbus Sans", Noto Sans, Arial, sans-serif;
+    font: Roboto, "Helvetica Neue", "Arial Nova", "Nimbus Sans", Noto Sans, Arial, sans-serif !important;
 }
 
 body {
