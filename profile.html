@@ -11,14 +11,12 @@
     <meta content="Jared Gross" property="og:title">
     <meta content="My personal website." property="og:description">
     <meta content="https://jared-gross.github.io" property="og:url">
-    <meta
-        content="https://media.licdn.com/dms/image/v2/D4D03AQHXBGExVw7LHQ/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1727455192897?e=1732752000&v=beta&t=pfQThHZHD_TkQ1JpksoP2rO9ke0KU0Jobc395P0aC8o"
-        property="og:image">
+    <meta content="https://media.licdn.com/dms/image/v2/D4D03AQHXBGExVw7LHQ/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1727455192897?e=1732752000&v=beta&t=pfQThHZHD_TkQ1JpksoP2rO9ke0KU0Jobc395P0aC8o" property="og:image">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta name="google" content="notranslate">
     <link rel="icon" type="image/x-icon" href="/static/picture/Gross Jared.jpg">
-    <link href="https://cdn.jsdelivr.net/npm/beercss@3.8.0/dist/cdn/beer.min.css" rel="stylesheet">
-    <script type="module" src="https://cdn.jsdelivr.net/npm/beercss@3.8.0/dist/cdn/beer.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/beercss@3.11.33/dist/cdn/beer.min.css" rel="stylesheet">
+    <script type="module" src="https://cdn.jsdelivr.net/npm/beercss@3.11.33/dist/cdn/beer.min.js"></script>
     </script>
     <link href="https://cdn.jsdelivr.net/npm/@mdi/font@7.4.47/css/materialdesignicons.min.css" rel="stylesheet">
     <link href="/static/css/theme.css" rel="stylesheet">
@@ -28,68 +26,56 @@
 </head>
 
 <body class="light">
-    <header class="fixed no-padding">
-        <nav class="primary padding header-nav">
-            <button class="circle transparent" onclick="window.location.href='/';">
-                <i class="mdi mdi-arrow-left"></i>
-            </button>
-            <h5 id="header-title" class="max">Jared Gross</h5>
-            <button class="circle transparent" id="picture-as-pdf">
-                <i class="mdi mdi-file-pdf-box"></i>
-                <div class="tooltip left">
-                    <p>
-                        Set scale to 80%
-                    </p>
-                </div>
-            </button>
-            <button class="circle transparent" id="theme-toggle">
-                <i id="theme-icon">dark_mode</i>
-            </button>
-        </nav>
-        <h1 class="center-align" id="document-title">Jared Gross</h1>
-        <div class="tabs surface no-margin scroll left-align">
-            <a class="vertical" class="active" data-ui="#introduction">
-                <i>person</i>
-                <span>Introduction</span>
-            </a>
-            <a class="vertical" data-ui="#experience">
-                <i>license</i>
-                <span>Experience</span>
-            </a>
-            <a class="vertical" data-ui="#gallery">
-                <i>gallery_thumbnail</i>
-                <span>Gallery</span>
-            </a>
-            <a class="vertical" data-ui="#goals">
-                <i>star</i>
-                <span>Goals</span>
-            </a>
-            <a class="vertical" data-ui="#contributions">
-                <i>share</i>
-                <span>Contributions</span>
-            </a>
-            <a class="vertical" data-ui="#teaching-philosophy">
-                <i>school</i>
-                <span>Teaching Philosophy</span>
-            </a>
-            <a class="vertical" data-ui="#growth">
-                <i>potted_plant</i>
-                <span>Growth</span>
-            </a>
-            <a class="vertical" data-ui="#framework-for-learning">
-                <i>psychology</i>
-                <span>Framework for Learning</span>
-            </a>
-        </div>
+    <header class="fixed blur row">
+        <button class="circle transparent" onclick="window.location.href='/';">
+            <i>home</i>
+        </button>
+        <h6 class="max" id="header-title">Jared Gross</h6>
+        <button class="circle transparent" id="theme-toggle">
+            <i id="theme-icon">dark_mode</i>
+        </button>
     </header>
+    <nav class="left">
+        <a class="active" data-ui="#introduction">
+            <i>person</i>
+            <span>Introduction</span>
+        </a>
+        <a data-ui="#experience">
+            <i>license</i>
+            <span>Experience</span>
+        </a>
+        <a data-ui="#gallery">
+            <i>gallery_thumbnail</i>
+            <span>Gallery</span>
+        </a>
+        <a data-ui="#goals">
+            <i>star</i>
+            <span>Goals</span>
+        </a>
+        <a data-ui="#contributions">
+            <i>share</i>
+            <span>Contributions</span>
+        </a>
+        <a data-ui="#teaching-philosophy">
+            <i>school</i>
+            <span>Teaching Philosophy</span>
+        </a>
+        <a data-ui="#growth">
+            <i>potted_plant</i>
+            <span>Growth</span>
+        </a>
+        <a data-ui="#framework-for-learning">
+            <i>psychology</i>
+            <span>Framework for Learning</span>
+        </a>
+    </nav>
     <main class="responsive">
         <div class="page padding active" id="introduction">
-            <div class="round elevate no-padding surface-container">
+            <div class="border round no-padding surface-container">
                 <aside class="left padding primary right-margin">
                     <picture>
                         <source srcset="/static/picture/Gross Jared.webp" type="image/webp">
-                        <img fetchpriority="high" style="max-width: 256px;" decoding="async" class="large-elevate"
-                            src="/static/picture/headshot.jpg" alt="Jared Gross">
+                        <img fetchpriority="high" style="max-width: 256px;" decoding="async" class="large-elevate" src="/static/picture/headshot.jpg" alt="Jared Gross">
                     </picture>
                     <div class="round center surface-container padding top-margin">
                         <p class="no-margin no-line no-padding center-align">Teach people, not subjects.</p>
@@ -99,121 +85,91 @@
                     <h5>Introduction</h5>
                     <p><strong>What inspired you to become a teacher?</strong></p>
                     <p>
-                        I was fortunate to have many inspiring and supportive teachers who guided me throughout my
-                        education. Their encouragement played a crucial role in my decision to pursue teaching as a
-                        career. Additionally, I believe I possess a unique and valuable skill set that can be used to
-                        educate and inspire the next generation. </p>
+                        I was fortunate to have many inspiring and supportive teachers who guided me throughout my education. Their encouragement played a crucial role in my decision to pursue teaching as a career. Additionally, I believe I possess a unique and valuable skill
+                        set that can be used to educate and inspire the next generation. </p>
                     <p><strong>What are your core values and beliefs about education?</strong></p>
                     <p>
-                        I believe in a personalized approach to teaching. Teachers should invest time in listening and
-                        engaging with students, both in and out of the classroom. Even a brief conversation in the
-                        hallway can make a difference.
+                        I believe in a personalized approach to teaching. Teachers should invest time in listening and engaging with students, both in and out of the classroom. Even a brief conversation in the hallway can make a difference.
                     </p>
-                    <p>Building positive relationships is crucial for student success. Teaching students how to connect
-                        socially and communicate effectively is a lifelong skill that will benefit them in various
-                        aspects of life. Additionally, fostering critical thinking and problem-solving skills is
-                        essential. Encouraging students to verbalize their thought processes and engage in meaningful
-                        discussions is a key part of my teaching philosophy.</p>
+                    <p>Building positive relationships is crucial for student success. Teaching students how to connect socially and communicate effectively is a lifelong skill that will benefit them in various aspects of life. Additionally, fostering critical
+                        thinking and problem-solving skills is essential. Encouraging students to verbalize their thought processes and engage in meaningful discussions is a key part of my teaching philosophy.</p>
                     <p><strong>How do you see your role in the classroom and in the school community?</strong></p>
                     <p>
-                        I aim to teach high school-level mathematics, science, and English or social studies in my
-                        Hutterian community. My strong background in computer science and robotics makes me passionate
-                        about integrating these subjects alongside core curriculum requirements to create a
-                        cross-curricular learning environment.
+                        I aim to teach high school-level mathematics, science, and English or social studies in my Hutterian community. My strong background in computer science and robotics makes me passionate about integrating these subjects alongside core curriculum requirements
+                        to create a cross-curricular learning environment.
                     </p>
                     <p><strong>What strengths do you bring to the teaching profession?</strong></p>
                     <p>
-                        My background in computer science and programming provides me with strong problem-solving and
-                        critical-thinking skills. These abilities are transferable to various subjects and will be
-                        valuable for students to experience firsthand. Additionally, I am highly structured and
-                        organized, which aligns well with the responsibilities of a teacher.
+                        My background in computer science and programming provides me with strong problem-solving and critical-thinking skills. These abilities are transferable to various subjects and will be valuable for students to experience firsthand. Additionally, I am
+                        highly structured and organized, which aligns well with the responsibilities of a teacher.
                     </p>
 
                 </div>
             </div>
         </div>
         <div class="page padding" id="experience">
-            <article class="round">
+            <article class="round border">
                 <div>
                     <aside class="left padding">
-                        <img loading="eager" class="medium-elevate medium-round white padding" style="max-width: 256px;"
-                            src="https://static.thenounproject.com/png/5679525-512.png">
+                        <img loading="eager" class="medium-elevate medium-round white padding" style="max-width: 256px;" src="https://static.thenounproject.com/png/5679525-512.png">
                     </aside>
                     <div class="padding">
                         <h4>Experience with Children and Adolescents</h4>
                         <p><strong>What past experiences have shaped your understanding of working with young
                                 people?</strong></p>
-                        <p> Before starting university, I spent a year assisting in various classrooms, which allowed me
-                            to experience working with students across all grade levels. This experience helped me
-                            determine my interest in teaching and the age group I would prefer to work with.
+                        <p> Before starting university, I spent a year assisting in various classrooms, which allowed me to experience working with students across all grade levels. This experience helped me determine my interest in teaching and the age group
+                            I would prefer to work with.
                         </p>
-                        <p>During my first practicum at Brennan School, I worked under Elma Maendel, my mentor teacher.
-                            While I was assessed on teaching Kindergarten, I also gained experience teaching students up
-                            to Grade 9.</p>
+                        <p>During my first practicum at Brennan School, I worked under Elma Maendel, my mentor teacher. While I was assessed on teaching Kindergarten, I also gained experience teaching students up to Grade 9.</p>
                         <p><strong>What grade levels and subjects have you worked with so far?</strong></p>
                         <p> I have worked with all grades from Kindergarten to Grade 12.
                         </p>
                         <p><strong>How have these experiences influenced your teaching philosophy?</strong></p>
-                        <p> My initial interest in teaching was fueled by the joy of working with young learners and
-                            witnessing their enthusiasm for learning. However, as I pursued my undergraduate degree in
-                            Mathematics, I gradually shifted my focus to high school education.
+                        <p> My initial interest in teaching was fueled by the joy of working with young learners and witnessing their enthusiasm for learning. However, as I pursued my undergraduate degree in Mathematics, I gradually shifted my focus to high
+                            school education.
                         </p>
                         <p>
-                            Teaching at Brennan School helped me realize that Early Years teaching was not the best fit
-                            for me, despite my training. I felt a strong desire to challenge myself and my students with
-                            more advanced topics.
+                            Teaching at Brennan School helped me realize that Early Years teaching was not the best fit for me, despite my training. I felt a strong desire to challenge myself and my students with more advanced topics.
                         </p>
                     </div>
                 </div>
             </article>
-            <article class="round">
+            <article class="round border">
                 <h4>Successes and Challenges in my First Practicum</h4>
                 <h6>Key Moments During my Practicum</h6>
                 <p>One of my most significant growth areas was developing my teacher voice.
                 </p>
-                <p>Additionally, my faculty supervisor noted that I demonstrated strong lesson planning, organization,
-                    and adaptability, especially in multi-grade classrooms.
+                <p>Additionally, my faculty supervisor noted that I demonstrated strong lesson planning, organization, and adaptability, especially in multi-grade classrooms.
 
                 </p>
                 <h6>Challenges and How I Navigated Them</h6>
                 <p>One of my biggest challenges was a lack of experience with school policies and strategies.
                 </p>
-                <p>However, with time and practice, I learned how to better manage classroom transitions and lesson
-                    closures.</p>
+                <p>However, with time and practice, I learned how to better manage classroom transitions and lesson closures.
+                </p>
             </article>
         </div>
         <div class="page padding" id="goals">
-            <article class="round">
+            <article class="round border">
                 <h4>Teaching Goals and Aspirations</h4>
                 <p><strong>What grade levels or subjects do you see yourself teaching in the future? Why?
                     </strong></p>
-                <p>I would prefer to teach Grades 8–12, particularly in Computer Science. My strong background in this
-                    field allows me to offer students a unique perspective on problem-solving and critical thinking,
-                    both of which are essential life skills.</p>
-                <p>One of my most impactful educational experiences was having a teacher who conducted a weekly virtues
-                    class. This approach resonated with me, and I would love to incorporate a similar character
-                    education program into my teaching.</p>
-                <p>Additionally, I have noticed that many people mislabel their emotions, which prevents them from
-                    managing their feelings effectively. Teaching students how to navigate emotions in a healthy and
-                    constructive manner is something I believe is crucial.</p>
+                <p>I would prefer to teach Grades 8–12, particularly in Computer Science. My strong background in this field allows me to offer students a unique perspective on problem-solving and critical thinking, both of which are essential life skills.</p>
+                <p>One of my most impactful educational experiences was having a teacher who conducted a weekly virtues class. This approach resonated with me, and I would love to incorporate a similar character education program into my teaching.</p>
+                <p>Additionally, I have noticed that many people mislabel their emotions, which prevents them from managing their feelings effectively. Teaching students how to navigate emotions in a healthy and constructive manner is something I believe
+                    is crucial.</p>
 
                 <div>
                     <aside class="left padding">
-                        <img loading="eager" class="medium-elevate medium-round white padding" style="max-width: 256px;"
-                            src="https://static.thenounproject.com/png/7548721-512.png">
+                        <img loading="eager" class="medium-elevate medium-round white padding" style="max-width: 256px;" src="https://static.thenounproject.com/png/7548721-512.png">
                     </aside>
                     <div class="padding">
                         <p><strong>What teaching methods or approaches do you feel most comfortable using?</strong></p>
-                        <p>I am structured, organized, and punctual. I value details and ensure that students fully
-                            understand concepts rather than leaving them to figure things out on their own.</p>
+                        <p>I am structured, organized, and punctual. I value details and ensure that students fully understand concepts rather than leaving them to figure things out on their own.</p>
                         <p><strong>What are some innovative strategies you’d like to try in your future
                                 classroom?</strong></p>
-                        <p>I would like to implement a more ungraded approach, where I engage in conversations with
-                            students about their progress. By doing this, I can gain a deeper understanding of their
-                            learning journey.</p>
-                        <p>Additionally, I believe formative and summative assessments should be balanced. Formative
-                            assessments should challenge students’ understanding rather than simply testing their recall
-                            of information.</p>
+                        <p>I would like to implement a more ungraded approach, where I engage in conversations with students about their progress. By doing this, I can gain a deeper understanding of their learning journey.</p>
+                        <p>Additionally, I believe formative and summative assessments should be balanced. Formative assessments should challenge students’ understanding rather than simply testing their recall of information.</p>
                     </div>
                 </div>
             </article>
@@ -221,111 +177,85 @@
         <div class="page padding" id="gallery">
             <h4>First Practicum</h4>
             <div class="padding">
-                <article class="round grid">
-                    <img class="s12 m12 l12 responsive" loading="eager" fetchpriority="high" decoding="async"
-                        src="/static/picture/practicum_one/IMG-20250207-WA0011.jpg" />
+                <article class="round border grid">
+                    <img class="s12 m12 l12 responsive" loading="eager" fetchpriority="high" decoding="async" src="/static/picture/practicum_one/IMG-20250207-WA0011.jpg" />
                     <p class="s12">
                         Brennan School at Elm River Colony school photo.
                     </p>
                 </article>
-                <article class="round grid">
-                    <img class="s12 m12 l12 responsive" loading="eager" fetchpriority="high" decoding="async"
-                        src="/static/picture/practicum_one/IMG-20250207-WA0010.jpg" />
+                <article class="round border grid">
+                    <img class="s12 m12 l12 responsive" loading="eager" fetchpriority="high" decoding="async" src="/static/picture/practicum_one/IMG-20250207-WA0010.jpg" />
                     <p class="s12">
                         Portage School Division donated Terrier jerseys.
                     </p>
                 </article>
-                <article class="round grid">
-                    <img class="s12 m6 l6 responsive" loading="eager" fetchpriority="high" decoding="async"
-                        src="/static/picture/practicum_one/IMG-20250207-WA0009.jpg" />
-                    <img class="s12 m6 l6 responsive" loading="eager" fetchpriority="high" decoding="async"
-                        src="/static/picture/practicum_one/IMG-20250210-WA0001.jpg" />
+                <article class="round border grid">
+                    <img class="s12 m6 l6 responsive" loading="eager" fetchpriority="high" decoding="async" src="/static/picture/practicum_one/IMG-20250207-WA0009.jpg" />
+                    <img class="s12 m6 l6 responsive" loading="eager" fetchpriority="high" decoding="async" src="/static/picture/practicum_one/IMG-20250210-WA0001.jpg" />
                     <p class="s12">
                         Kindergarten math class busy working on puzzles and number sequences.
                     </p>
                 </article>
-                <article class="round grid">
-                    <img class="s12 m12 l12 responsive" loading="eager" fetchpriority="high" decoding="async"
-                        src="/static/picture/practicum_one/IMG-20250207-WA0013.jpg" />
+                <article class="round border grid">
+                    <img class="s12 m12 l12 responsive" loading="eager" fetchpriority="high" decoding="async" src="/static/picture/practicum_one/IMG-20250207-WA0013.jpg" />
                     <p class="s12">
                         Annual evening lantern walk with Brennan School.
                     </p>
                 </article>
-                <article class="round grid">
-                    <img class="s12 m12 l12 responsive" loading="eager" fetchpriority="high" decoding="async"
-                        src="/static/picture/practicum_one/IMG-20250207-WA0012.jpg" />
+                <article class="round border grid">
+                    <img class="s12 m12 l12 responsive" loading="eager" fetchpriority="high" decoding="async" src="/static/picture/practicum_one/IMG-20250207-WA0012.jpg" />
                     <p class="s12">
                         The first art class I attended at Brennan School with Elma Maendel.
                     </p>
                 </article>
-                <article class="round grid">
-                    <img class="s12 m6 l6 responsive" loading="eager" fetchpriority="high" decoding="async"
-                        src="/static/picture/practicum_one/IMG-20250207-WA0007.jpg" />
-                    <img class="s12 m6 l6 responsive" loading="eager" fetchpriority="high" decoding="async"
-                        src="/static/picture/practicum_one/IMG-20250207-WA0008.jpg" />
-                    <img class="s12 m12 l12 responsive" loading="eager" fetchpriority="high" decoding="async"
-                        src="/static/picture/practicum_one/IMG-20250207-WA0006.jpg" />
+                <article class="round border grid">
+                    <img class="s12 m6 l6 responsive" loading="eager" fetchpriority="high" decoding="async" src="/static/picture/practicum_one/IMG-20250207-WA0007.jpg" />
+                    <img class="s12 m6 l6 responsive" loading="eager" fetchpriority="high" decoding="async" src="/static/picture/practicum_one/IMG-20250207-WA0008.jpg" />
+                    <img class="s12 m12 l12 responsive" loading="eager" fetchpriority="high" decoding="async" src="/static/picture/practicum_one/IMG-20250207-WA0006.jpg" />
                     <p class="s12">
                         Indigenous people donated trees to the school that we planted before winter.
                     </p>
                 </article>
-                <article class="round grid">
-                    <img class="s12 m6 l7 responsive" loading="eager" fetchpriority="high" decoding="async"
-                        src="/static/picture/practicum_one/IMG-20250207-WA0002.jpg" />
-                    <img class="s12 m6 l5 responsive" loading="eager" fetchpriority="high" decoding="async"
-                        src="/static/picture/practicum_one/IMG-20250207-WA0003.jpg" />
-                    <img class="s12 m6 l5 responsive" loading="eager" fetchpriority="high" decoding="async"
-                        src="/static/picture/practicum_one/IMG-20250207-WA0004.jpg" />
-                    <img class="s12 m6 l7 responsive" loading="eager" fetchpriority="high" decoding="async"
-                        src="/static/picture/practicum_one/IMG-20250207-WA0005.jpg" />
+                <article class="round border grid">
+                    <img class="s12 m6 l7 responsive" loading="eager" fetchpriority="high" decoding="async" src="/static/picture/practicum_one/IMG-20250207-WA0002.jpg" />
+                    <img class="s12 m6 l5 responsive" loading="eager" fetchpriority="high" decoding="async" src="/static/picture/practicum_one/IMG-20250207-WA0003.jpg" />
+                    <img class="s12 m6 l5 responsive" loading="eager" fetchpriority="high" decoding="async" src="/static/picture/practicum_one/IMG-20250207-WA0004.jpg" />
+                    <img class="s12 m6 l7 responsive" loading="eager" fetchpriority="high" decoding="async" src="/static/picture/practicum_one/IMG-20250207-WA0005.jpg" />
                     <p class="s12">
-                        When I finishd my practicum they had farewell party for me that started with a sharing circle,
-                        games,
-                        and ended with snacks.
+                        When I finishd my practicum they had farewell party for me that started with a sharing circle, games, and ended with snacks.
                     </p>
                 </article>
             </div>
 
             <h4>Second Practicum</h4>
             <div class="padding">
-                <article class="round grid">
-                    <img class="s12 m6 l6 responsive" loading="eager" fetchpriority="high" decoding="async"
-                        src="/static/picture/practicum_two/IMG-20250321-WA0006.jpg" />
-                    <img class="s12 m6 l6 responsive" loading="eager" fetchpriority="high" decoding="async"
-                        src="/static/picture/practicum_two/IMG-20250324-WA0002.jpg" />
+                <article class="round border grid">
+                    <img class="s12 m6 l6 responsive" loading="eager" fetchpriority="high" decoding="async" src="/static/picture/practicum_two/IMG-20250321-WA0006.jpg" />
+                    <img class="s12 m6 l6 responsive" loading="eager" fetchpriority="high" decoding="async" src="/static/picture/practicum_two/IMG-20250324-WA0002.jpg" />
                     <p class="s12">
                         For the math unit on clocks we built clock models with seconds and minutes.
                     </p>
                 </article>
-                <article class="round grid">
-                    <img class="s12 m6 l4 responsive" loading="eager" fetchpriority="high" decoding="async"
-                        src="/static/picture/practicum_two/IMG-20250415-WA0001.jpg" />
-                    <img class="s12 m6 l4 responsive" loading="eager" fetchpriority="high" decoding="async"
-                        src="/static/picture/practicum_two/IMG-20250422-WA0022.jpg" />
-                    <img class="s12 m6 l4 responsive" loading="eager" fetchpriority="high" decoding="async"
-                        src="/static/picture/practicum_two/IMG-20250415-WA0002.jpg" />
+                <article class="round border grid">
+                    <img class="s12 m6 l4 responsive" loading="eager" fetchpriority="high" decoding="async" src="/static/picture/practicum_two/IMG-20250415-WA0001.jpg" />
+                    <img class="s12 m6 l4 responsive" loading="eager" fetchpriority="high" decoding="async" src="/static/picture/practicum_two/IMG-20250422-WA0022.jpg" />
+                    <img class="s12 m6 l4 responsive" loading="eager" fetchpriority="high" decoding="async" src="/static/picture/practicum_two/IMG-20250415-WA0002.jpg" />
                     <p class="s12">
                         During our science unit about soil, we planted Zinnia's and Tomatoes. We also planted extra for a community garden. We made pots for them to close of the science unit.
                     </p>
                 </article>
-                <article class="round grid">
-                    <img class="s12 m4 l4 responsive" loading="eager" fetchpriority="high" decoding="async"
-                        src="/static/picture/practicum_two/IMG-20250422-WA0019.jpg" />
-                    <img class="s12 m4 l4 responsive" loading="eager" fetchpriority="high" decoding="async"
-                        src="/static/picture/practicum_two/IMG-20250422-WA0021.jpg" />
-                    <img class="s12 m4 l4 responsive" loading="eager" fetchpriority="high" decoding="async"
-                        src="/static/picture/practicum_two/IMG-20250422-WA0023.jpg" />
+                <article class="round border grid">
+                    <img class="s12 m4 l4 responsive" loading="eager" fetchpriority="high" decoding="async" src="/static/picture/practicum_two/IMG-20250422-WA0019.jpg" />
+                    <img class="s12 m4 l4 responsive" loading="eager" fetchpriority="high" decoding="async" src="/static/picture/practicum_two/IMG-20250422-WA0021.jpg" />
+                    <img class="s12 m4 l4 responsive" loading="eager" fetchpriority="high" decoding="async" src="/static/picture/practicum_two/IMG-20250422-WA0023.jpg" />
                     <p class="s12">
                         For a science lesson we exprimented with different types of soil and how tall we can make a tower using it. This demonstrated different soil mechanics and the effects of water.
                     </p>
                 </article>
-                <article class="round grid">
-                    <img class="s12 m6 l4 responsive" loading="eager" fetchpriority="high" decoding="async"
-                        src="/static/picture/practicum_two/IMG-20250422-WA0024.jpg" />
-                    <img class="s12 m6 l4 responsive" loading="eager" fetchpriority="high" decoding="async"
-                        src="/static/picture/practicum_two/IMG-20250412-WA0006.jpg" />
-                    <img class="s12 m6 l4 responsive" loading="eager" fetchpriority="high" decoding="async"
-                        src="/static/picture/practicum_two/IMG-20250422-WA0025.jpg" />
+                <article class="round border grid">
+                    <img class="s12 m6 l4 responsive" loading="eager" fetchpriority="high" decoding="async" src="/static/picture/practicum_two/IMG-20250422-WA0024.jpg" />
+                    <img class="s12 m6 l4 responsive" loading="eager" fetchpriority="high" decoding="async" src="/static/picture/practicum_two/IMG-20250412-WA0006.jpg" />
+                    <img class="s12 m6 l4 responsive" loading="eager" fetchpriority="high" decoding="async" src="/static/picture/practicum_two/IMG-20250422-WA0025.jpg" />
                     <p class="s12">
                         To close off the science unit we did pottery for the plants we planted.
                     </p>
@@ -333,159 +263,121 @@
             </div>
         </div>
         <div class="page padding" id="contributions">
-            <article class="round">
+            <article class="round border">
                 <h4>Contributions Beyond the Classroom</h4>
                 <p><strong>How do you see yourself contributing to extracurricular activities?</strong></p>
                 <p>
-                    I would like to establish a makerspace in my classroom, equipped with 3D printing, robotics, and
-                    electronics.</p>
+                    I would like to establish a makerspace in my classroom, equipped with 3D printing, robotics, and electronics.
+                </p>
                 <p>
-                    Additionally, I am passionate about teaching social and emotional intelligence. In today’s
-                    digital-driven world, these skills are often overlooked but remain essential.
+                    Additionally, I am passionate about teaching social and emotional intelligence. In today’s digital-driven world, these skills are often overlooked but remain essential.
                 </p>
                 <p><strong>How do your hobbies and interests support student engagement?</strong></p>
-                <p>My background in computer science allows me to introduce unique approaches to problem-solving and
-                    critical thinking.</p>
-                <p>Furthermore, I am interested in 3D printing and modeling, which would provide students with
-                    opportunities to develop creative solutions to real-world problems.</p>
+                <p>My background in computer science allows me to introduce unique approaches to problem-solving and critical thinking.</p>
+                <p>Furthermore, I am interested in 3D printing and modeling, which would provide students with opportunities to develop creative solutions to real-world problems.</p>
             </article>
         </div>
         <div class="page padding" id="teaching-philosophy">
-            <article class="round">
+            <article class="round border">
                 <h4>Evolving Teaching Philosophy</h4>
                 <p>
-                    I aspire to be a calm, confident, and professional teacher who fosters critical and creative
-                    thinking following a growth-mindset while prioritizing student-centered learning.</p>
+                    I aspire to be a calm, confident, and professional teacher who fosters critical and creative thinking following a growth-mindset while prioritizing student-centered learning.</p>
             </article>
-            <article class="round">
+            <article class="round border">
                 <div>
                     <aside class="right padding">
-                        <img loading="eager" class="medium-elevate medium-round white padding" style="max-width: 256px;"
-                            src="https://static.thenounproject.com/png/7433828-512.png">
+                        <img loading="eager" class="medium-elevate medium-round white padding" style="max-width: 256px;" src="https://static.thenounproject.com/png/7433828-512.png">
                     </aside>
                     <div class="padding">
                         <h4>Self-Awareness & Critical Reflection</h4>
                         <p><strong>What are some beliefs about teaching that you are beginning to question?</strong></p>
-                        <p>I am mindful of the "curse of knowledge"—the assumption that what I know is common knowledge.
-                            I believe that by applying a structured, problem-solving-oriented approach, I can mitigate
-                            this bias.</p>
-                        <p>Additionally, I believe teachers should only assess what they explicitly teach. There is no
-                            reason to include questions on an assessment that have not been thoroughly covered in class.
+                        <p>I am mindful of the "curse of knowledge"—the assumption that what I know is common knowledge. I believe that by applying a structured, problem-solving-oriented approach, I can mitigate this bias.</p>
+                        <p>Additionally, I believe teachers should only assess what they explicitly teach. There is no reason to include questions on an assessment that have not been thoroughly covered in class.
                         </p>
                         <p><strong>How do your personal experiences shape your classroom interactions?</strong></p>
-                        <p>I take a professional, punctual, and articulate approach in both digital and real-life
-                            interactions.</p>
-                        <p>As I plan to teach within a Hutterite community, many students will already know me. Thus,
-                            modeling professionalism and clear communication is crucial.</p>
+                        <p>I take a professional, punctual, and articulate approach in both digital and real-life interactions.
+                        </p>
+                        <p>As I plan to teach within a Hutterite community, many students will already know me. Thus, modeling professionalism and clear communication is crucial.</p>
                     </div>
                 </div>
             </article>
-            <article class="round">
+            <article class="round border">
                 <h4>Books That Shaped My Educational Approach</h4>
                 <p>
-                    One of the most insightful books I have read is Positive Discipline for Children with Special Needs
-                    by
-                    Arlene Raphael, Steven Foster, and Jane Nelsen. It provided me with a structured, respectful, and
-                    effective approach to helping students develop responsibility and resilience. This book reinforced
-                    my
-                    belief in fostering an inclusive and empathetic classroom environment.
+                    One of the most insightful books I have read is Positive Discipline for Children with Special Needs by Arlene Raphael, Steven Foster, and Jane Nelsen. It provided me with a structured, respectful, and effective approach to helping students develop responsibility
+                    and resilience. This book reinforced my belief in fostering an inclusive and empathetic classroom environment.
                 </p>
             </article>
         </div>
         <div class="page padding" id="growth">
-            <article class="round">
+            <article class="round border">
                 <div>
                     <aside class="right padding">
-                        <img loading="eager" class="medium-elevate medium-round white padding" style="max-width: 256px;"
-                            src="https://static.thenounproject.com/png/7396341-512.png">
+                        <img loading="eager" class="medium-elevate medium-round white padding" style="max-width: 256px;" src="https://static.thenounproject.com/png/7396341-512.png">
                     </aside>
                     <div class="padding">
                         <h4>Areas for Growth</h4>
                         <p>
                             I am to:</p>
                         <ul>
-                            <li>Refine how I close lessons to ensure students leave with a clear understanding of key
-                                concepts.</li>
-                            <li>Explore professional development opportunities that focus on effective teaching methods
-                                for specific topics, allowing me to enhance my instructional techniques.</li>
-                            <li>Attend workshops and stay engaged in professional learning communities to continue
-                                evolving as an educator.</li>
-                            <li>Focus on improving my classroom management skills, particularly in handling disruptions
-                                and guiding students more effectively.</li>
+                            <li>Refine how I close lessons to ensure students leave with a clear understanding of key concepts.
+                            </li>
+                            <li>Explore professional development opportunities that focus on effective teaching methods for specific topics, allowing me to enhance my instructional techniques.</li>
+                            <li>Attend workshops and stay engaged in professional learning communities to continue evolving as an educator.</li>
+                            <li>Focus on improving my classroom management skills, particularly in handling disruptions and guiding students more effectively.</li>
                         </ul>
                     </div>
                 </div>
             </article>
         </div>
         <div class="page padding" id="framework-for-learning">
-            <article class="round">
+            <article class="round border">
                 <h4>Fostering a Growth Mindset</h4>
                 <p>
-                    Fostering a growth mindset is just as important as academic learning. I approach student ideas and
-                    thought processes with positivity and respect, guiding them through questioning and conversation
-                    rather than simply correcting them. I model lifelong learning by demonstrating curiosity and
-                    enthusiasm for acquiring new knowledge, making it clear that learning is an ongoing process, not
-                    just something that happens in school.
+                    Fostering a growth mindset is just as important as academic learning. I approach student ideas and thought processes with positivity and respect, guiding them through questioning and conversation rather than simply correcting them. I model lifelong learning
+                    by demonstrating curiosity and enthusiasm for acquiring new knowledge, making it clear that learning is an ongoing process, not just something that happens in school.
                 </p>
             </article>
-            <article class="round">
+            <article class="round border">
                 <h4>Continuously Reflecting and Growing as an Educator</h4>
                 <p>
-                    To continuously refine my approach, I engage in constant reflection. I stay open to growth, new
-                    ideas, and challenges, while also seeking student feedback to ensure they are learning effectively
-                    and in ways that resonate with them. Professional development is a priority—I attend and present at
-                    workshops, network with other educators, and exchange ideas, challenges, and solutions with
-                    colleagues. Teaching is a dynamic profession, and I am committed to evolving alongside it.
+                    To continuously refine my approach, I engage in constant reflection. I stay open to growth, new ideas, and challenges, while also seeking student feedback to ensure they are learning effectively and in ways that resonate with them. Professional development
+                    is a priority—I attend and present at workshops, network with other educators, and exchange ideas, challenges, and solutions with colleagues. Teaching is a dynamic profession, and I am committed to evolving alongside it.
                 </p>
             </article>
-            <article class="round">
+            <article class="round border">
                 <h4>Establishing a Student-Centered Learning Structure</h4>
                 <p>
-                    My framework for learning begins with understanding where students are at and what they need. To do
-                    this, I establish a diagnostic test to assess prior knowledge and then determine what they are
-                    interested in learning, how they want to learn, and why. With this foundation, I create a structured
-                    plan that incorporates multiple modalities, ensuring that learning is both engaging and aligned with
-                    curriculum expectations. My approach is transparent, structured, and organized, providing a clear
-                    path for both teaching and learning.
+                    My framework for learning begins with understanding where students are at and what they need. To do this, I establish a diagnostic test to assess prior knowledge and then determine what they are interested in learning, how they want to learn, and why.
+                    With this foundation, I create a structured plan that incorporates multiple modalities, ensuring that learning is both engaging and aligned with curriculum expectations. My approach is transparent, structured, and organized, providing
+                    a clear path for both teaching and learning.
                 </p>
             </article>
-            <article class="round">
+            <article class="round border">
                 <h4>Encouraging Engagement and Active Participation</h4>
                 <p>
-                    Engagement and ownership are key components of my teaching. I encourage collaboration by inviting
-                    students to the board to answer questions, working through problems in groups or individually while
-                    I observe, assist, and facilitate deeper understanding. Inquiry-based learning, active
-                    participation, and collaboration are essential—students should explore, question, and engage with
-                    material in a way that fosters critical thinking and problem-solving.
+                    Engagement and ownership are key components of my teaching. I encourage collaboration by inviting students to the board to answer questions, working through problems in groups or individually while I observe, assist, and facilitate deeper understanding.
+                    Inquiry-based learning, active participation, and collaboration are essential—students should explore, question, and engage with material in a way that fosters critical thinking and problem-solving.
                 </p>
             </article>
-            <article class="round">
+            <article class="round border">
                 <h4>Differentiating Instruction to Meet Diverse Needs</h4>
                 <p>
-                    To meet diverse needs, I take the time to understand how my students learn best. Differentiation
-                    means recognizing their unique learning styles and adapting my teaching accordingly. I believe in
-                    being the example—showing, guiding, and supporting students rather than expecting them to grasp
-                    something on their own the first time. A structured approach with clear explanations, stories, and
-                    analogies helps establish a solid foundation before transitioning into discussions and interactive
+                    To meet diverse needs, I take the time to understand how my students learn best. Differentiation means recognizing their unique learning styles and adapting my teaching accordingly. I believe in being the example—showing, guiding, and supporting students
+                    rather than expecting them to grasp something on their own the first time. A structured approach with clear explanations, stories, and analogies helps establish a solid foundation before transitioning into discussions and interactive
                     learning.
                 </p>
             </article>
-            <article class="round">
+            <article class="round border">
                 <div>
                     <aside class="right padding">
-                        <img loading="eager" class="medium-elevate medium-round white padding" style="max-width: 128px;"
-                            src="https://static.thenounproject.com/png/7515369-512.png">
+                        <img loading="eager" class="medium-elevate medium-round white padding" style="max-width: 128px;" src="https://static.thenounproject.com/png/7515369-512.png">
                     </aside>
                     <div class="padding">
                         <h4>Aligning Lessons with Curriculum Standards</h4>
                         <p>
-                            Aligning with curriculum standards is crucial. I start with the curriculum and learning
-                            outcomes to
-                            structure my lessons, providing a clear framework while allowing room for meaningful,
-                            real-world
-                            learning experiences. My yearly plan ensures that all required outcomes are met while
-                            maintaining
-                            flexibility to adapt based on student needs and interests.
+                            Aligning with curriculum standards is crucial. I start with the curriculum and learning outcomes to structure my lessons, providing a clear framework while allowing room for meaningful, real-world learning experiences. My yearly plan ensures that all
+                            required outcomes are met while maintaining flexibility to adapt based on student needs and interests.
                         </p>
                     </div>
                 </div>
@@ -496,38 +388,28 @@
                 <article class="s12 m6 l6 round">
                     <h4>Providing Meaningful and Constructive Feedback</h4>
                     <p>
-                        Feedback is equally important. I provide detailed, constructive feedback while understanding that
-                        some students may overlook it, especially if their grade is lower than expected or if they are
-                        disengaged. Regardless, it is my professional responsibility to ensure students receive the guidance
-                        they need. I also give them opportunities to discuss their progress, ask questions, and improve
-                        their work because I believe in second chances.
+                        Feedback is equally important. I provide detailed, constructive feedback while understanding that some students may overlook it, especially if their grade is lower than expected or if they are disengaged. Regardless, it is my professional responsibility
+                        to ensure students receive the guidance they need. I also give them opportunities to discuss their progress, ask questions, and improve their work because I believe in second chances.
                     </p>
                 </article>
                 <article class="s12 m6 l6 round">
                     <h4>Using Assessment to Guide Learning</h4>
                     <p>
-                        Assessment should guide learning rather than just measure it. I use student-generated
-                        self-assessments, such as exit tickets, to shape the next lesson, ensuring we pick up where they
-                        left off rather than where I left off. This keeps learning student-centered and responsive. I see
-                        assessments as a tool not just for evaluation but for reflection and adjustment in my teaching.
+                        Assessment should guide learning rather than just measure it. I use student-generated self-assessments, such as exit tickets, to shape the next lesson, ensuring we pick up where they left off rather than where I left off. This keeps learning student-centered
+                        and responsive. I see assessments as a tool not just for evaluation but for reflection and adjustment in my teaching.
                     </p>
                 </article>
             </div>
-            <article class="round">
+            <article class="round border">
                 <div>
                     <aside class="right padding">
-                        <img loading="eager" class="medium-elevate medium-round white padding" style="max-width: 128px;"
-                            src="https://static.thenounproject.com/png/4139755-512.png">
+                        <img loading="eager" class="medium-elevate medium-round white padding" style="max-width: 128px;" src="https://static.thenounproject.com/png/4139755-512.png">
                     </aside>
                     <div class="padding">
                         <h4>Integrating Technology and Innovation</h4>
                         <p>
-                            Technology and innovation play a role in my framework as well. I plan to incorporate
-                            subjects like
-                            coding, 3D printing, and collaborative online tools as electives, allowing students to solve
-                            real-world problems through hands-on application. Encouraging digital literacy and
-                            problem-solving
-                            is vital, as these skills will benefit students beyond the classroom.
+                            Technology and innovation play a role in my framework as well. I plan to incorporate subjects like coding, 3D printing, and collaborative online tools as electives, allowing students to solve real-world problems through hands-on application. Encouraging
+                            digital literacy and problem-solving is vital, as these skills will benefit students beyond the classroom.
                         </p>
                     </div>
                 </div>
@@ -536,7 +418,7 @@
     </main>
 </body>
 <script>
-    document.addEventListener("DOMContentLoaded", function () {
+    document.addEventListener("DOMContentLoaded", function() {
         if (document.startViewTransition) {
             document.startViewTransition(() => {
                 document.body.style.opacity = "1"; // Ensure it becomes visible after transition
@@ -544,6 +426,7 @@
         } else {
             document.body.style.opacity = "1"; // Fallback for unsupported browsers
         }
+
         function setTheme(theme) {
             document.body.classList.remove("light", "dark");
             document.body.classList.add(theme);
@@ -552,10 +435,6 @@
             const themeIcon = document.getElementById("theme-icon");
             themeIcon.innerText = theme === "dark" ? "light_mode" : "dark_mode";
         }
-
-        document.getElementById("picture-as-pdf").addEventListener("click", () => {
-            window.print();
-        });
 
         const savedTheme = localStorage.getItem("theme") || "light";
         setTheme(savedTheme);
@@ -570,11 +449,11 @@
         });
 
         // Set theme to light when printing
-        window.onbeforeprint = function () {
+        window.onbeforeprint = function() {
             document.body.classList.remove("light", "dark");
             document.body.classList.add("light");
         };
-        window.onafterprint = function () {
+        window.onafterprint = function() {
             setTheme(localStorage.getItem("theme") || "light");
         };
     });

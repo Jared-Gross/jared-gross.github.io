@@ -14,8 +14,9 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta name="google" content="notranslate">
     <link rel="icon" type="image/x-icon" href="/static/picture/Gross Jared.jpg">
-    <link href="https://cdn.jsdelivr.net/npm/beercss@3.8.0/dist/cdn/beer.min.css" rel="stylesheet">
-    <script type="module" src="https://cdn.jsdelivr.net/npm/beercss@3.8.0/dist/cdn/beer.min.js"></script></script>
+    <link href="https://cdn.jsdelivr.net/npm/beercss@3.11.33/dist/cdn/beer.min.css" rel="stylesheet">
+    <script type="module" src="https://cdn.jsdelivr.net/npm/beercss@3.11.33/dist/cdn/beer.min.js"></script>
+    </script>
     <link href="https://cdn.jsdelivr.net/npm/@mdi/font@7.4.47/css/materialdesignicons.min.css" rel="stylesheet">
     <link href="/static/css/theme.css" rel="stylesheet">
     <link href="/static/css/style.css" rel="stylesheet">
@@ -26,7 +27,7 @@
 <body class="dark">
     <main class="responsive" id="index-main">
         <br>
-        <article class="fade-in no-padding medium-round">
+        <article class="fade-in no-padding border round">
             <div class="grid">
                 <div class="medium-round img-container s12 m5 l3">
                     <picture>
@@ -69,10 +70,11 @@
                     </a>
                 </div>
                 <blockquote class="left-align">
-                    I am a developer and student in the After Degree Education program. I have worked on a variety of projects, including inventory management and automation systems, educational tools, and interactive technologies, all with a focus on making tasks easier and more efficient. I believe in creating open-source tools to support teachers, helping them save time and improve their work experience, allowing teachers to focus on what truly matters: teaching.
+                    I am a developer and student in the After Degree Education program. I have worked on a variety of projects, including inventory management and automation systems, educational tools, and interactive technologies, all with a focus on making tasks easier
+                    and more efficient. I believe in creating open-source tools to support teachers, helping them save time and improve their work experience, allowing teachers to focus on what truly matters: teaching.
                     <br>
-                    <br>
-                    As of September 2, 2024 my main focus is on being a student at <a class="link" href="https://www.brandonu.ca">Brandon University</a> doing my <a class="link" href="https://www.brandonu.ca/future-students/programs/degrees/education/">Bachelor of Education</a>. I am working on <a class="link" href="https://github.com/TheCodingJsoftware/Invigo" target="_blank">Invigo</a>, <a class="link" href="https://github.com/Curiki/Curiki" target="_blank">Curiki</a>, <a class="link" href="https://github.com/TheCodingJsoftware/Gradiance" target="_blank">Gradiance</a> and <a class="link" href="https://github.com/TheCodingJsoftware/Hutterite-Bookshelf" target="_blank">Hutterite Bookshelf</a> in my spare time.
+                    <br> As of September 2, 2025 my main focus is on being a student at <a class="link" href="https://www.brandonu.ca">Brandon University</a> doing my <a class="link" href="https://www.brandonu.ca/future-students/programs/degrees/education/">Bachelor of Education</a>.
+                    I am working on <a class="link" href="https://github.com/TheCodingJsoftware/Invigo" target="_blank">Invigo</a> and <a class="link" href="https://github.com/Curiki/Curiki" target="_blank">Curiki</a> in my spare time.
                 </blockquote>
             </div>
             <nav class="row scroll">
@@ -117,7 +119,7 @@
             window.location.href = url; // Fallback
         }
     }
-    document.addEventListener("DOMContentLoaded", function () {
+    document.addEventListener("DOMContentLoaded", function() {
         if (document.startViewTransition) {
             document.startViewTransition(() => {
                 document.body.style.opacity = "1"; // Ensure it becomes visible after transition
@@ -125,6 +127,7 @@
         } else {
             document.body.style.opacity = "1"; // Fallback for unsupported browsers
         }
+
         function setTheme(theme) {
             document.body.classList.remove("light", "dark");
             document.body.classList.add(theme);
@@ -149,4 +152,5 @@
         setTheme(savedTheme);
     });
 </script>
+
 </html>
