@@ -18,407 +18,407 @@
     <link href="https://cdn.jsdelivr.net/npm/beercss@3.12.11/dist/cdn/beer.min.css" rel="stylesheet">
     <script type="module" src="https://cdn.jsdelivr.net/npm/beercss@3.12.11/dist/cdn/beer.min.js"></script>
     </script>
-    <link href="https://cdn.jsdelivr.net/npm/@mdi/font@7.4.47/css/materialdesignicons.min.css" rel="stylesheet">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/2.10.377/pdf.min.js"></script>
     <link href="/static/css/theme.css" rel="stylesheet">
-    <link href="/static/css/style.css" rel="stylesheet">
     <script src="/static/js/index.js"></script>
     <title>Jared Gross</title>
     <meta content="#44d8f1" data-react-helmet="true" name="theme-color">
 </head>
 
-<header class="fixed no-padding blur">
-    <nav class="primary padding header-nav">
-        <button class="circle transparent" onclick="window.location.href='/';">
-            <i class="mdi mdi-arrow-left"></i>
-        </button>
-        <h5 id="header-title" class="max">Jared Gross</h5>
-        <button class="circle transparent" id="picture-as-pdf">
-            <i class="mdi mdi-file-pdf-box"></i>
-            <div class="tooltip left">
-                <p>
-                    Set scale to 80%
-                </p>
-            </div>
-        </button>
-        <button class="circle transparent" id="theme-toggle">
-            <i id="theme-icon">dark_mode</i>
-        </button>
-    </nav>
-    <h1 class="center-align" id="document-title">Jared Gross</h1>
-    <nav class="fade-in margin no-padding tabbed primary">
+<header class="tiny-margin center-align tiny-space m l">
+    <nav class="toolbar elevate">
         <a href="tel:+1-204-782-1038">
-            <i class="mdi mdi-phone"></i>
+            <i>phone</i>
             <span class="small-text">(204) 782-1038</span>
         </a>
         <a href="mailto:jared@pinelandfarms.ca">
-            <i class="mdi mdi-email"></i>
+            <i>mail</i>
             <span class="small-text">jared@pinelandfarms.ca</span>
         </a>
         <a>
-            <i class="mdi mdi-home"></i>
+            <i>home</i>
             <span class="small-text no-line">Pineland Colony. Piney, MB</span>
         </a>
     </nav>
-    <hr class="fade-in">
 </header>
 
 <body class="light">
     <main class="responsive">
-        <div class="grid no-space small-margin">
-            <div class="s4">
-                <details class="small-round small-margin" open>
-                    <summary class="none">
-                        <a class="row wave">
-                            <i class="mdi mdi-school"></i>
-                            <span>Education</span>
-                        </a>
-                    </summary>
-                    <div class="content">
-                        <div class="no-margin no-padding no-space">
-                            <details id="summary-details" open>
-                                <summary class="none">
-                                    <a class="grid small-padding wave no-space">
-                                        <div class="s8">
-                                            <h6 class="small">B.ED.(AD)</h6>
-                                        </div>
-                                        <label class="right-align s4">2024 - 2026</label>
-                                        <div class="s12"><i class="tiny mdi mdi-map-marker"></i>Brandon University. Brandon, MB
-                                        </div>
-                                    </a>
-                                </summary>
-                                <div class="small-margin">
-                                    <p class="no-line no-margin">Early Years Stream</p>
-                                </div>
-                            </details>
-                            <hr>
-                            <details id="summary-details" open>
-                                <summary class="none">
-                                    <a class="grid small-padding wave no-space">
-                                        <div class="s8">
-                                            <h6 class="small">B.SC. 3 YR.</h6>
-                                        </div>
-                                        <label class="right-align s4">2020 - 2024</label>
-                                        <div class="s12"><i class="tiny mdi mdi-map-marker"></i>Brandon University. Brandon, MB
-                                        </div>
-                                    </a>
-                                </summary>
-                                <div class="small-margin">
-                                    <p class="no-line no-margin">Graduated with Great Distinction</p>
-                                    <p class="no-line no-margin">Major in Mathematics: GPA: 4.0</p>
-                                    <p class="no-line no-margin">Minor in History: GPA: 3.6</p>
-                                    <p class="no-line no-margin">Overall GPA: 3.85</p>
-                                </div>
-                            </details>
-                            <hr>
-                            <details id="summary-details" open>
-                                <summary class="none">
-                                    <a class="grid small-padding wave no-space">
-                                        <div class="s8">
-                                            <h6 class="small">High School.</h6>
-                                        </div>
-                                        <label class="right-align s4">2007 - 2020</label>
-                                        <div class="s12">
-                                            <i class="tiny mdi mdi-map-marker"></i>Pineland Colony School. Piney, MB
-                                        </div>
-                                    </a>
-                                </summary>
-                                <div class="small-margin">
-                                    <p class="no-line no-margin">Did a robotics course.</p>
-                                </div>
-                            </details>
-                        </div>
-                    </div>
-                </details>
-                <details class="small-round small-margin" open>
-                    <summary class="none">
-                        <a class="row wave">
-                            <i class="mdi mdi-account-tie"></i>
-                            <span>Professional Development</span>
-                        </a>
-                    </summary>
-                    <div class="content">
-                        <div class="no-margin no-padding grid no-space">
-                            <a class="no-line left-align no-round small-padding wave s12" onclick="ui('#pd1')">1.
-                                Play-based Outdoor Learning (Part I) with Carole McCurry and Kyla Yanick (K-3).
-                                September 13, 2024</a>
-                            <a class="no-line left-align no-round small-padding wave s12" onclick="ui('#pd2')">2.
-                                Intentional Designs with Shawna Philpott. September 20, 2024</a>
-                            <a class="no-line left-align no-round small-padding wave s12" onclick="ui('#pd3')">3.
-                                Ungrading (Part I) with Chris Sarkonak. September 24, 2024</a>
-                            <a class="no-line left-align no-round small-padding wave s12" onclick="ui('#pd4')">4.
-                                Assessment in Physical Education with Derek Richels. October 1, 2024</a>
-                            <a class="no-line left-align no-round small-padding wave s12" onclick="ui('#pd1')">5.
-                                Play-based Outdoor Learning (Part II) with Carole McCurry and Kyla Yanick (K-3). October
-                                4, 2024</a>
-                            <a class="no-line left-align no-round small-padding wave s12" onclick="ui('#pd6')">6.
-                                Lesson Planning Workshop with Shawna Philpott. October 8, 2024</a>
-                            <a class="no-line left-align no-round small-padding wave s12" onclick="ui('#pd7')">7. MTS PD
-                                Day: MTSLD. October 25, 2024</a>
-                            <a class="no-line left-align no-round small-padding wave s12" onclick="ui('#pd8')">8.
-                                PD in Portage la Prairie: Understanding the True History between
-                                Indigenous and Hutterite Peoples. November 8, 2024</a>
-                            </a>
-                            <a class="no-line left-align no-round small-padding wave s12" onclick="ui('#pd9')">9.
-                                Ungrading (Part II) with Chris Sarkonak. November 26, 2024</a>
-                            </a>
-                            <a class="no-line left-align no-round small-padding wave s12" onclick="ui('#pd10')">10.
-                                Presenter at BYTE Conference 2025. February 14, 2025</a>
-                            </a>
-                            <a class="no-line left-align no-round small-padding wave s12" onclick="ui('#pd11')">11.
-                                "Write" Stuff. March 25, 2025</a>
-                            </a>
-                        </div>
-                    </div>
-                </details>
-                <details class="small-round small-margin" open>
-                    <summary class="none">
-                        <a class="row wave">
-                            <i class="mdi mdi-heart"></i>
-                            <span>Interests</span>
-                        </a>
-                    </summary>
-                    <div class="content">
-                        <div class="no-space">
-                            <div class="small-padding">
-                                <p class="no-line">
-                                    Enjoy playing (beach) volleyball and pickleball.
-                                </p>
-                                <p class="no-line">
-                                    Enjoy outdoor activities such as cycling, jogging and walking.
-                                </p>
-                                <p class="no-line">
-                                    Love learning about different cultures and new mathematical, computer science, and psychological concepts and theories.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                </details>
-                <details class="small-round small-margin" open>
-                    <summary class="none">
-                        <a class="row wave">
-                            <i class="mdi mdi-translate"></i>
-                            <span>Language</span>
-                        </a>
-                    </summary>
-                    <div class="content">
-                        <p class="no-margin small-padding">English & German</p>
-                    </div>
-                </details>
-            </div>
-            <div class="s8">
-                <div class="grid no-space no-margin">
-                    <details class="small-round small-margin s12" open>
-                        <summary class="none">
-                            <a class="row wave">
-                                <i class="mdi mdi-account"></i>
-                                <span>About Me</span>
-                            </a>
-                        </summary>
-                        <div class="content">
-                            <div class="no-margin no-padding no-space">
-                                <p class="tiny-line no-margin small-padding">
-                                    An aspiring educator with a deep passion for fostering growth and understanding. My aim is to design lessons and activities that address the diverse educational and social needs of each student, ensuring a personalized approach to their academic journey.
-                                </p>
-                            </div>
-                        </div>
-                    </details>
-                    <details class="small-round small-margin s12" open>
-                        <summary class="none">
-                            <a class="row wave">
-                                <i class="mdi mdi-briefcase"></i>
-                                <span>Experience</span>
-                            </a>
-                        </summary>
-                        <div class="content">
-                            <details id="summary-details" open>
-                                <summary class="none">
-                                    <a class="grid small-padding wave no-space">
-                                        <div class="s8">
-                                            <h6 class="small">Practicum II</h6>
-                                        </div>
-                                        <label class="right-align s4">2025-03-10 - 2025-04-02</label>
-                                        <div class="s12">
-                                            <i class="tiny mdi mdi-map-marker"></i>Ross L. Gray School. Sprague, MB
-                                        </div>
-                                    </a>
-                                </summary>
-                                <div class="small-margin">
-                                    <p class="tiny-line no-margin">
-                                        Focusing on a grade 3/4 classroom and grade 1/2 mathematics, I gained hands-on experience designing and leading interactive lessons focused on mathematics, science, reading, and writing. I worked closely with my mentor, Melissa Goulet, to strengthen my
-                                        classroom management and adapt activities to engage young learners. Through these experiences, I developed confidence in my behaviour management skills and learned to balance warmth with structure in guiding students.
-                                    </p>
-                                </div>
-                            </details>
-                            <hr>
-                            <details id="summary-details" open>
-                                <summary class="none">
-                                    <a class="grid small-padding wave no-space">
-                                        <div class="s8">
-                                            <h6 class="small">Practicum I</h6>
-                                        </div>
-                                        <label class="right-align s4">2024-10-15 - 2024-11-15</label>
-                                        <div class="s12">
-                                            <i class="tiny mdi mdi-map-marker"></i>Brennan School. Newton, MB
-                                        </div>
-                                    </a>
-                                </summary>
-                                <div class="small-margin">
-                                    <p class="tiny-line no-margin">
-                                        Focusing on a Kindergarten classroom, I gained hands-on experience designing and leading interactive lessons focused on foundational literacy and numeracy. I worked closely with my mentor, Elma Maendel, to strengthen my classroom management and adapt
-                                        activities to engage young learners. Through these experiences, I developed confidence in my “teacher voice” and learned to balance warmth with structure in guiding students.
-                                    </p>
-                                </div>
-                            </details>
-                            <hr>
-                            <details id="summary-details" open>
-                                <summary class="none">
-                                    <a class="grid small-padding wave no-space">
-                                        <div class="s8">
-                                            <h6 class="small">Undergraduate Teaching Assistant & Marker</h6>
-                                        </div>
-                                        <label class="right-align s4">2022-09 - 2024-04</label>
-                                        <div class="s12">
-                                            <i class="tiny mdi mdi-map-marker"></i>Brandon University. Brandon, MB
-                                        </div>
-                                    </a>
-                                </summary>
-                                <div class="small-margin">
-                                    <p class="tiny-line no-margin">
-                                        Assisted in four mathematics and two computer science courses, each with 50–100+ students, fostering strong relationships with students, colleagues, and faculty. Supported faculty with administrative tasks, including grading, updating class records, and
-                                        tracking attendance.
-                                    </p>
-                                </div>
-                            </details>
-                            <hr>
-                            <details id="summary-details" open>
-                                <summary class="none">
-                                    <a class="grid small-padding wave no-space">
-                                        <div class="s8">
-                                            <h6 class="small">Teaching Assistant & Marker</h6>
-                                        </div>
-                                        <label class="right-align s4">2020-09 - 2021-06</label>
-                                        <div class="s12">
-                                            <i class="tiny mdi mdi-map-marker"></i>Pineland Colony School. Piney, MB
-                                        </div>
-                                    </a>
-                                </summary>
-                                <div class="small-margin">
-                                    <p class="tiny-line no-margin">
-                                        Taught grade 11 and 12 mathematics, providing one-on-one support to students in grades 6–12 who needed extra help. Facilitated social and mathematical skill development in younger students from grades 1 to 3.
-                                    </p>
-                                </div>
-                            </details>
-                        </div>
-                    </details>
-                    <details class="small-round small-margin s12" open>
-                        <summary class="none">
-                            <a class="row wave">
-                                <i class="mdi mdi-puzzle"></i>
-                                <span>Demonstrated Skills</span>
-                            </a>
-                        </summary>
-                        <div class="content">
-                            <div class="grid no-margin tiny-padding no-space">
-                                <article class="border small-round tiny-margin small-padding s8">
-                                    <p class="tiny-line no-margin">
-                                        Maintains a calm, patient, and empathetic demeanor, supporting students in grasping complex concepts while fostering a positive and encouraging learning environment. Consistently addresses tasks promptly and completes work ahead of schedule, ensuring
-                                        dedication to student success.
-                                    </p>
-                                </article>
-                                <article class="border small-round tiny-margin small-padding s4">
-                                    <p class="tiny-line no-margin">
-                                        Possesses communication skills developed through public speaking, presentations, and writing.
-                                    </p>
-                                </article>
-                                <article class="border small-round tiny-margin small-padding s6">
-                                    <p class="tiny-line no-margin">
-                                        Demonstrates strict punctuality and effective time management, creating a consistent and predictable teaching style that enhances student learning outcomes.
-                                    </p>
-                                </article>
-                                <article class="border small-round tiny-margin small-padding s6">
-                                    <p class="tiny-line no-margin">
-                                        Proficient with computers and technology with over seven years of programming experience in software, server, web, mobile, and game development.
-                                    </p>
-                                </article>
-                            </div>
-                        </div>
-                    </details>
+        <div class="grid">
+            <article class="s12 m12 l12 round">
+                <div class="row">
+                    <i>person</i>
+                    <h6>About Me</h6>
                 </div>
-            </div>
-            <details class="small-round small-margin s6" open>
-                <summary class="none">
-                    <a class="row wave">
-                        <i class="mdi mdi-medal"></i>
-                        <span>Awards</span>
-                    </a>
-                </summary>
-                <div class="content">
-                    <div class="no-margin">
-                        <a class="row small-padding wave" onclick="ui('#silver-medal-dialog');">
-                            <img src="/static/awards/mathematics-silver-medal.png" alt="robot games medal" class="round" id="mathematics-silver-medal">
+                <blockquote>
+                    An aspiring educator with a deep passion for fostering growth and understanding. My aim is to design lessons and activities that address the diverse educational and social needs of each student, ensuring a personalized approach to their academic journey.
+                </blockquote>
+                <div class="row">
+                    <article class="round border max">
+                        <div class="row">
+                            <i>lightbulb</i>
+                            <h6>Interests</h6>
+                        </div>
+                        Enjoy outdoor activities such as cycling, jogging and walking. Love learning about different cultures and new mathematical, computer science, and psychological concepts and theories.
+                    </article>
+                    <article class="round border min">
+                        <div class="row">
+                            <i>translate</i>
+                            <h6>Langauge</h6>
+                        </div>
+                        English and German
+                    </article>
+                </div>
+            </article>
+            <article class="s12 m12 l12 round">
+                <div class="row">
+                    <i>school</i>
+                    <h6>Education</h6>
+                </div>
+                <div class="grid">
+                    <button class="s6 row left-align extra padding transparent round border">
+                        <div class="left-align max">
+                            <h6>B.ED. (AD)</h6>
+                            <div><i>apartment</i>Brandon University, Brandon, MB</div>
+                        </div>
+                        <label class="left-align">2024 -<br>2026</label>
+                        <div class="tooltip max">
+                            Early Years Stream
+                        </div>
+                    </button>
+                    <button class="s6 row left-align extra padding transparent round border">
+                        <div class="left-align max">
+                            <h6>B.SC. 3 YR.</h6>
+                            <div><i>apartment</i>Brandon University, Brandon, MB</div>
+                        </div>
+                        <label class="left-align">2020 -<br>2024</label>
+                        <div class="tooltip max">
+                            Graduated with Great Distinction<br> Major in Mathematics: GPA: 4.0<br>Minor in History: GPA: 3.6<br>Overall GPA: 3.85
+                        </div>
+                    </button>
+                    <button class="s6 row left-align extra padding transparent round border">
+                        <div class="left-align max">
+                            <h6>High School</h6>
+                            <div><i>cottage</i>Pineland Colony School, Piney, MB</div>
+                        </div>
+                        <label class="left-align">2020</label>
+                        <div class="tooltip max">
+                            Won the governor generals award.
+                        </div>
+                    </button>
+                </div>
+            </article>
+            <article class="s12 m12 l12 round">
+                <div class="row">
+                    <i>work</i>
+                    <h6>Experience</h6>
+                </div>
+                <div class="grid">
+                    <article class="s12 round border">
+                        <div class=row>
                             <div class="max">
-                                <h6 class="small">Silver Medal in Mathematics</h6>
-                                <div><i class="tiny mdi mdi-map-marker"></i>Brandon University. Brandon, MB</div>
+                                <h6>Practicum II</h6>
+                                <i>apartment</i>Ross L. Gray School. Sprague, MB
+                            </div>
+                            <label class="left-align">2025-03-10 -<br>2025-04-02</label>
+                        </div>
+                        <blockquote>
+                            Focusing on a grade 3/4 classroom and grade 1/2 mathematics, I gained hands-on experience designing and leading interactive lessons focused on mathematics, science, reading, and writing. I worked closely with my mentor, Melissa Goulet, to strengthen my
+                            classroom management and adapt activities to engage young learners. Through these experiences, I developed confidence in my behaviour management skills and learned to balance warmth with structure in guiding students.
+                        </blockquote>
+                    </article>
+                    <article class="s12 round border">
+                        <div class=row>
+                            <div class="max">
+                                <h6>Practicum I</h6>
+                                <i>apartment</i>Brennan School. Newton, MB
+                            </div>
+                            <label class="left-align">2024-10-15 -<br>2024-11-15</label>
+                        </div>
+                        <blockquote>
+                            Focusing on a Kindergarten classroom, I gained hands-on experience designing and leading interactive lessons focused on foundational literacy and numeracy. I worked closely with my mentor, Elma Maendel, to strengthen my classroom management and adapt
+                            activities to engage young learners. Through these experiences, I developed confidence in my “teacher voice” and learned to balance warmth with structure in guiding students.
+                        </blockquote>
+                    </article>
+                    <article class="s12 round border">
+                        <div class=row>
+                            <div class="max">
+                                <h6>Undergraduate Teaching Assistant & Marker</h6>
+                                <i>apartment</i>Brandon University. Brandon, MB
+                            </div>
+                            <label class="left-align">2022-09 -<br>2024-04</label>
+                        </div>
+                        <blockquote>
+                            Assisted in four mathematics and two computer science courses, each with 50–100+ students, fostering strong relationships with students, colleagues, and faculty. Supported faculty with administrative tasks, including grading, updating class records, and
+                            tracking attendance.
+                        </blockquote>
+                    </article>
+                    <article class="s12 round border">
+                        <div class=row>
+                            <div class="max">
+                                <h6>Teaching Assistant & Marker</h6>
+                                <i>cottage</i>Pineland Colony School. Piney, MB
+                            </div>
+                            <label class="left-align">2020-09 -<br>2021-06</label>
+                        </div>
+                        <blockquote>
+                            Taught grade 11 and 12 mathematics, providing one-on-one support to students in grades 6–12 who needed extra help. Facilitated social and mathematical skill development in younger students from grades 1 to 3.
+                        </blockquote>
+                    </article>
+                </div>
+            </article>
+            <article class="s12 m12 l12 round">
+                <div class="row">
+                    <i>trending_up</i>
+                    <h6>Professional Development</h6>
+                </div>
+                <div class="grid">
+                    <button class="s6 row left-align extra transparent round border">
+                        <div class="left-align max">
+                            <span>1. Play-based Outdoor Learning (Part I) with Carole McCurry and Kyla Yanick (K-3).</span>
+                        </div>
+                        <label class="right-align">September 13,<br>2024</label>
+                        <div class="tooltip max">
+                            Focuses on engaging young learners through outdoor activities that promote physical, cognitive, and social development, using play-based methods suited for Kindergarten to Grade 3 students.
+                        </div>
+                    </button>
+                    <button class="s6 row left-align extra transparent round border">
+                        <div class="left-align max">
+                            <span>2. Intentional Designs with Shawna Philpott.</span>
+                        </div>
+                        <label class="right-align">September 20,<br>2024</label>
+                        <div class="tooltip max">
+                            Explores the strategic planning and organization of learning spaces to enhance student engagement and foster a productive learning environment through thoughtful, intentional design.
+                        </div>
+                    </button>
+                    <button class="s6 row left-align extra transparent round border">
+                        <div class="left-align max">
+                            <span>3. Ungrading (Part I) with Chris Sarkonak.</span>
+                        </div>
+                        <label class="right-align">September 24,<br>2024</label>
+                        <div class="tooltip max">
+                            Introduces the philosophy of ungrading, a method of assessment that emphasizes feedback over traditional grades, encouraging student growth and self-reflection in the learning process.
+                        </div>
+                    </button>
+                    <button class="s6 row left-align extra transparent round border">
+                        <div class="left-align max">
+                            <span>4. Assessment in Physical Education with Derek Richels.</span>
+                        </div>
+                        <label class="right-align">October 1,<br>2024</label>
+                        <div class="tooltip max">
+                            Covers effective strategies for assessing student performance in physical education, focusing on how to measure both physical skills and overall student participation.
+                        </div>
+                    </button>
+                    <button class="s6 row left-align extra transparent round border">
+                        <div class="left-align max">
+                            <span>5. Play-based Outdoor Learning (Part II) with Carole McCurry and Kyla Yanick (K-3).</span>
+                        </div>
+                        <label class="right-align">October 4,<br>2024</label>
+                    </button>
+                    <button class="s6 row left-align extra transparent round border">
+                        <div class="left-align max">
+                            <span>6. Lesson Planning Workshop with Shawna Philpott.</span>
+                        </div>
+                        <label class="right-align">October 8,<br>2024</label>
+                        <div class="tooltip max">
+                            This workshop provided a framework for planning lessons and activities.
+                        </div>
+                    </button>
+                    <button class="s6 row left-align extra transparent round border">
+                        <div class="left-align max">
+                            <span>7. MTS PD Day: MTSLD.</span>
+                        </div>
+                        <label class="right-align">October 25,<br>2024</label>
+                        <div class="tooltip max">
+                            This professional development session covered foundational strategies in numeracy, math, and early literacy detection, alongside structured literacy approaches for vocabulary and grammar, aimed at enhancing support for students with learning disabilities.
+                        </div>
+                    </button>
+                    <button class="s6 row left-align extra transparent round border">
+                        <div class="left-align max">
+                            <span>8. PD in Portage la Prairie: Understanding the True History between Indigenous and Hutterite Peoples.</span>
+                        </div>
+                        <label class="right-align">November 8,<br>2024</label>
+                        <div class="tooltip max">
+                            This professional development session focused on student-centered learning approaches, emphasizing the use of portfolios and inquiry-based learning to strike a delicate balance. It also explored the importance of student self-reflections, whether oral
+                            or written, in the assessment process. Additionally, the session delved into understanding perspectives on Hutterite-Indigenous relations, particularly in the context of river colonies. The discussion covered the history of Hutterites in Canada,
+                            the significance of Treaty education for Hutterites, and the importance of presenting a balanced narrative that acknowledges both emotional and factual aspects of the true history.
+                        </div>
+                    </button>
+                    <button class="s6 row left-align extra transparent round border">
+                        <div class="left-align max">
+                            <span>9. Ungrading (Part II) with Chris Sarkonak.</span>
+                        </div>
+                        <label class="right-align">November 26,<br>2024</label>
+                        <div class="tooltip max">
+                            A continuation of the last session in September, but this time it focused more on providing evidence, context and how it looks like and how to do it.
+                        </div>
+                    </button>
+                    <button class="s6 row left-align extra transparent round border">
+                        <div class="left-align max">
+                            <span>10. Presenter & Participant at BYTE Conference 2025.</span>
+                        </div>
+                        <label class="right-align">February 14,<br>2025</label>
+                        <div class="tooltip max">
+                            I had the privledge of attending and presenting at BYTE 2025 in Brandon University. I had a session on one of my projects <a class="link" href="https://curiki.web.app">Curiki</a> and attended sessions on story-telling and game-based learning
+                            aswell as robotics and programming sessions in the classroom.
+                        </div>
+                    </button>
+                    <button class="s6 row left-align extra transparent round border">
+                        <div class="left-align max">
+                            <span>11. "Write" Stuff.</span>
+                        </div>
+                        <label class="right-align">March 25,<br>2025</label>
+                        <div class="tooltip max large-width">
+                            The “Write” Stuff professional development session, held at the Border Land School Division Office in Altona, built on the momentum of Day 1 at Ross L. Gray School and focused on helping educators strengthen their writing instruction practices. Drawing
+                            inspiration from Nancie Atwell’s Lessons That Change Writers and Carl Anderson’s How to Become a Better Writing Teacher, the session explored how to immerse students in meaningful writing experiences and help them learn from both published
+                            authors and peers. A strong focus was placed on inquiry-based, group learning, where educators collaborated to practice lesson plans and explore strategies through shared discussion and reflection. Using texts like My Five Senses, teachers
+                            connected literature to personal experience, modeling how to guide students in doing the same. The session emphasized the use of mentor texts to teach craft, conventions, and process, while also encouraging the use of student writing as mentor
+                            material. Teachers learned how to conduct whole-class and small-group immersion, guide students in reading like writers, and highlight the humanity of mentor authors. Participants were encouraged to gather stacks of high-quality texts and
+                            mine them for teachable moments, expanding their teaching repertoire through professional reading and thoughtful planning.
+                        </div>
+                    </button>
+                </div>
+            </article>
+            <article class="s12 m12 l12 round">
+                <div class="row">
+                    <i>extension</i>
+                    <h6>Demonstrated Skills</h6>
+                </div>
+                <div class="grid">
+                    <article class="s7 border round">
+                        Maintains a calm, patient, and empathetic demeanor, supporting students in grasping complex concepts while fostering a positive and encouraging learning environment. Consistently addresses tasks promptly and completes work ahead of schedule, ensuring
+                        dedication to student success.
+                    </article>
+                    <article class="s5 border round">
+                        Possesses communication skills developed through public speaking, presentations, and writing.
+                    </article>
+                    <article class="s5 border round">
+                        Demonstrates strict punctuality and effective time management, creating a consistent and predictable teaching style that enhances student learning outcomes.
+                    </article>
+                    <article class="s7 border round">
+                        Proficient with computers and technology with over seven years of programming experience in software, server, web, mobile, and game development.
+                    </article>
+                </div>
+            </article>
+            <article class="s12 m12 l12 round">
+                <div class="row">
+                    <i>trophy</i>
+                    <h6>Awards</h6>
+                </div>
+                <div class="grid">
+                    <article class="s6 border round">
+                        <img class="round center small-width small-height" src="/static/awards/mathematics-silver-medal.png" alt="mathematics silver medal" id="mathematics-silver-medal">
+                        <div class="row">
+                            <div class="max">
+                                <h6>Silver Medal in Mathematics</h6>
+                                <div><i>apartment</i>Brandon University. Brandon, MB</div>
                             </div>
                             <label>2024</label>
-                        </a>
-                        <hr>
-                        <a class="row small-padding wave" onclick="ui('#governor-general-academic-medal-dialog');">
-                            <img src="/static/awards/governor-general-academic-medal.png" alt="robot games medal" class="round" id="governor-general-academic-medal">
+                        </div>
+                        <blockquote>
+                            Highest GPA graduating with major in Mathematics.
+                        </blockquote>
+                    </article>
+                    <article class="s6 border round">
+                        <img class="round center small-width small-height" src="/static/awards/governor-general-academic-medal.png" alt="governor general academic medal" id="governor-general-academic-medal">
+                        <div class="row">
                             <div class="max">
-                                <h6 class="small">Governor General's Academic Medal</h6>
-                                <div><i class="tiny mdi mdi-map-marker"></i>Pineland Colony School. Piney, MB</div>
+                                <h6>Governor General's Academic Medal</h6>
+                                <div><i>apartment</i>Pineland Colony School. Piney, MB</div>
                             </div>
                             <label>2020</label>
-                        </a>
-                        <hr>
-                        <a class="row small-padding wave" onclick="ui('#manitoba-robot-games-medal-dialog');">
-                            <img src="/static/awards/manitoba-robot-games.png" alt="robot games medal" class="round" id="manitoba-robot-games-medal">
+                        </div>
+                        <blockquote>
+                            Awarded by Ted Falk for a signficant academic achievement.
+                        </blockquote>
+                    </article>
+                    <article class="s6 border round">
+                        <img class="round center small-width small-height" src="/static/awards/manitoba-robot-games.png" alt="manitoba robot games" id="manitoba-robot-games">
+                        <div class="row">
                             <div class="max">
-                                <h6 class="small">Third Place in Judges Choice</h6>
-                                <div><i class="tiny mdi mdi-map-marker"></i>Tec Voc School. Winnipeg, MB</div>
+                                <h6>Third Place in Judges Choice</h6>
+                                <div><i>apartment</i>Tec Voc School. Winnipeg, MB</div>
                             </div>
                             <label>2019</label>
-                        </a>
-                    </div>
+                        </div>
+                        <blockquote>
+                            Awarded by Phil Hossack during the 2019 Manitoba Robot Games.
+                        </blockquote>
+                    </article>
                 </div>
-            </details>
-            <details class="small-round small-margin s6" open>
-                <summary class="none">
-                    <a class="row wave">
-                        <i class="mdi mdi-certificate"></i>
-                        <span>Assessments</span>
-                    </a>
-                </summary>
-                <div class="content">
-                    <div class="no-margin">
-                        <a class="row small-padding wave">
-                            <div class="max">
-                                <h6 class="small">Inducted into the President's Honour Society</h6>
-                                <div><i class="tiny mdi mdi-map-marker"></i>Brandon University. Brandon, MB</div>
-                            </div>
-                            <label>2023-2024</label>
-                        </a>
-                        <hr>
-                        <a class="row small-padding wave">
-                            <div class="max">
-                                <h6 class="small">Dean's Honour list</h6>
-                                <div><i class="tiny mdi mdi-map-marker"></i>Brandon University. Brandon, MB</div>
-                            </div>
-                            <label>2021-2024</label>
-                        </a>
-                    </div>
+            </article>
+            <article class="s12 m12 l12 round">
+                <div class="row">
+                    <i>license</i>
+                    <h6>Assessments</h6>
                 </div>
-            </details>
-            <details class="small-round small-margin s12" open>
-                <summary class="none">
-                    <a class="row wave">
-                        <i class="mdi mdi-account-group"></i>
-                        <span>References</span>
-                    </a>
-                </summary>
-                <div class="content">
+                <div class="grid">
+
+                    <button class="s6 row left-align extra padding transparent round border">
+                        <div class="left-align max">
+                            <h6>Inducted into the President's Honour Society</h6>
+                            <div><i>apartment</i>Brandon University, Brandon, MB</div>
+                        </div>
+                        <label class="left-align">2023-<br>2024</label>
+                    </button>
+                    <button class="s6 row left-align extra padding transparent round border">
+                        <div class="left-align max">
+                            <h6>Dean's Honour list</h6>
+                            <div><i>apartment</i>Brandon University, Brandon, MB</div>
+                        </div>
+                        <label class="left-align">2021-<br>2024</label>
+                    </button>
+                </div>
+            </article>
+        </div>
+    </main>
+</body>
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+        if (document.startViewTransition) {
+            document.startViewTransition(() => {
+                document.body.style.opacity = "1"; // Ensure it becomes visible after transition
+            });
+        } else {
+            document.body.style.opacity = "1"; // Fallback for unsupported browsers
+        }
+
+        function setTheme(theme) {
+            document.body.classList.remove("light", "dark");
+            document.body.classList.add(theme);
+            localStorage.setItem("theme", theme);
+
+            const themeIcon = document.getElementById("theme-icon");
+            themeIcon.innerText = theme === "dark" ? "light_mode" : "dark_mode";
+        }
+
+        document.getElementById("picture-as-pdf").addEventListener("click", () => {
+            window.print();
+        });
+
+        const savedTheme = localStorage.getItem("theme") || "light";
+        setTheme(savedTheme);
+
+        const themeToggle = document.getElementById("theme-toggle");
+        themeToggle.addEventListener("click", () => {
+            const currentTheme = document.body.classList.contains("dark") ?
+                "dark" :
+                "light";
+            const newTheme = currentTheme === "dark" ? "light" : "dark";
+            setTheme(newTheme);
+        });
+
+        // Set theme to light when printing
+        window.onbeforeprint = function() {
+            document.body.classList.remove("light", "dark");
+            document.body.classList.add("light");
+        };
+        window.onafterprint = function() {
+            setTheme(localStorage.getItem("theme") || "light");
+        };
+    });
+</script>
+
+</html>         <div class="content">
                     <div id="skills-container" class="grid no-space">
                         <article class="small-round small-margin border s6 m6 l6">
                             <h6>Susan Squires</h6>
