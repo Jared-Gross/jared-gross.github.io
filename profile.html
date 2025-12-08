@@ -26,7 +26,8 @@
 </head>
 
 <body class="light">
-    <nav class="top surface-container right-align">
+    <nav class="top blur">
+        <h4 class="left-align max">Portfolio</h4>
         <label class="switch icon margin" style="margin-top: 2rem;">
             <input type="checkbox" id="theme-toggle">
             <span>
@@ -34,41 +35,25 @@
             </span>
         </label>
     </nav>
-    <nav class="right surface-container">
-        <a class="active" data-ui="#introduction">
-            <i>person</i>
-            <span>Introduction</span>
+    <nav class="left l blur">
+        <a onclick="transitionTo(event, '/')">
+            <i class="mdi mdi-home"></i>
+            <span>Home</span>
         </a>
-        <a data-ui="#experience">
-            <i>license</i>
-            <span>Experience</span>
+        <a onclick="transitionTo(event, '/resume.html')">
+            <i class="mdi mdi-file-account"></i>
+            <span>Resume</span>
         </a>
-        <a data-ui="#gallery">
-            <i>gallery_thumbnail</i>
-            <span>Gallery</span>
+        <a class="active" onclick="transitionTo(event, '/profile.html')">
+            <i class="mdi mdi-file-certificate"></i>
+            <span>Portfolio</span>
         </a>
-        <a data-ui="#goals">
-            <i>star</i>
-            <span>Goals</span>
-        </a>
-        <a data-ui="#contributions">
-            <i>share</i>
-            <span>Contributions</span>
-        </a>
-        <a data-ui="#teaching-philosophy">
-            <i>school</i>
-            <span>Teaching Philosophy</span>
-        </a>
-        <a data-ui="#growth">
-            <i>potted_plant</i>
-            <span>Growth</span>
-        </a>
-        <a data-ui="#framework-for-learning">
-            <i>psychology</i>
-            <span>Framework for Learning</span>
+        <a href='https://TheCodingJsoftware.github.io' target="_blank">
+            <i class="mdi mdi-briefcase"></i>
+            <span>Projects</span>
         </a>
     </nav>
-    <nav class="left surface-container">
+    <nav class="bottom s m blur">
         <a onclick="transitionTo(event, '/')">
             <i class="mdi mdi-home"></i>
             <span>Home</span>
@@ -87,6 +72,40 @@
         </a>
     </nav>
     <main class="responsive">
+        <div class="tabs scroll">
+            <a class="vertical active" data-ui="#introduction">
+                <i>person</i>
+                <span>Introduction</span>
+            </a>
+            <a class="vertical" data-ui="#experience">
+                <i>license</i>
+                <span>Experience</span>
+            </a>
+            <a class="vertical" data-ui="#gallery">
+                <i>gallery_thumbnail</i>
+                <span>Gallery</span>
+            </a>
+            <a class="vertical" data-ui="#goals">
+                <i>star</i>
+                <span>Goals</span>
+            </a>
+            <a class="vertical" data-ui="#contributions">
+                <i>share</i>
+                <span>Contributions</span>
+            </a>
+            <a class="vertical" data-ui="#teaching-philosophy">
+                <i>school</i>
+                <span>Teaching Philosophy</span>
+            </a>
+            <a class="vertical" data-ui="#growth">
+                <i>potted_plant</i>
+                <span>Growth</span>
+            </a>
+            <a class="vertical" data-ui="#framework-for-learning">
+                <i>psychology</i>
+                <span>Framework for Learning</span>
+            </a>
+        </div>
         <div class="page padding active" id="introduction">
             <div class="border round no-padding surface-container">
                 <aside class="left padding primary right-margin">
