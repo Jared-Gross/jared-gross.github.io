@@ -10,6 +10,7 @@ body {
     from {
         opacity: 0;
     }
+
     to {
         opacity: 1;
     }
@@ -114,9 +115,11 @@ body {
     0% {
         transform: translateY(-2000px);
     }
+
     50% {
         transform: translateY(10px);
     }
+
     100% {
         transform: translateY(0px);
     }
@@ -148,9 +151,11 @@ details:not(#summary-details) {
     position: relative;
     width: auto;
     height: auto;
-     ::-webkit-details-marker {
+
+    ::-webkit-details-marker {
         display: none;
     }
+
     page-break-inside: avoid;
     transform: translateX(-2000px);
     /* Start from the right */
@@ -174,6 +179,7 @@ details:not(#summary-details)[open] .content {
         transform: translateX(-2000px);
         /* Start from the right */
     }
+
     100% {
         transform: translateX(0);
         /* End at original position */
@@ -232,17 +238,21 @@ details#summary-details:not([open]) summary a {
 }
 
 @media print {
+
     #manitoba-robot-games-medal,
     #governor-general-academic-medal,
     #mathematics-silver-medal {
         display: none;
     }
+
     details:not(#summary-details):not([open]) {
         display: none !important;
     }
+
     #document-title {
         display: block !important;
     }
+
     .header-nav {
         display: none !important;
     }

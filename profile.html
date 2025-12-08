@@ -15,8 +15,8 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta name="google" content="notranslate">
     <link rel="icon" type="image/x-icon" href="/static/picture/Gross Jared.jpg">
-    <link href="https://cdn.jsdelivr.net/npm/beercss@3.12.11/dist/cdn/beer.min.css" rel="stylesheet">
-    <script type="module" src="https://cdn.jsdelivr.net/npm/beercss@3.12.11/dist/cdn/beer.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/beercss@3.13.1/dist/cdn/beer.min.css" rel="stylesheet">
+    <script type="module" src="https://cdn.jsdelivr.net/npm/beercss@3.13.1/dist/cdn/beer.min.js"></script>
     </script>
     <link href="https://cdn.jsdelivr.net/npm/@mdi/font@7.4.47/css/materialdesignicons.min.css" rel="stylesheet">
     <link href="/static/css/theme.css" rel="stylesheet">
@@ -26,13 +26,15 @@
 </head>
 
 <body class="light">
-    <header class="fixed blur row">
-        <h6 class="max" id="header-title">Jared Gross</h6>
-        <button class="circle transparent" id="theme-toggle">
-            <i id="theme-icon">dark_mode</i>
-        </button>
-    </header>
-    <nav class="left">
+    <nav class="top surface-container right-align">
+        <label class="switch icon margin" style="margin-top: 2rem;">
+            <input type="checkbox" id="theme-toggle">
+            <span>
+                <i id="theme-icon">dark_mode</i>
+            </span>
+        </label>
+    </nav>
+    <nav class="right surface-container">
         <a class="active" data-ui="#introduction">
             <i>person</i>
             <span>Introduction</span>
@@ -64,6 +66,24 @@
         <a data-ui="#framework-for-learning">
             <i>psychology</i>
             <span>Framework for Learning</span>
+        </a>
+    </nav>
+    <nav class="left surface-container">
+        <a onclick="transitionTo(event, '/')">
+            <i class="mdi mdi-home"></i>
+            <span>Home</span>
+        </a>
+        <a onclick="transitionTo(event, '/resume.html')">
+            <i class="mdi mdi-file-account"></i>
+            <span>Resume</span>
+        </a>
+        <a class="active" onclick="transitionTo(event, '/profile.html')">
+            <i class="mdi mdi-file-certificate"></i>
+            <span>Portfolio</span>
+        </a>
+        <a href='https://TheCodingJsoftware.github.io' target="_blank">
+            <i class="mdi mdi-briefcase"></i>
+            <span>Projects</span>
         </a>
     </nav>
     <main class="responsive">
@@ -415,6 +435,17 @@
     </main>
 </body>
 <script>
+    function transitionTo(event, url) {
+        event.preventDefault(); // Prevent full reload
+        if (document.startViewTransition) {
+            document.startViewTransition(() => {
+                window.location.href = url; // Navigate with animation
+            });
+        } else {
+            window.location.href = url; // Fallback
+        }
+    }
+
     document.addEventListener("DOMContentLoaded", function() {
         if (document.startViewTransition) {
             document.startViewTransition(() => {
@@ -430,11 +461,8 @@
             localStorage.setItem("theme", theme);
 
             const themeIcon = document.getElementById("theme-icon");
-            themeIcon.innerText = theme === "dark" ? "light_mode" : "dark_mode";
+            themeIcon.innerText = theme === "dark" ? "dark_mode" : "light_mode";
         }
-
-        const savedTheme = localStorage.getItem("theme") || "light";
-        setTheme(savedTheme);
 
         const themeToggle = document.getElementById("theme-toggle");
         themeToggle.addEventListener("click", () => {
@@ -445,6 +473,10 @@
             setTheme(newTheme);
         });
 
+        themeToggle.checked = localStorage.getItem("theme") === "dark";
+
+        const savedTheme = localStorage.getItem("theme") || "light";
+        setTheme(savedTheme);
         // Set theme to light when printing
         window.onbeforeprint = function() {
             document.body.classList.remove("light", "dark");

@@ -15,8 +15,9 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta name="google" content="notranslate">
     <link rel="icon" type="image/x-icon" href="/static/picture/Gross Jared.jpg">
-    <link href="https://cdn.jsdelivr.net/npm/beercss@3.12.11/dist/cdn/beer.min.css" rel="stylesheet">
-    <script type="module" src="https://cdn.jsdelivr.net/npm/beercss@3.12.11/dist/cdn/beer.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/beercss@3.13.1/dist/cdn/beer.min.css" rel="stylesheet">
+    <script type="module" src="https://cdn.jsdelivr.net/npm/beercss@3.13.1/dist/cdn/beer.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/@mdi/font@7.4.47/css/materialdesignicons.min.css" rel="stylesheet">
     </script>
     <link href="/static/css/theme.css" rel="stylesheet">
     <script src="/static/js/index.js"></script>
@@ -24,26 +25,17 @@
     <meta content="#44d8f1" data-react-helmet="true" name="theme-color">
 </head>
 
-<header class="tiny-margin center-align tiny-space m l">
-    <nav class="toolbar elevate">
-        <a href="tel:+1-204-782-1038">
-            <i>phone</i>
-            <span class="small-text">(204) 782-1038</span>
-        </a>
-        <a href="mailto:jared@pinelandfarms.ca">
-            <i>mail</i>
-            <span class="small-text">jared@pinelandfarms.ca</span>
-        </a>
-        <a>
-            <i>home</i>
-            <span class="small-text no-line">Pineland Colony. Piney, MB</span>
-        </a>
+<body class="dark">
+    <nav class="top">
+        <label class="fixed top right switch icon margin" style="margin-top: 2rem;">
+            <input type="checkbox" id="theme-toggle">
+            <span>
+                <i id="theme-icon">dark_mode</i>
+            </span>
+        </label>
     </nav>
-</header>
-
-<body class="light">
     <main class="responsive">
-        <div class="grid">
+        <div class="grid padding">
             <article class="s12 m12 l12 round">
                 <div class="row">
                     <i>person</i>
@@ -52,22 +44,20 @@
                 <blockquote>
                     An aspiring educator with a deep passion for fostering growth and understanding. My aim is to design lessons and activities that address the diverse educational and social needs of each student, ensuring a personalized approach to their academic journey.
                 </blockquote>
-                <div class="row">
-                    <article class="round border max">
-                        <div class="row">
-                            <i>lightbulb</i>
-                            <h6>Interests</h6>
-                        </div>
-                        Enjoy outdoor activities such as cycling, jogging and walking. Love learning about different cultures and new mathematical, computer science, and psychological concepts and theories.
-                    </article>
-                    <article class="round border min">
-                        <div class="row">
-                            <i>translate</i>
-                            <h6>Langauge</h6>
-                        </div>
-                        English and German
-                    </article>
-                </div>
+                <article class="round border">
+                    <div class="row">
+                        <i>lightbulb</i>
+                        <h6>Interests</h6>
+                    </div>
+                    Enjoy outdoor activities such as cycling, jogging and walking. Love learning about different cultures and new mathematical, computer science, and psychological concepts and theories.
+                </article>
+                <article class="round border">
+                    <div class="row">
+                        <i>translate</i>
+                        <h6>Langauge</h6>
+                    </div>
+                    English and German
+                </article>
             </article>
             <article class="s12 m12 l12 round">
                 <div class="row">
@@ -75,7 +65,7 @@
                     <h6>Education</h6>
                 </div>
                 <div class="grid">
-                    <button class="s6 row left-align extra padding transparent round border">
+                    <button class="s12 m6 l6 row left-align extra padding transparent round border">
                         <div class="left-align max">
                             <h6>B.ED. (AD)</h6>
                             <div><i>apartment</i>Brandon University, Brandon, MB</div>
@@ -85,7 +75,7 @@
                             Early Years Stream
                         </div>
                     </button>
-                    <button class="s6 row left-align extra padding transparent round border">
+                    <button class="s12 m6 l6 row left-align extra padding transparent round border">
                         <div class="left-align max">
                             <h6>B.SC. 3 YR.</h6>
                             <div><i>apartment</i>Brandon University, Brandon, MB</div>
@@ -95,7 +85,7 @@
                             Graduated with Great Distinction<br> Major in Mathematics: GPA: 4.0<br>Minor in History: GPA: 3.6<br>Overall GPA: 3.85
                         </div>
                     </button>
-                    <button class="s6 row left-align extra padding transparent round border">
+                    <button class="s12 m6 l6 row left-align extra padding transparent round border">
                         <div class="left-align max">
                             <h6>High School</h6>
                             <div><i>cottage</i>Pineland Colony School, Piney, MB</div>
@@ -187,19 +177,19 @@
                 </div>
 
                 <div class="grid">
-                    <button class="s6 row left-align extra transparent round border">
+                    <button class="s12 m6 l6 row left-align extra transparent round border">
                         <div class="left-align max">
                             <span>1. Respect in Schools</span>
                         </div>
                         <label class="right-align">April 26,<br>2025</label>
                     </button>
-                    <button class="s6 row left-align extra transparent round border">
+                    <button class="s12 m6 l6 row left-align extra transparent round border">
                         <div class="left-align max">
                             <span>2. Accessibility Training</span>
                         </div>
                         <label class="right-align">April 26,<br>2025</label>
                     </button>
-                    <button class="s6 row left-align extra transparent round border">
+                    <button class="s12 m6 l6 row left-align extra transparent round border">
                         <div class="left-align max">
                             <span>3. Treaty Education</span>
                         </div>
@@ -213,7 +203,7 @@
                     <h6>Professional Development</h6>
                 </div>
                 <div class="grid">
-                    <button class="s6 row left-align extra transparent round border">
+                    <button class="s12 m6 l6 row left-align extra transparent round border">
                         <div class="left-align max">
                             <span>1. Play-based Outdoor Learning (Part I) with Carole McCurry and Kyla Yanick (K-3).</span>
                         </div>
@@ -222,7 +212,7 @@
                             Focuses on engaging young learners through outdoor activities that promote physical, cognitive, and social development, using play-based methods suited for Kindergarten to Grade 3 students.
                         </div>
                     </button>
-                    <button class="s6 row left-align extra transparent round border">
+                    <button class="s12 m6 l6 row left-align extra transparent round border">
                         <div class="left-align max">
                             <span>2. Intentional Designs with Shawna Philpott.</span>
                         </div>
@@ -231,7 +221,7 @@
                             Explores the strategic planning and organization of learning spaces to enhance student engagement and foster a productive learning environment through thoughtful, intentional design.
                         </div>
                     </button>
-                    <button class="s6 row left-align extra transparent round border">
+                    <button class="s12 m6 l6 row left-align extra transparent round border">
                         <div class="left-align max">
                             <span>3. Ungrading (Part I) with Chris Sarkonak.</span>
                         </div>
@@ -240,7 +230,7 @@
                             Introduces the philosophy of ungrading, a method of assessment that emphasizes feedback over traditional grades, encouraging student growth and self-reflection in the learning process.
                         </div>
                     </button>
-                    <button class="s6 row left-align extra transparent round border">
+                    <button class="s12 m6 l6 row left-align extra transparent round border">
                         <div class="left-align max">
                             <span>4. Assessment in Physical Education with Derek Richels.</span>
                         </div>
@@ -249,13 +239,13 @@
                             Covers effective strategies for assessing student performance in physical education, focusing on how to measure both physical skills and overall student participation.
                         </div>
                     </button>
-                    <button class="s6 row left-align extra transparent round border">
+                    <button class="s12 m6 l6 row left-align extra transparent round border">
                         <div class="left-align max">
                             <span>5. Play-based Outdoor Learning (Part II) with Carole McCurry and Kyla Yanick (K-3).</span>
                         </div>
                         <label class="right-align">October 4,<br>2024</label>
                     </button>
-                    <button class="s6 row left-align extra transparent round border">
+                    <button class="s12 m6 l6 row left-align extra transparent round border">
                         <div class="left-align max">
                             <span>6. Lesson Planning Workshop with Shawna Philpott.</span>
                         </div>
@@ -264,7 +254,7 @@
                             This workshop provided a framework for planning lessons and activities.
                         </div>
                     </button>
-                    <button class="s6 row left-align extra transparent round border">
+                    <button class="s12 m6 l6 row left-align extra transparent round border">
                         <div class="left-align max">
                             <span>7. MTS PD Day: MTSLD.</span>
                         </div>
@@ -273,7 +263,7 @@
                             This professional development session covered foundational strategies in numeracy, math, and early literacy detection, alongside structured literacy approaches for vocabulary and grammar, aimed at enhancing support for students with learning disabilities.
                         </div>
                     </button>
-                    <button class="s6 row left-align extra transparent round border">
+                    <button class="s12 m6 l6 row left-align extra transparent round border">
                         <div class="left-align max">
                             <span>8. PD in Portage la Prairie: Understanding the True History between Indigenous and Hutterite Peoples.</span>
                         </div>
@@ -284,7 +274,7 @@
                             the significance of Treaty education for Hutterites, and the importance of presenting a balanced narrative that acknowledges both emotional and factual aspects of the true history.
                         </div>
                     </button>
-                    <button class="s6 row left-align extra transparent round border">
+                    <button class="s12 m6 l6 row left-align extra transparent round border">
                         <div class="left-align max">
                             <span>9. Ungrading (Part II) with Chris Sarkonak.</span>
                         </div>
@@ -293,7 +283,7 @@
                             A continuation of the last session in September, but this time it focused more on providing evidence, context and how it looks like and how to do it.
                         </div>
                     </button>
-                    <button class="s6 row left-align extra transparent round border">
+                    <button class="s12 m6 l6 row left-align extra transparent round border">
                         <div class="left-align max">
                             <span>10. Presenter & Participant at BYTE Conference 2025.</span>
                         </div>
@@ -303,7 +293,7 @@
                             aswell as robotics and programming sessions in the classroom.
                         </div>
                     </button>
-                    <button class="s6 row left-align extra transparent round border">
+                    <button class="s12 m6 l6 row left-align extra transparent round border">
                         <div class="left-align max">
                             <span>11. "Write" Stuff.</span>
                         </div>
@@ -317,7 +307,7 @@
                             mine them for teachable moments, expanding their teaching repertoire through professional reading and thoughtful planning.
                         </div>
                     </button>
-                    <button class="s6 row left-align extra transparent round border">
+                    <button class="s12 m6 l6 row left-align extra transparent round border">
                         <div class="left-align max">
                             <span>12. MTS PD Day: MAMT.</span>
                         </div>
@@ -334,17 +324,17 @@
                     <h6>Demonstrated Skills</h6>
                 </div>
                 <div class="grid">
-                    <article class="s7 border round">
+                    <article class="s12 m7 l7 border round">
                         Maintains a calm, patient, and empathetic demeanor, supporting students in grasping complex concepts while fostering a positive and encouraging learning environment. Consistently addresses tasks promptly and completes work ahead of schedule, ensuring
                         dedication to student success.
                     </article>
-                    <article class="s5 border round">
+                    <article class="s12 m5 l5 border round">
                         Possesses communication skills developed through public speaking, presentations, and writing.
                     </article>
-                    <article class="s5 border round">
+                    <article class="s12 m5 l5 border round">
                         Demonstrates strict punctuality and effective time management, creating a consistent and predictable teaching style that enhances student learning outcomes.
                     </article>
-                    <article class="s7 border round">
+                    <article class="s12 m7 l7 border round">
                         Proficient with computers and technology with over seven years of programming experience in software, server, web, mobile, and game development.
                     </article>
                 </div>
@@ -355,7 +345,7 @@
                     <h6>Awards</h6>
                 </div>
                 <div class="grid">
-                    <article class="s6 border round">
+                    <article class="s12 m6 l6 border round">
                         <img style="border-radius: 0px;" src="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v5_0_2/wet-boew/assets/sig-blk-en.svg" alt="harold vidal scholarship" id="harold-vidal-scholarship">
                         <div class="row">
                             <div class="max">
@@ -368,7 +358,7 @@
                             To be awarded to outstanding full-time students in a Bachelor of Education program. (B.Ed. A.D.) Preference may be given to rural, aboriginal and northern students. Awarded upon Faculty of Education recommendation.
                         </blockquote>
                     </article>
-                    <article class="s6 border round">
+                    <article class="s12 m6 l6 border round">
                         <img class="round center small-width small-height" src="/static/awards/mathematics-silver-medal.png" alt="mathematics silver medal" id="mathematics-silver-medal">
                         <div class="row">
                             <div class="max">
@@ -381,7 +371,7 @@
                             Highest GPA graduating with major in Mathematics.
                         </blockquote>
                     </article>
-                    <article class="s6 border round">
+                    <article class="s12 m6 l6 border round">
                         <img class="round center small-width small-height" src="/static/awards/governor-general-academic-medal.png" alt="governor general academic medal" id="governor-general-academic-medal">
                         <div class="row">
                             <div class="max">
@@ -394,7 +384,7 @@
                             Awarded by Ted Falk for a signficant academic achievement.
                         </blockquote>
                     </article>
-                    <article class="s6 border round">
+                    <article class="s12 m6 l6 border round">
                         <img class="round center small-width small-height" src="/static/awards/manitoba-robot-games.png" alt="manitoba robot games" id="manitoba-robot-games">
                         <div class="row">
                             <div class="max">
@@ -416,14 +406,14 @@
                 </div>
                 <div class="grid">
 
-                    <button class="s6 row left-align extra padding transparent round border">
+                    <button class="s12 m6 l6 row left-align extra padding transparent round border">
                         <div class="left-align max">
                             <h6>Inducted into the President's Honour Society</h6>
                             <div><i>apartment</i>Brandon University, Brandon, MB</div>
                         </div>
                         <label class="left-align">2023-<br>2024</label>
                     </button>
-                    <button class="s6 row left-align extra padding transparent round border">
+                    <button class="s12 m6 l6 row left-align extra padding transparent round border">
                         <div class="left-align max">
                             <h6>Dean's Honour list</h6>
                             <div><i>apartment</i>Brandon University, Brandon, MB</div>
@@ -434,8 +424,55 @@
             </article>
         </div>
     </main>
+    <nav class="left l surface-container">
+        <a onclick="transitionTo(event, '/')">
+            <i class="mdi mdi-home"></i>
+            <span>Home</span>
+        </a>
+        <a class="active" onclick="transitionTo(event, '/resume.html')">
+            <i class="mdi mdi-file-account"></i>
+            <span>Resume</span>
+        </a>
+        <a onclick="transitionTo(event, '/profile.html')">
+            <i class="mdi mdi-file-certificate"></i>
+            <span>Portfolio</span>
+        </a>
+        <a href='https://TheCodingJsoftware.github.io' target="_blank">
+            <i class="mdi mdi-briefcase"></i>
+            <span>Projects</span>
+        </a>
+    </nav>
+    <nav class="bottom s m">
+        <a onclick="transitionTo(event, '/')">
+            <i class="mdi mdi-home"></i>
+            <span>Home</span>
+        </a>
+        <a class="active" onclick="transitionTo(event, '/resume.html')">
+            <i class="mdi mdi-file-account"></i>
+            <span>Resume</span>
+        </a>
+        <a onclick="transitionTo(event, '/profile.html')">
+            <i class="mdi mdi-file-certificate"></i>
+            <span>Portfolio</span>
+        </a>
+        <a href='https://TheCodingJsoftware.github.io' target="_blank">
+            <i class="mdi mdi-briefcase"></i>
+            <span>Projects</span>
+        </a>
+    </nav>
 </body>
 <script>
+    function transitionTo(event, url) {
+        event.preventDefault(); // Prevent full reload
+        if (document.startViewTransition) {
+            document.startViewTransition(() => {
+                window.location.href = url; // Navigate with animation
+            });
+        } else {
+            window.location.href = url; // Fallback
+        }
+    }
+
     document.addEventListener("DOMContentLoaded", function() {
         if (document.startViewTransition) {
             document.startViewTransition(() => {
@@ -451,15 +488,8 @@
             localStorage.setItem("theme", theme);
 
             const themeIcon = document.getElementById("theme-icon");
-            themeIcon.innerText = theme === "dark" ? "light_mode" : "dark_mode";
+            themeIcon.innerText = theme === "dark" ? "dark_mode" : "light_mode";
         }
-
-        document.getElementById("picture-as-pdf").addEventListener("click", () => {
-            window.print();
-        });
-
-        const savedTheme = localStorage.getItem("theme") || "light";
-        setTheme(savedTheme);
 
         const themeToggle = document.getElementById("theme-toggle");
         themeToggle.addEventListener("click", () => {
@@ -469,6 +499,11 @@
             const newTheme = currentTheme === "dark" ? "light" : "dark";
             setTheme(newTheme);
         });
+
+        themeToggle.checked = localStorage.getItem("theme") === "dark";
+
+        const savedTheme = localStorage.getItem("theme") || "light";
+        setTheme(savedTheme);
 
         // Set theme to light when printing
         window.onbeforeprint = function() {
