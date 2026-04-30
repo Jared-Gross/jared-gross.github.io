@@ -1,33 +1,11 @@
-body {
-    font-family: Roboto, "Helvetica Neue", "Arial Nova", "Nimbus Sans", Noto Sans, Arial, sans-serif !important;
-}
-
-body {
-    opacity: 0;
-}
-
-@keyframes fade-in {
-    from {
-        opacity: 0;
-    }
-
-    to {
-        opacity: 1;
-    }
-}
-
-::view-transition-old(root),
-::view-transition-new(root) {
-    animation-duration: 0.5s;
-    animation-timing-function: ease-in-out;
-}
-
-::view-transition-new(root) {
-    animation-name: fade-in;
-}
-
 .cursive {
     font-family: 'Dancing Script', cursive;
+}
+
+#top-nav,
+#left-nav,
+#bottom-nav {
+    background: color-mix(in srgb, var(--surface) 40%, transparent) !important;
 }
 
 .img-container img {
@@ -41,6 +19,8 @@ body {
     border-radius: 2rem 0 3rem 0 !important;
     width: calc(200px + 16px + 16px);
     max-width: calc(200px + 16px + 16px);
+    height: calc(200px + 16px + 16px);
+    max-height: calc(200px + 16px + 16px);
 }
 
 .profile-image-wrapper {
@@ -99,161 +79,4 @@ body {
     left: -0px;
     border-radius: 50% 0 0 0;
     box-shadow: -0.4px -25px 0 -0.2px var(--primary);
-}
-
-::selection {
-    color: var(--on-primary);
-    background-color: var(--primary);
-}
-
-.fade-in {
-    animation: fadeInFromTop ease 1.5s;
-    animation-fill-mode: forwards;
-}
-
-@keyframes fadeInFromTop {
-    0% {
-        transform: translateY(-2000px);
-    }
-
-    50% {
-        transform: translateY(10px);
-    }
-
-    100% {
-        transform: translateY(0px);
-    }
-}
-
-.slide-in {
-    transform: translateX(-2000px);
-    /* Start from the right */
-    animation: fadeInFromRight 0.5s forwards;
-    /* Added animation */
-}
-
-.tooltip img {
-    z-index: 999999 !important;
-}
-
-article {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-}
-
-article nav {
-    margin-top: auto;
-    /* Pushes the nav to the bottom */
-}
-
-details:not(#summary-details) {
-    position: relative;
-    width: auto;
-    height: auto;
-
-    ::-webkit-details-marker {
-        display: none;
-    }
-
-    page-break-inside: avoid;
-    transform: translateX(-2000px);
-    /* Start from the right */
-    animation: fadeInFromRight 0.5s forwards;
-    /* Added animation */
-}
-
-details:not(#summary-details) div.content {
-    position: relative;
-    width: auto;
-    height: auto;
-}
-
-details:not(#summary-details)[open] .content {
-    border-radius: 10px;
-    box-shadow: 0 -10px 0 0 var(--primary);
-}
-
-@keyframes fadeInFromRight {
-    0% {
-        transform: translateX(-2000px);
-        /* Start from the right */
-    }
-
-    100% {
-        transform: translateX(0);
-        /* End at original position */
-    }
-}
-
-details:not(#summary-details)[open] {
-    border: 0.0625rem solid var(--primary) !important;
-}
-
-summary {
-    border-radius: 0.4rem;
-}
-
-details:not(#summary-details)[open] summary {
-    border-radius: 0.4rem 0.4rem 0 0;
-}
-
-details:not(#summary-details):not([open]) summary {
-    background-color: var(--surface-variant);
-    color: var(--on-surface-variant);
-    border-color: var(--surface-variant);
-    border-radius: 0.4rem;
-}
-
-details:not(#summary-details):not([open]) summary a {
-    background-color: var(--surface-variant);
-    color: var(--on-surface-variant);
-    border-color: var(--surface-variant);
-    border-radius: 0.4rem;
-}
-
-details:not(#summary-details)[open] summary a {
-    background-color: var(--primary);
-    color: var(--on-primary);
-    border-color: var(--primary);
-    border-radius: 0.4rem 0.4rem 0 0;
-}
-
-details #summary-details[open] summary a {
-    background-color: transparent;
-    color: var(--on-surface);
-    margin: 1px;
-    border-radius: 0;
-}
-
-details#summary-details:not([open]) summary a {
-    background-color: transparent;
-    color: var(--on-surface);
-    margin: 1px;
-    border-radius: 0;
-}
-
-#document-title {
-    display: none;
-}
-
-@media print {
-
-    #manitoba-robot-games-medal,
-    #governor-general-academic-medal,
-    #mathematics-silver-medal {
-        display: none;
-    }
-
-    details:not(#summary-details):not([open]) {
-        display: none !important;
-    }
-
-    #document-title {
-        display: block !important;
-    }
-
-    .header-nav {
-        display: none !important;
-    }
 }

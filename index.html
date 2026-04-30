@@ -1,4 +1,4 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<!DOCTYPE >
 <html lang="en">
 
 <head>
@@ -14,18 +14,19 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta name="google" content="notranslate">
     <link rel="icon" type="image/x-icon" href="/static/picture/Gross Jared.jpg">
-    <link href="https://cdn.jsdelivr.net/npm/beercss@4.0.16/dist/cdn/beer.min.css" rel="stylesheet">
-    <script type="module" src="https://cdn.jsdelivr.net/npm/beercss@4.0.16/dist/cdn/beer.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/beercss@4.0.20/dist/cdn/beer.min.css" rel="stylesheet">
+    <script type="module" src="https://cdn.jsdelivr.net/npm/beercss@4.0.20/dist/cdn/beer.min.js"></script>
     </script>
-    <link href="https://cdn.jsdelivr.net/npm/@mdi/font@7.4.47/css/materialdesignicons.min.css" rel="stylesheet">
     <link href="/static/css/theme.css" rel="stylesheet">
     <link href="/static/css/style.css" rel="stylesheet">
+    <link rel="prefetch" href="/resume.html">
+    <link rel="prefetch" href="/profile.html">
     <title>Jared Gross</title>
     <meta content="#44d8f1" data-react-helmet="true" name="theme-color">
 </head>
 
 <body class="dark">
-    <nav class="top blur">
+    <nav id="top-nav" class="top blur">
         <h4 class="left-align max">Home</h4>
         <label class="fixed top right switch icon margin" style="margin-top: 2rem;">
             <input type="checkbox" id="theme-toggle">
@@ -47,22 +48,23 @@
                     <h2 class="no-margin">Jared Gross</h2>
                     <p class="no-margin">Aspiring Teacher & Software Developer</p>
                 </div>
-                <nav class="s12 toolbar fill margin">
+                <nav class="s12 toolbar fill margin scroll">
                     <a href="tel:+1-204-782-1038">
-                        <i class="mdi mdi-phone"></i>
-                        <span class="l">+1 (204) 782-1038</span>
+                        <i>phone</i>
+                        <span>+1 (204) 782-1038</span>
                     </a>
                     <a href="mailto:jared@pinelandfarms.ca">
-                        <i class="mdi mdi-email"></i>
-                        <span class="l">jared@pinelandfarms.ca</span>
+                        <i>mail</i>
+                        <span>jared@pinelandfarms.ca</span>
                     </a>
-                    <a href='https://www.linkedin.com/in/jaredgross12418/' target="_blank">
-                        <i class="mdi mdi-linkedin"></i>
-                        <span class="l">LinkedIn</span>
+                    <a href='https://www.linkedin.com/in/jaredgross12418/' target="_blank" rel="noopener noreferrer">
+                        <span>LinkedIn</span>
                     </a>
-                    <a href='https://github.com/jared-gross' target="_blank">
-                        <i class="mdi mdi-github"></i>
-                        <span class="l">GitHub</span>
+                    <a href='https://github.com/jared-gross' target="_blank" rel="noopener noreferrer">
+                        <span>GitHub</span>
+                    </a>
+                    <a href='https://codeberg.org/jared-gross' target="_blank" rel="noopener noreferrer">
+                        <span>Codeberg</span>
                     </a>
                 </nav>
             </div>
@@ -72,44 +74,44 @@
                     and more efficient. I believe in creating open-source tools to support teachers, helping them save time and improve their work experience, allowing teachers to focus on what truly matters: teaching.
                     <br>
                     <br> As of September 2, 2025 my main focus is on being a student at <a class="link" href="https://www.brandonu.ca">Brandon University</a> doing my <a class="link" href="https://www.brandonu.ca/future-students/programs/degrees/education/">Bachelor of Education</a>.
-                    I am working on <a class="link" href="https://github.com/TheCodingJsoftware/Invigo" target="_blank">Invigo</a> and <a class="link" href="https://github.com/TheCodingJsoftware/Kuriki" target="_blank">Kuriki</a> in my spare time.
+                    I am working on <a class="link" href="https://github.com/TheCodingJsoftware/Invigo" target="_blank" rel="noopener noreferrer">Invigo</a> and <a class="link" href="https://github.com/TheCodingJsoftware/Kuriki" target="_blank" rel="noopener noreferrer">Kuriki</a> in my spare time.
                 </blockquote>
             </div>
         </article>
     </main>
-    <nav class="left l blur">
+    <nav id="left-nav" class="left l blur">
         <a class="active" onclick="transitionTo(event, '/')">
-            <i class="mdi mdi-home"></i>
+            <i>home</i>
             <span>Home</span>
         </a>
-        <a onclick="transitionTo(event, '/resume.html')">
-            <i class="mdi mdi-file-account"></i>
+        <a href='https://affine.pinelandfarms.ca/workspace/3fd7314c-5ee1-43cf-bcd5-c79256dbc148/xlhLlUWOVUewWaFCU2ZYM' target="_blank" rel="noopener noreferrer">
+            <i>article_person</i>
             <span>Resume</span>
         </a>
         <a onclick="transitionTo(event, '/profile.html')">
-            <i class="mdi mdi-file-certificate"></i>
+            <i>badge</i>
             <span>Portfolio</span>
         </a>
-        <a href='https://TheCodingJsoftware.github.io' target="_blank">
-            <i class="mdi mdi-briefcase"></i>
+        <a href='https://TheCodingJsoftware.github.io' target="_blank" rel="noopener noreferrer">
+            <i>work</i>
             <span>Projects</span>
         </a>
     </nav>
-    <nav class="bottom s m blur">
+    <nav id="bottom-nav" class="bottom s m blur">
         <a class="active" onclick="transitionTo(event, '/')">
-            <i class="mdi mdi-home"></i>
+            <i>home</i>
             <span>Home</span>
         </a>
-        <a onclick="transitionTo(event, '/resume.html')">
-            <i class="mdi mdi-file-account"></i>
+        <a href='https://affine.pinelandfarms.ca/workspace/3fd7314c-5ee1-43cf-bcd5-c79256dbc148/xlhLlUWOVUewWaFCU2ZYM' target="_blank" rel="noopener noreferrer">
+            <i>article_person</i>
             <span>Resume</span>
         </a>
         <a onclick="transitionTo(event, '/profile.html')">
-            <i class="mdi mdi-file-certificate"></i>
+            <i>badge</i>
             <span>Portfolio</span>
         </a>
-        <a href='https://TheCodingJsoftware.github.io' target="_blank">
-            <i class="mdi mdi-briefcase"></i>
+        <a href='https://TheCodingJsoftware.github.io' target="_blank" rel="noopener noreferrer">
+            <i>work</i>
             <span>Projects</span>
         </a>
     </nav>
@@ -127,14 +129,6 @@
     }
 
     document.addEventListener("DOMContentLoaded", function() {
-        if (document.startViewTransition) {
-            document.startViewTransition(() => {
-                document.body.style.opacity = "1"; // Ensure it becomes visible after transition
-            });
-        } else {
-            document.body.style.opacity = "1"; // Fallback for unsupported browsers
-        }
-
         function setTheme(theme) {
             document.body.classList.remove("light", "dark");
             document.body.classList.add(theme);
@@ -157,6 +151,21 @@
 
         const savedTheme = localStorage.getItem("theme") || "light";
         setTheme(savedTheme);
+
+        function prefetch(url) {
+            if (prefetched.has(url)) return;
+            prefetched.add(url);
+
+            fetch(url, { priority: "low" }).catch(() => {});
+        }
+
+        document.querySelectorAll("nav a[onclick]").forEach((a) => {
+            const url = a.getAttribute("onclick").match(/'(.*?)'/)?.[1];
+            if (!url) return;
+
+            a.addEventListener("mouseenter", () => prefetch(url), { passive: true });
+            a.addEventListener("touchstart", () => prefetch(url), { passive: true });
+        });
     });
 </script>
 

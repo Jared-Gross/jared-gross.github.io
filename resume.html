@@ -1,4 +1,4 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<!DOCTYPE >
 <html lang="en">
 
 
@@ -15,18 +15,58 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta name="google" content="notranslate">
     <link rel="icon" type="image/x-icon" href="/static/picture/Gross Jared.jpg">
-    <link href="https://cdn.jsdelivr.net/npm/beercss@4.0.16/dist/cdn/beer.min.css" rel="stylesheet">
-    <script type="module" src="https://cdn.jsdelivr.net/npm/beercss@4.0.16/dist/cdn/beer.min.js"></script>
-    <link href="https://cdn.jsdelivr.net/npm/@mdi/font@7.4.47/css/materialdesignicons.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/beercss@4.0.20/dist/cdn/beer.min.css" rel="stylesheet">
+    <script type="module" src="https://cdn.jsdelivr.net/npm/beercss@4.0.20/dist/cdn/beer.min.js"></script>
     </script>
     <link href="/static/css/theme.css" rel="stylesheet">
+    <link href="/static/css/style.css" rel="stylesheet">
+    <link rel="prefetch" href="/index.html">
+    <link rel="prefetch" href="/profile.html">
     <script src="/static/js/index.js"></script>
     <title>Jared Gross</title>
     <meta content="#44d8f1" data-react-helmet="true" name="theme-color">
+    <style>
+        h1 {
+            font-size: clamp(2.5rem, 5vw, 3.5rem);
+        }
+
+        h2 {
+            font-size: 1.5rem;
+            color: var(--primary);
+        }
+
+        h3 {
+            font-size: 1.1rem;
+        }
+
+        /* Print optimization */
+        @media print {
+            body {
+                background: white !important;
+            }
+
+            main.responsive {
+                padding: 0;
+            }
+
+            h2::before {
+                display: none;
+            }
+
+            h3,
+            h3 + p,
+            h3 + p + ul,
+            h3 + p + p {
+                background: none;
+                padding: 0;
+            }
+        }
+    </style>
 </head>
 
 <body class="dark">
-    <nav class="top blur">
+    <script src="https://cdn.jsdelivr.net/npm/marked/lib/marked.umd.js"></script>
+    <nav id="top-nav" class="top blur">
         <h4 class="left-align max">Resume</h4>
         <label class="fixed top right switch icon margin" style="margin-top: 2rem;">
             <input type="checkbox" id="theme-toggle">
@@ -36,469 +76,40 @@
         </label>
     </nav>
     <main class="responsive">
-        <div class="grid padding">
-            <article class="s12 m12 l12 round">
-                <div class="row">
-                    <i>person</i>
-                    <h6>About Me</h6>
-                </div>
-                <blockquote>
-                    An aspiring educator with a deep passion for fostering growth and understanding. My aim is to design lessons and activities that address the diverse educational and social needs of each student, ensuring a personalized approach to their academic journey.
-                </blockquote>
-                <article class="round border">
-                    <div class="row">
-                        <i>lightbulb</i>
-                        <h6>Interests</h6>
-                    </div>
-                    Enjoy outdoor activities such as cycling, jogging and walking. Love learning about different cultures and new mathematical, computer science, and psychological concepts and theories.
-                </article>
-                <article class="round border">
-                    <div class="row">
-                        <i>translate</i>
-                        <h6>Langauge</h6>
-                    </div>
-                    English and German
-                </article>
-            </article>
-            <article class="s12 m12 l12 round">
-                <div class="row">
-                    <i>school</i>
-                    <h6>Education</h6>
-                </div>
-                <div class="grid">
-                    <button class="s12 m6 l6 row left-align extra padding transparent round border">
-                        <div class="left-align max">
-                            <h6>B.ED. (AD)</h6>
-                            <div><i>apartment</i>Brandon University, Brandon, MB</div>
-                        </div>
-                        <label class="left-align">2024 -<br>2026</label>
-                        <div class="tooltip max">
-                            Early Years Stream
-                        </div>
-                    </button>
-                    <button class="s12 m6 l6 row left-align extra padding transparent round border">
-                        <div class="left-align max">
-                            <h6>B.SC. 3 YR.</h6>
-                            <div><i>apartment</i>Brandon University, Brandon, MB</div>
-                        </div>
-                        <label class="left-align">2020 -<br>2024</label>
-                        <div class="tooltip max">
-                            Graduated with Great Distinction<br> Major in Mathematics: GPA: 4.0<br>Minor in History: GPA: 3.6<br>Overall GPA: 3.85
-                        </div>
-                    </button>
-                    <button class="s12 m6 l6 row left-align extra padding transparent round border">
-                        <div class="left-align max">
-                            <h6>High School</h6>
-                            <div><i>cottage</i>Pineland Colony School, Piney, MB</div>
-                        </div>
-                        <label class="left-align">2020</label>
-                        <div class="tooltip max">
-                            Won the governor generals award.
-                        </div>
-                    </button>
-                </div>
-            </article>
-            <article class="s12 m12 l12 round">
-                <div class="row">
-                    <i>work</i>
-                    <h6>Experience</h6>
-                </div>
-                <div class="grid">
-                    <article class="s12 round border">
-                        <div class=row>
-                            <div class="max">
-                                <h6>Practicum III</h6>
-                                <i>apartment</i>Shevchenko School. Vita, MB
-                            </div>
-                            <label class="left-align">2025-10-14 -<br>2025-11-14</label>
-                        </div>
-                        <blockquote>
-                            Successfully completed a teaching practicum under the mentorship of Sarah Michalski, designing and delivering engaging, student-centered lessons for Grades 9-12 including 10 Essentials and 12 Essentials; assessed learning through a variety of formal and
-                            informal methods; developed fair and consistent grading practices; adapted instruction based on student feedback and engagement; and strengthened skills in unit planning, classroom management, and professional communication-demonstrating
-                            significant growth in confidence, instructional design, and reflective teaching practice.
-                        </blockquote>
-                    </article>
-                    <article class="s12 round border">
-                        <div class=row>
-                            <div class="max">
-                                <h6>Practicum II</h6>
-                                <i>apartment</i>Ross L. Gray School. Sprague, MB
-                            </div>
-                            <label class="left-align">2025-03-10 -<br>2025-04-02</label>
-                        </div>
-                        <blockquote>
-                            Focusing on a grade 3/4 classroom and grade 1/2 mathematics, I gained hands-on experience designing and leading interactive lessons focused on mathematics, science, reading, and writing. I worked closely with my mentor, Melissa Goulet, to strengthen my
-                            classroom management and adapt activities to engage young learners. Through these experiences, I developed confidence in my behaviour management skills and learned to balance warmth with structure in guiding students.
-                        </blockquote>
-                    </article>
-                    <article class="s12 round border">
-                        <div class=row>
-                            <div class="max">
-                                <h6>Practicum I</h6>
-                                <i>apartment</i>Brennan School. Newton, MB
-                            </div>
-                            <label class="left-align">2024-10-15 -<br>2024-11-15</label>
-                        </div>
-                        <blockquote>
-                            Focusing on a Kindergarten classroom, I gained hands-on experience designing and leading interactive lessons focused on foundational literacy and numeracy. I worked closely with my mentor, Elma Maendel, to strengthen my classroom management and adapt
-                            activities to engage young learners. Through these experiences, I developed confidence in my “teacher voice” and learned to balance warmth with structure in guiding students.
-                        </blockquote>
-                    </article>
-                    <article class="s12 round border">
-                        <div class=row>
-                            <div class="max">
-                                <h6>Undergraduate Teaching Assistant & Marker</h6>
-                                <i>apartment</i>Brandon University. Brandon, MB
-                            </div>
-                            <label class="left-align">2022-09 -<br>2024-04</label>
-                        </div>
-                        <blockquote>
-                            Assisted in four mathematics and two computer science courses, each with 50–100+ students, fostering strong relationships with students, colleagues, and faculty. Supported faculty with administrative tasks, including grading, updating class records, and
-                            tracking attendance.
-                        </blockquote>
-                    </article>
-                    <article class="s12 round border">
-                        <div class=row>
-                            <div class="max">
-                                <h6>Teaching Assistant & Marker</h6>
-                                <i>cottage</i>Pineland Colony School. Piney, MB
-                            </div>
-                            <label class="left-align">2020-09 -<br>2021-06</label>
-                        </div>
-                        <blockquote>
-                            Taught grade 11 and 12 mathematics, providing one-on-one support to students in grades 6–12 who needed extra help. Facilitated social and mathematical skill development in younger students from grades 1 to 3.
-                        </blockquote>
-                    </article>
-                </div>
-            </article>
-            <article class="s12 m12 l12 round">
-                <div class="row">
-                    <i>construction</i>
-                    <h6>Training</h6>
-                </div>
-
-                <div class="grid">
-                    <button class="s12 m6 l6 row left-align extra transparent round border">
-                        <div class="left-align max">
-                            <span>1. Respect in Schools</span>
-                        </div>
-                        <label class="right-align">April 26,<br>2025</label>
-                    </button>
-                    <button class="s12 m6 l6 row left-align extra transparent round border">
-                        <div class="left-align max">
-                            <span>2. Accessibility Training</span>
-                        </div>
-                        <label class="right-align">April 26,<br>2025</label>
-                    </button>
-                    <button class="s12 m6 l6 row left-align extra transparent round border">
-                        <div class="left-align max">
-                            <span>3. Treaty Education</span>
-                        </div>
-                        <label class="right-align">November 27-28,<br>2025</label>
-                    </button>
-                </div>
-            </article>
-            <article class="s12 m12 l12 round">
-                <div class="row">
-                    <i>trending_up</i>
-                    <h6>Professional Development</h6>
-                </div>
-                <div class="grid">
-                    <button class="s12 m12 l6 row left-align extra transparent round border">
-                        <div class="left-align max">
-                            <span>1. Play-based Outdoor Learning (Part I) with Carole McCurry and Kyla Yanick (K-3).</span>
-                        </div>
-                        <label class="right-align">September 13,<br>2024</label>
-                        <div class="tooltip max">
-                            Focuses on engaging young learners through outdoor activities that promote physical, cognitive, and social development, using play-based methods suited for Kindergarten to Grade 3 students.
-                        </div>
-                    </button>
-                    <button class="s12 m12 l6 row left-align extra transparent round border">
-                        <div class="left-align max">
-                            <span>2. Intentional Designs with Shawna Philpott.</span>
-                        </div>
-                        <label class="right-align">September 20,<br>2024</label>
-                        <div class="tooltip max">
-                            Explores the strategic planning and organization of learning spaces to enhance student engagement and foster a productive learning environment through thoughtful, intentional design.
-                        </div>
-                    </button>
-                    <button class="s12 m12 l6 row left-align extra transparent round border">
-                        <div class="left-align max">
-                            <span>3. Ungrading (Part I) with Chris Sarkonak.</span>
-                        </div>
-                        <label class="right-align">September 24,<br>2024</label>
-                        <div class="tooltip max">
-                            Introduces the philosophy of ungrading, a method of assessment that emphasizes feedback over traditional grades, encouraging student growth and self-reflection in the learning process.
-                        </div>
-                    </button>
-                    <button class="s12 m12 l6 row left-align extra transparent round border">
-                        <div class="left-align max">
-                            <span>4. Assessment in Physical Education with Derek Richels.</span>
-                        </div>
-                        <label class="right-align">October 1,<br>2024</label>
-                        <div class="tooltip max">
-                            Covers effective strategies for assessing student performance in physical education, focusing on how to measure both physical skills and overall student participation.
-                        </div>
-                    </button>
-                    <button class="s12 m12 l6 row left-align extra transparent round border">
-                        <div class="left-align max">
-                            <span>5. Play-based Outdoor Learning (Part II) with Carole McCurry and Kyla Yanick (K-3).</span>
-                        </div>
-                        <label class="right-align">October 4,<br>2024</label>
-                    </button>
-                    <button class="s12 m12 l6 row left-align extra transparent round border">
-                        <div class="left-align max">
-                            <span>6. Lesson Planning Workshop with Shawna Philpott.</span>
-                        </div>
-                        <label class="right-align">October 8,<br>2024</label>
-                        <div class="tooltip max">
-                            This workshop provided a framework for planning lessons and activities.
-                        </div>
-                    </button>
-                    <button class="s12 m12 l6 row left-align extra transparent round border">
-                        <div class="left-align max">
-                            <span>7. MTS PD Day: MTSLD.</span>
-                        </div>
-                        <label class="right-align">October 25,<br>2024</label>
-                        <div class="tooltip max">
-                            This professional development session covered foundational strategies in numeracy, math, and early literacy detection, alongside structured literacy approaches for vocabulary and grammar, aimed at enhancing support for students with learning disabilities.
-                        </div>
-                    </button>
-                    <button class="s12 m12 l6 row left-align extra transparent round border">
-                        <div class="left-align max">
-                            <span>8. PD in Portage la Prairie: Understanding the True History between Indigenous and Hutterite Peoples.</span>
-                        </div>
-                        <label class="right-align">November 8,<br>2024</label>
-                        <div class="tooltip max">
-                            This professional development session focused on student-centered learning approaches, emphasizing the use of portfolios and inquiry-based learning to strike a delicate balance. It also explored the importance of student self-reflections, whether oral
-                            or written, in the assessment process. Additionally, the session delved into understanding perspectives on Hutterite-Indigenous relations, particularly in the context of river colonies. The discussion covered the history of Hutterites in Canada,
-                            the significance of Treaty education for Hutterites, and the importance of presenting a balanced narrative that acknowledges both emotional and factual aspects of the true history.
-                        </div>
-                    </button>
-                    <button class="s12 m12 l6 row left-align extra transparent round border">
-                        <div class="left-align max">
-                            <span>9. Ungrading (Part II) with Chris Sarkonak.</span>
-                        </div>
-                        <label class="right-align">November 26,<br>2024</label>
-                        <div class="tooltip max">
-                            A continuation of the last session in September, but this time it focused more on providing evidence, context and how it looks like and how to do it.
-                        </div>
-                    </button>
-                    <button class="s12 m12 l6 row left-align extra transparent round border">
-                        <div class="left-align max">
-                            <span>10. Presenter & Participant at BYTE Conference 2025.</span>
-                        </div>
-                        <label class="right-align">February 14,<br>2025</label>
-                        <div class="tooltip max">
-                            I had the privledge of attending and presenting at BYTE 2025 in Brandon University. I had a session on one of my projects <a class="link" href="https://curiki.web.app">Curiki</a> and attended sessions on story-telling and game-based learning
-                            aswell as robotics and programming sessions in the classroom.
-                        </div>
-                    </button>
-                    <button class="s12 m12 l6 row left-align extra transparent round border">
-                        <div class="left-align max">
-                            <span>11. "Write" Stuff.</span>
-                        </div>
-                        <label class="right-align">March 25,<br>2025</label>
-                        <div class="tooltip max large-width">
-                            The “Write” Stuff professional development session, held at the Border Land School Division Office in Altona, built on the momentum of Day 1 at Ross L. Gray School and focused on helping educators strengthen their writing instruction practices. Drawing
-                            inspiration from Nancie Atwell’s Lessons That Change Writers and Carl Anderson’s How to Become a Better Writing Teacher, the session explored how to immerse students in meaningful writing experiences and help them learn from both published
-                            authors and peers. A strong focus was placed on inquiry-based, group learning, where educators collaborated to practice lesson plans and explore strategies through shared discussion and reflection. Using texts like My Five Senses, teachers
-                            connected literature to personal experience, modeling how to guide students in doing the same. The session emphasized the use of mentor texts to teach craft, conventions, and process, while also encouraging the use of student writing as mentor
-                            material. Teachers learned how to conduct whole-class and small-group immersion, guide students in reading like writers, and highlight the humanity of mentor authors. Participants were encouraged to gather stacks of high-quality texts and
-                            mine them for teachable moments, expanding their teaching repertoire through professional reading and thoughtful planning.
-                        </div>
-                    </button>
-                    <button class="s12 m12 l6 row left-align extra transparent round border">
-                        <div class="left-align max">
-                            <span>12. MTS PD Day: MAMT.</span>
-                        </div>
-                        <label class="right-align">October 24,<br>2025</label>
-                        <div class="tooltip max large-width">
-                            Attended a series of professional development keynotes focused on promoting joy, equity, and deep understanding in mathematics education. Learned strategies from speakers including Howie Hua, Darren Kuropatwa, Laura Masterson, and Fawn Nguyen on fostering curiosity, problem-solving, and inclusive practices in math classrooms. Key takeaways included emphasizing math as an art of patterns and creativity, teaching conceptual understanding alongside procedures, integrating linguistic supports for students with dyscalculia, and challenging long-held beliefs to make math accessible, meaningful, and joyful for all learners.
-                        </div>
-                    </button>
-                    <button class="s12 m12 l6 row left-align extra transparent round border">
-                        <div class="left-align max">
-                            <span>13. Agriculture in the Classroom.</span>
-                        </div>
-                        <label class="right-align">January 21,<br>2026</label>
-                        <div class="tooltip max large-width">
-                            Facilitated hands-on agriculture stations, leading a fibre station and organizing a student scavenger hunt during Ag Days to promote experiential learning.
-                        </div>
-                    </button>
-                    <button class="s12 m12 l6 row left-align extra transparent round border">
-                        <div class="left-align max">
-                            <span>14. Presenter & Participant at BYTE Conference 2026.</span>
-                        </div>
-                        <label class="right-align">February 13,<br>2026</label>
-                        <div class="tooltip max large-width">
-                            Presented Kuriki at Brandon University and attended sessions on AI in education, assessment in the age of AI, computer science curriculum, and ethical AI integration in classrooms.
-                        </div>
-                    </button>
-                    <button class="s12 m12 l6 row left-align extra transparent round border">
-                        <div class="left-align max">
-                            <span>15. Presenter & Participant at WestCAST Conference 2026.</span>
-                        </div>
-                        <label class="right-align">February 18-20,<br>2026</label>
-                        <div class="tooltip max large-width">
-                            Presented Kuriki at the University of Winnipeg, highlighting strategies for organizing curriculum outcomes to support effective planning and instruction. Also attended sessions on UDL in Physical Education, nature-based learning, classroom community building, and ethical AI integration.
-                        </div>
-                    </button>
-                    <button class="s12 m12 l6 row left-align extra transparent round border">
-                        <div class="left-align max">
-                            <span>16. BEI Judge.</span>
-                        </div>
-                        <label class="right-align">February 27,<br>2026</label>
-                        <div class="tooltip max large-width">
-                            Volunteered as a judge for a Grade 9 public speaking event, providing feedback and supporting student communication skills development.
-                        </div>
-                    </button>
-                </div>
-            </article>
-            <article class="s12 m12 l12 round">
-                <div class="row">
-                    <i>extension</i>
-                    <h6>Demonstrated Skills</h6>
-                </div>
-                <div class="grid">
-                    <article class="s12 m7 l7 border round">
-                        Maintains a calm, patient, and empathetic demeanor, supporting students in grasping complex concepts while fostering a positive and encouraging learning environment. Consistently addresses tasks promptly and completes work ahead of schedule, ensuring
-                        dedication to student success.
-                    </article>
-                    <article class="s12 m5 l5 border round">
-                        Possesses communication skills developed through public speaking, presentations, and writing.
-                    </article>
-                    <article class="s12 m5 l5 border round">
-                        Demonstrates strict punctuality and effective time management, creating a consistent and predictable teaching style that enhances student learning outcomes.
-                    </article>
-                    <article class="s12 m7 l7 border round">
-                        Proficient with computers and technology with over seven years of programming experience in software, server, web, mobile, and game development.
-                    </article>
-                </div>
-            </article>
-            <article class="s12 m12 l12 round">
-                <div class="row">
-                    <i>trophy</i>
-                    <h6>Awards</h6>
-                </div>
-                <div class="grid">
-                    <article class="s12 m6 l6 border round">
-                        <img style="border-radius: 0px;" src="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v5_0_2/wet-boew/assets/sig-blk-en.svg" alt="harold vidal scholarship" id="harold-vidal-scholarship">
-                        <div class="row">
-                            <div class="max">
-                                <h6>Harold Vidal Scholarship in Education ($1,500)</h6>
-                                <div><i>apartment</i>Brandon University. Brandon, MB</div>
-                            </div>
-                            <label>2025</label>
-                        </div>
-                        <blockquote>
-                            To be awarded to outstanding full-time students in a Bachelor of Education program. (B.Ed. A.D.) Preference may be given to rural, aboriginal and northern students. Awarded upon Faculty of Education recommendation.
-                        </blockquote>
-                    </article>
-                    <article class="s12 m6 l6 border round">
-                        <img class="round center small-width small-height" src="/static/awards/mathematics-silver-medal.png" alt="mathematics silver medal" id="mathematics-silver-medal">
-                        <div class="row">
-                            <div class="max">
-                                <h6>Silver Medal in Mathematics</h6>
-                                <div><i>apartment</i>Brandon University. Brandon, MB</div>
-                            </div>
-                            <label>2024</label>
-                        </div>
-                        <blockquote>
-                            Awarded to the student with the highest standing (GPA) in a degree program with a major in Mathematics.
-                        </blockquote>
-                    </article>
-                    <article class="s12 m6 l6 border round">
-                        <img class="round center small-width small-height" src="/static/awards/governor-general-academic-medal.png" alt="governor general academic medal" id="governor-general-academic-medal">
-                        <div class="row">
-                            <div class="max">
-                                <h6>Governor General's Academic Medal</h6>
-                                <div><i>apartment</i>Pineland Colony School. Piney, MB</div>
-                            </div>
-                            <label>2020</label>
-                        </div>
-                        <blockquote>
-                            Awarded to the student with the highest academic average upon graduation from secondary school.
-                        </blockquote>
-                    </article>
-                    <article class="s12 m6 l6 border round">
-                        <img class="round center small-width small-height" src="/static/awards/manitoba-robot-games.png" alt="manitoba robot games" id="manitoba-robot-games">
-                        <div class="row">
-                            <div class="max">
-                                <h6>Third Place in Judges Choice</h6>
-                                <div><i>apartment</i>Tec Voc School. Winnipeg, MB</div>
-                            </div>
-                            <label>2019</label>
-                        </div>
-                        <blockquote>
-                            Judges’ Choice award recognizing design and performance excellence at the 2019 Manitoba Robot Games.
-                        </blockquote>
-                    </article>
-                </div>
-            </article>
-            <article class="s12 m12 l12 round">
-                <div class="row">
-                    <i>license</i>
-                    <h6>Assessments</h6>
-                </div>
-                <div class="grid">
-                    <button class="s12 m6 l6 row left-align extra padding transparent round border">
-                        <div class="left-align max">
-                            <h6>Inducted into the President's Honour Society</h6>
-                            <div><i>apartment</i>Brandon University, Brandon, MB</div>
-                        </div>
-                        <label class="left-align">2023-<br>2024</label>
-                        <div class="tooltip max large-width">
-                            The President’s Honour Society recognizes undergraduate students who achieve a high sessional GPA while completing a full course load. It represents sustained academic excellence across the academic year.
-                        </div>
-                    </button>
-                    <button class="s12 m6 l6 row left-align extra padding transparent round border">
-                        <div class="left-align max">
-                            <h6>Dean's Honour list</h6>
-                            <div><i>apartment</i>Brandon University, Brandon, MB</div>
-                        </div>
-                        <label class="left-align">2021-<br>2024</label>
-                        <div class="tooltip max large-width">
-                            The Dean’s Honour List is awarded to students who maintain a strong GPA over the academic year while completing the required minimum credit load. It acknowledges consistent, high-level academic performance.
-                        </div>
-                    </button>
-                </div>
-            </article>
-        </div>
     </main>
-    <nav class="left l blur">
+    <nav id="left-nav" class="left l blur">
         <a onclick="transitionTo(event, '/')">
-            <i class="mdi mdi-home"></i>
+            <i>home</i>
             <span>Home</span>
         </a>
         <a class="active" onclick="transitionTo(event, '/resume.html')">
-            <i class="mdi mdi-file-account"></i>
+            <i>article_person</i>
             <span>Resume</span>
         </a>
         <a onclick="transitionTo(event, '/profile.html')">
-            <i class="mdi mdi-file-certificate"></i>
+            <i>badge</i>
             <span>Portfolio</span>
         </a>
-        <a href='https://TheCodingJsoftware.github.io' target="_blank">
-            <i class="mdi mdi-briefcase"></i>
+        <a href='https://TheCodingJsoftware.github.io' target="_blank" rel="noopener noreferrer">
+            <i>work</i>
             <span>Projects</span>
         </a>
     </nav>
-    <nav class="bottom s m blur">
+    <nav id="bottom-nav" class="bottom s m blur">
         <a onclick="transitionTo(event, '/')">
-            <i class="mdi mdi-home"></i>
+            <i>home</i>
             <span>Home</span>
         </a>
         <a class="active" onclick="transitionTo(event, '/resume.html')">
-            <i class="mdi mdi-file-account"></i>
+            <i>article_person</i>
             <span>Resume</span>
         </a>
         <a onclick="transitionTo(event, '/profile.html')">
-            <i class="mdi mdi-file-certificate"></i>
+            <i>badge</i>
             <span>Portfolio</span>
         </a>
-        <a href='https://TheCodingJsoftware.github.io' target="_blank">
-            <i class="mdi mdi-briefcase"></i>
+        <a href='https://TheCodingJsoftware.github.io' target="_blank" rel="noopener noreferrer">
+            <i>work</i>
             <span>Projects</span>
         </a>
     </nav>
@@ -516,14 +127,6 @@
     }
 
     document.addEventListener("DOMContentLoaded", function() {
-        if (document.startViewTransition) {
-            document.startViewTransition(() => {
-                document.body.style.opacity = "1"; // Ensure it becomes visible after transition
-            });
-        } else {
-            document.body.style.opacity = "1"; // Fallback for unsupported browsers
-        }
-
         function setTheme(theme) {
             document.body.classList.remove("light", "dark");
             document.body.classList.add(theme);
@@ -555,6 +158,40 @@
         window.onafterprint = function() {
             setTheme(localStorage.getItem("theme") || "light");
         };
+
+        function prefetch(url) {
+            if (prefetched.has(url)) return;
+            prefetched.add(url);
+
+            fetch(url, { priority: "low" }).catch(() => {});
+        }
+
+        document.querySelectorAll("nav a[onclick]").forEach((a) => {
+            const url = a.getAttribute("onclick").match(/'(.*?)'/)?.[1];
+            if (!url) return;
+
+            a.addEventListener("mouseenter", () => prefetch(url), { passive: true });
+            a.addEventListener("touchstart", () => prefetch(url), { passive: true });
+        });
+    });
+
+    document.addEventListener("DOMContentLoaded", async () => {
+        const main = document.querySelector("main");
+
+        try {
+            const res = await fetch("/RESUME.md");
+            if (!res.ok) throw new Error("Failed to load RESUME.md");
+
+            const md = await res.text();
+
+            // Remove zero-width chars (marked issue)
+            const clean = md.replace(/^[\u200B\u200C\u200D\u200E\u200F\uFEFF]/, "");
+
+            main.innerHTML = marked.parse(clean);
+        } catch (err) {
+            main.innerHTML = "<p>Failed to load resume.</p>";
+            console.error(err);
+        }
     });
 </script>
 

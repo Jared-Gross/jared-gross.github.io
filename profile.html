@@ -1,4 +1,4 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<!DOCTYPE >
 <html lang="en">
 
 
@@ -15,18 +15,19 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta name="google" content="notranslate">
     <link rel="icon" type="image/x-icon" href="/static/picture/Gross Jared.jpg">
-    <link href="https://cdn.jsdelivr.net/npm/beercss@4.0.16/dist/cdn/beer.min.css" rel="stylesheet">
-    <script type="module" src="https://cdn.jsdelivr.net/npm/beercss@4.0.16/dist/cdn/beer.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/beercss@4.0.20/dist/cdn/beer.min.css" rel="stylesheet">
+    <script type="module" src="https://cdn.jsdelivr.net/npm/beercss@4.0.20/dist/cdn/beer.min.js"></script>
     </script>
-    <link href="https://cdn.jsdelivr.net/npm/@mdi/font@7.4.47/css/materialdesignicons.min.css" rel="stylesheet">
     <link href="/static/css/theme.css" rel="stylesheet">
     <link href="/static/css/style.css" rel="stylesheet">
+    <link rel="prefetch" href="/resume.html">
+    <link rel="prefetch" href="/index.html">
     <title>Jared Gross</title>
     <meta content="#44d8f1" data-react-helmet="true" name="theme-color">
 </head>
 
 <body class="light">
-    <nav class="top blur">
+    <nav id="top-nav" class="top blur">
         <h4 class="left-align max">Portfolio</h4>
         <label class="switch icon margin" style="margin-top: 2rem;">
             <input type="checkbox" id="theme-toggle">
@@ -35,39 +36,39 @@
             </span>
         </label>
     </nav>
-    <nav class="left l blur">
+    <nav id="left-nav" class="left l blur">
         <a onclick="transitionTo(event, '/')">
-            <i class="mdi mdi-home"></i>
+            <i>home</i>
             <span>Home</span>
         </a>
-        <a onclick="transitionTo(event, '/resume.html')">
-            <i class="mdi mdi-file-account"></i>
+        <a href='https://affine.pinelandfarms.ca/workspace/3fd7314c-5ee1-43cf-bcd5-c79256dbc148/xlhLlUWOVUewWaFCU2ZYM' target="_blank" rel="noopener noreferrer">
+            <i>article_person</i>
             <span>Resume</span>
         </a>
         <a class="active" onclick="transitionTo(event, '/profile.html')">
-            <i class="mdi mdi-file-certificate"></i>
+            <i>badge</i>
             <span>Portfolio</span>
         </a>
-        <a href='https://TheCodingJsoftware.github.io' target="_blank">
-            <i class="mdi mdi-briefcase"></i>
+        <a href='https://TheCodingJsoftware.github.io' target="_blank" rel="noopener noreferrer">
+            <i>work</i>
             <span>Projects</span>
         </a>
     </nav>
-    <nav class="bottom s m blur">
+    <nav id="bottom-nav" class="bottom s m blur">
         <a onclick="transitionTo(event, '/')">
-            <i class="mdi mdi-home"></i>
+            <i>home</i>
             <span>Home</span>
         </a>
-        <a onclick="transitionTo(event, '/resume.html')">
-            <i class="mdi mdi-file-account"></i>
+        <a href='https://affine.pinelandfarms.ca/workspace/3fd7314c-5ee1-43cf-bcd5-c79256dbc148/xlhLlUWOVUewWaFCU2ZYM' target="_blank" rel="noopener noreferrer">
+            <i>article_person</i>
             <span>Resume</span>
         </a>
         <a class="active" onclick="transitionTo(event, '/profile.html')">
-            <i class="mdi mdi-file-certificate"></i>
+            <i>badge</i>
             <span>Portfolio</span>
         </a>
-        <a href='https://TheCodingJsoftware.github.io' target="_blank">
-            <i class="mdi mdi-briefcase"></i>
+        <a href='https://TheCodingJsoftware.github.io' target="_blank" rel="noopener noreferrer">
+            <i>work</i>
             <span>Projects</span>
         </a>
     </nav>
@@ -466,14 +467,6 @@
     }
 
     document.addEventListener("DOMContentLoaded", function() {
-        if (document.startViewTransition) {
-            document.startViewTransition(() => {
-                document.body.style.opacity = "1"; // Ensure it becomes visible after transition
-            });
-        } else {
-            document.body.style.opacity = "1"; // Fallback for unsupported browsers
-        }
-
         function setTheme(theme) {
             document.body.classList.remove("light", "dark");
             document.body.classList.add(theme);
@@ -504,6 +497,21 @@
         window.onafterprint = function() {
             setTheme(localStorage.getItem("theme") || "light");
         };
+
+        function prefetch(url) {
+            if (prefetched.has(url)) return;
+            prefetched.add(url);
+
+            fetch(url, { priority: "low" }).catch(() => {});
+        }
+
+        document.querySelectorAll("nav a[onclick]").forEach((a) => {
+            const url = a.getAttribute("onclick").match(/'(.*?)'/)?.[1];
+            if (!url) return;
+
+            a.addEventListener("mouseenter", () => prefetch(url), { passive: true });
+            a.addEventListener("touchstart", () => prefetch(url), { passive: true });
+        });
     });
 </script>
 
