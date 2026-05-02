@@ -59,25 +59,6 @@
             </label>
         </nav>
 
-        <nav id="bottom-nav" class="bottom s m blur" aria-label="Primary navigation">
-            <a onclick="transitionTo(event, '/')">
-                <i>home</i>
-                <span>Home</span>
-            </a>
-            <a onclick="transitionTo(event, '/resume.html')">
-                <i>article_person</i>
-                <span>Resume</span>
-            </a>
-            <a class="active" onclick="transitionTo(event, '/profile.html')">
-                <i>badge</i>
-                <span>Portfolio</span>
-            </a>
-            <a href="https://TheCodingJsoftware.github.io" target="_blank" rel="noopener noreferrer">
-                <i>work</i>
-                <span>Projects</span>
-            </a>
-        </nav>
-
         <main class="responsive portfolio-shell">
             <header class="portfolio-hero no-border round">
                 <div class="portfolio-hero-media">
@@ -435,64 +416,78 @@
                     </ul>
                 </article>
             </section>
-
             <section class="page padding" id="gallery">
-                <article class="portfolio-card feature-card">
-                    <div class="section-kicker row"><i>gallery_thumbnail</i><span>Gallery</span></div>
+                <article class="portfolio-card feature-card gallery-intro">
+                    <div class="section-kicker row">
+                        <i>gallery_thumbnail</i>
+                        <span>Gallery</span>
+                    </div>
                     <h2>Practicum artifacts and classroom moments.</h2>
                     <p>
-                        Selected photos from practicum learning activities and school experiences. Images should remain
-                        privacy-safe and avoid identifiable student close-ups where permission is not available.
+                        Selected photos from practicum learning activities and school experiences.
+                        Images are organized by placement so this section can grow over time.
                     </p>
                 </article>
 
-                <section class="gallery-section" aria-labelledby="first-practicum-gallery">
-                    <h3 id="first-practicum-gallery">First Practicum</h3>
+                <section class="gallery-section">
+                    <header class="gallery-heading">
+                        <div>
+                            <p class="eyebrow">2024</p>
+                            <h3>First Practicum</h3>
+                        </div>
+                        <span class="gallery-count">4 artifacts</span>
+                    </header>
+
                     <div class="gallery-grid">
-                        <figure class="gallery-card wide">
-                            <img loading="lazy" decoding="async" src="/static/picture/practicum_one/IMG-20250207-WA0011.jpg"
-                                alt="Brennan School at Elm River Colony school photo">
+                        <figure class="gallery-card gallery-large">
+                            <img loading="lazy" decoding="async" src="/static/picture/practicum_one/IMG-20250207-WA0011.jpg" alt="Brennan School at Elm River Colony school photo">
                             <figcaption>Brennan School at Elm River Colony school photo.</figcaption>
                         </figure>
+
                         <figure class="gallery-card">
-                            <img loading="lazy" decoding="async" src="/static/picture/practicum_one/IMG-20250207-WA0010.jpg"
-                                alt="Portage School Division donated Terrier jerseys">
+                            <img loading="lazy" decoding="async" src="/static/picture/practicum_one/IMG-20250207-WA0010.jpg" alt="Portage School Division donated Terrier jerseys">
                             <figcaption>Portage School Division donated Terrier jerseys.</figcaption>
                         </figure>
+
                         <figure class="gallery-card">
-                            <img loading="lazy" decoding="async" src="/static/picture/practicum_one/IMG-20250207-WA0013.jpg"
-                                alt="Annual evening lantern walk with Brennan School">
+                            <img loading="lazy" decoding="async" src="/static/picture/practicum_one/IMG-20250207-WA0013.jpg" alt="Annual evening lantern walk with Brennan School">
                             <figcaption>Annual evening lantern walk with Brennan School.</figcaption>
                         </figure>
-                        <figure class="gallery-card wide">
-                            <img loading="lazy" decoding="async" src="/static/picture/practicum_one/IMG-20250207-WA0012.jpg"
-                                alt="Art class at Brennan School">
+
+                        <figure class="gallery-card gallery-wide">
+                            <img loading="lazy" decoding="async" src="/static/picture/practicum_one/IMG-20250207-WA0012.jpg" alt="Art class at Brennan School">
                             <figcaption>The first art class I attended at Brennan School with Elma Maendel.</figcaption>
                         </figure>
                     </div>
                 </section>
 
-                <section class="gallery-section" aria-labelledby="second-practicum-gallery">
-                    <h3 id="second-practicum-gallery">Second Practicum</h3>
+                <section class="gallery-section">
+                    <header class="gallery-heading">
+                        <div>
+                            <p class="eyebrow">2025</p>
+                            <h3>Second Practicum</h3>
+                        </div>
+                        <span class="gallery-count">4 artifacts</span>
+                    </header>
+
                     <div class="gallery-grid">
                         <figure class="gallery-card">
-                            <img loading="lazy" decoding="async" src="/static/picture/practicum_two/IMG-20250321-WA0006.jpg"
-                                alt="Clock model activity for math">
+                            <img loading="lazy" decoding="async" src="/static/picture/practicum_two/IMG-20250321-WA0006.jpg" alt="Clock model activity for math">
                             <figcaption>For the math unit on clocks, we built clock models with seconds and minutes.</figcaption>
                         </figure>
-                        <figure class="gallery-card">
-                            <img loading="lazy" decoding="async" src="/static/picture/practicum_two/IMG-20250415-WA0001.jpg"
-                                alt="Science unit planting activity">
+
+                        <figure class="gallery-card gallery-wide">
+                            <img loading="lazy" decoding="async" src="/static/picture/practicum_two/IMG-20250415-WA0001.jpg" alt="Science unit planting activity">
                             <figcaption>During our science unit about soil, we planted zinnias and tomatoes.</figcaption>
                         </figure>
+
                         <figure class="gallery-card">
-                            <img loading="lazy" decoding="async" src="/static/picture/practicum_two/IMG-20250422-WA0019.jpg"
-                                alt="Soil tower science experiment">
+                            <img loading="lazy" decoding="async" src="/static/picture/practicum_two/IMG-20250422-WA0019.jpg" alt="Soil tower science experiment">
                             <figcaption>Students experimented with soil types and tower building.</figcaption>
                         </figure>
+
                         <figure class="gallery-card">
-                            <img loading="lazy" decoding="async" src="/static/picture/practicum_two/IMG-20250422-WA0024.jpg"
-                                alt="Pottery activity for planted seedlings">
+                            <img loading="lazy" decoding="async" src="/static/picture/practicum_two/IMG-20250422-WA0024.jpg" alt="Pottery activity for planted seedlings">
                             <figcaption>To close the science unit, students made pottery for the plants they grew.</figcaption>
                         </figure>
                     </div>
