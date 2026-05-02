@@ -1,31 +1,48 @@
-<!DOCTYPE >
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
     <meta charset="UTF-8">
-    <meta name="author" content="Jared Gross">
-    <meta name="description" content="My personal website.">
-    <meta name="keywords" content="jared, gross, teacher, software, developer">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta content="Jared Gross" property="og:title">
-    <meta content="My personal website." property="og:description">
-    <meta content="https://jared-gross.github.io" property="og:url">
-    <meta content="https://media.licdn.com/dms/image/v2/D4D03AQHXBGExVw7LHQ/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1727455192897?e=1732752000&v=beta&t=pfQThHZHD_TkQ1JpksoP2rO9ke0KU0Jobc395P0aC8o" property="og:image">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <title>Jared Gross</title>
+    <meta name="author" content="Jared Gross">
+    <meta name="description"
+        content="Personal website and teaching portfolio for Jared Gross, educator and software developer.">
     <meta name="google" content="notranslate">
-    <link rel="icon" type="image/x-icon" href="/static/picture/Gross Jared.jpg">
-    <link href="https://cdn.jsdelivr.net/npm/beercss@4.0.20/dist/cdn/beer.min.css" rel="stylesheet">
+    <meta name="theme-color" content="#44d8f1">
+
+    <meta property="og:title" content="Jared Gross">
+    <meta property="og:description"
+        content="Personal website and teaching portfolio for Jared Gross, educator and software developer.">
+    <meta property="og:url" content="https://jared-gross.github.io">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://jared-gross.github.io/static/picture/gross-jared.jpg">
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Jared Gross">
+    <meta name="twitter:description"
+        content="Personal website and teaching portfolio for Jared Gross, educator and software developer.">
+    <meta name="twitter:image" content="https://jared-gross.github.io/static/picture/gross-jared.jpg">
+
+    <link rel="icon" type="image/jpeg" href="/static/picture/gross-jared.jpg">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/beercss@4.0.20/dist/cdn/beer.min.css">
+    <link rel="stylesheet" href="/static/css/theme.css">
+    <link rel="stylesheet" href="/static/css/style.css">
+
     <script type="module" src="https://cdn.jsdelivr.net/npm/beercss@4.0.20/dist/cdn/beer.min.js"></script>
-    </script>
-    <link href="/static/css/theme.css" rel="stylesheet">
-    <link href="/static/css/style.css" rel="stylesheet">
+
+    <link rel="prefetch" href="/index.html">
     <link rel="prefetch" href="/resume.html">
     <link rel="prefetch" href="/profile.html">
-    <title>Jared Gross</title>
-    <meta content="#44d8f1" data-react-helmet="true" name="theme-color">
+    <script>
+        const theme = localStorage.getItem("theme") || "light";
+        document.documentElement.classList.add(theme);
+    </script>
 </head>
 
-<body class="dark">
+<body>
     <nav id="top-nav" class="top blur">
         <h4 class="left-align max">Home</h4>
         <label class="fixed top right switch icon margin" style="margin-top: 2rem;">
@@ -40,13 +57,14 @@
             <div class="grid">
                 <div class="medium-round img-container s12 m5 l3">
                     <picture>
-                        <source srcset="/static/picture/Gross Jared.webp" type="image/webp">
-                        <img fetchpriority="high" decoding="async" class="medium-round margin large-elevate" src="/static/picture/Gross Jared.jpg" alt="Jared Gross">
+                        <source srcset="/static/picture/gross-jared.jpg" type="image/jpg">
+                        <img fetchpriority="high" decoding="async" class="medium-round margin large-elevate"
+                            src="/static/picture/gross-jared.jpg" alt="Jared Gross">
                     </picture>
                 </div>
                 <div class="small-padding left-align s12 m7 l9" style="margin-top: auto; margin-bottom: auto;">
                     <h2 class="no-margin">Jared Gross</h2>
-                    <p class="no-margin">Aspiring Teacher & Software Developer</p>
+                    <p class="no-margin">Teacher & Software Developer</p>
                 </div>
                 <nav class="s12 toolbar fill margin scroll">
                     <a href="tel:+1-204-782-1038">
@@ -69,22 +87,31 @@
                 </nav>
             </div>
             <div class="padding">
-                <blockquote class="left-align">
-                    I am a developer and student in the After Degree Education program. I have worked on a variety of projects, including inventory management and automation systems, educational tools, and interactive technologies, all with a focus on making tasks easier
-                    and more efficient. I believe in creating open-source tools to support teachers, helping them save time and improve their work experience, allowing teachers to focus on what truly matters: teaching.
+                <blockquote>
+                    I am an educator, software developer, and recent Bachelor of Education After Degree student at
+                    <a class="link" href="https://www.brandonu.ca">Brandon University</a>. My work focuses on building
+                    practical,
+                    open-source tools for teachers, including inventory management, automation systems, educational
+                    platforms,
+                    and interactive technologies that help make teaching tasks more efficient.
                     <br>
-                    <br> As of September 2, 2025 my main focus is on being a student at <a class="link" href="https://www.brandonu.ca">Brandon University</a> doing my <a class="link" href="https://www.brandonu.ca/future-students/programs/degrees/education/">Bachelor of Education</a>.
-                    I am working on <a class="link" href="https://github.com/TheCodingJsoftware/Invigo" target="_blank" rel="noopener noreferrer">Invigo</a> and <a class="link" href="https://github.com/TheCodingJsoftware/Kuriki" target="_blank" rel="noopener noreferrer">Kuriki</a> in my spare time.
+                    <br>
+                    I am currently focused on beginning my teaching career while continuing to develop my personal
+                    projects
+                    <a class="link" href="https://thecodingjsoftware.github.io" target="_blank"
+                        rel="noopener noreferrer">(here)</a>
+                    in my spare time. My goal is to support teachers by saving time, reducing unnecessary workload, and
+                    helping them focus on what matters most: teaching and students.
                 </blockquote>
             </div>
         </article>
     </main>
-    <nav id="left-nav" class="left l blur">
+    <nav id="left-nav" class="left l m blur">
         <a class="active" onclick="transitionTo(event, '/')">
             <i>home</i>
             <span>Home</span>
         </a>
-        <a href='https://affine.pinelandfarms.ca/workspace/3fd7314c-5ee1-43cf-bcd5-c79256dbc148/xlhLlUWOVUewWaFCU2ZYM' target="_blank" rel="noopener noreferrer">
+        <a onclick="transitionTo(event, '/resume.html')">
             <i>article_person</i>
             <span>Resume</span>
         </a>
@@ -97,12 +124,12 @@
             <span>Projects</span>
         </a>
     </nav>
-    <nav id="bottom-nav" class="bottom s m blur">
+    <nav id="bottom-nav" class="bottom s blur">
         <a class="active" onclick="transitionTo(event, '/')">
             <i>home</i>
             <span>Home</span>
         </a>
-        <a href='https://affine.pinelandfarms.ca/workspace/3fd7314c-5ee1-43cf-bcd5-c79256dbc148/xlhLlUWOVUewWaFCU2ZYM' target="_blank" rel="noopener noreferrer">
+        <a onclick="transitionTo(event, '/resume.html')">
             <i>article_person</i>
             <span>Resume</span>
         </a>
@@ -116,57 +143,7 @@
         </a>
     </nav>
 </body>
-<script>
-    function transitionTo(event, url) {
-        event.preventDefault(); // Prevent full reload
-        if (document.startViewTransition) {
-            document.startViewTransition(() => {
-                window.location.href = url; // Navigate with animation
-            });
-        } else {
-            window.location.href = url; // Fallback
-        }
-    }
 
-    document.addEventListener("DOMContentLoaded", function() {
-        function setTheme(theme) {
-            document.body.classList.remove("light", "dark");
-            document.body.classList.add(theme);
-            localStorage.setItem("theme", theme);
-
-            const themeIcon = document.getElementById("theme-icon");
-            themeIcon.innerText = theme === "dark" ? "dark_mode" : "light_mode";
-        }
-
-        const themeToggle = document.getElementById("theme-toggle");
-        themeToggle.addEventListener("click", () => {
-            const currentTheme = document.body.classList.contains("dark") ?
-                "dark" :
-                "light";
-            const newTheme = currentTheme === "dark" ? "light" : "dark";
-            setTheme(newTheme);
-        });
-
-        themeToggle.checked = localStorage.getItem("theme") === "dark";
-
-        const savedTheme = localStorage.getItem("theme") || "light";
-        setTheme(savedTheme);
-
-        function prefetch(url) {
-            if (prefetched.has(url)) return;
-            prefetched.add(url);
-
-            fetch(url, { priority: "low" }).catch(() => {});
-        }
-
-        document.querySelectorAll("nav a[onclick]").forEach((a) => {
-            const url = a.getAttribute("onclick").match(/'(.*?)'/)?.[1];
-            if (!url) return;
-
-            a.addEventListener("mouseenter", () => prefetch(url), { passive: true });
-            a.addEventListener("touchstart", () => prefetch(url), { passive: true });
-        });
-    });
-</script>
+<script defer src="/index.js"></script>
 
 </html>

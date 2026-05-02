@@ -1,3 +1,15 @@
+@font-face {
+    font-family: "Material Symbols Rounded";
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url("../fonts/material-symbols-rounded.woff2") format("woff2");
+}
+
+:root {
+    --font-icon: "Material Symbols Rounded";
+}
+
 .cursive {
     font-family: 'Dancing Script', cursive;
 }
@@ -79,4 +91,40 @@
     left: -0px;
     border-radius: 50% 0 0 0;
     box-shadow: -0.4px -25px 0 -0.2px var(--primary);
+}
+
+h1 {
+    font-size: clamp(2.5rem, 5vw, 3.5rem);
+}
+
+h2 {
+    font-size: 1.5rem;
+    color: var(--primary);
+}
+
+h3 {
+    font-size: 1.1rem;
+}
+
+/* Print optimization */
+@media print {
+    body {
+        background: white !important;
+    }
+
+    main.responsive {
+        padding: 0;
+    }
+
+    h2::before {
+        display: none;
+    }
+
+    h3,
+    h3 + p,
+    h3 + p + ul,
+    h3 + p + p {
+        background: none;
+        padding: 0;
+    }
 }

@@ -1,70 +1,47 @@
-<!DOCTYPE >
+<!DOCTYPE html>
 <html lang="en">
-
 
 <head>
     <meta charset="UTF-8">
-    <meta name="author" content="Jared Gross">
-    <meta name="description" content="My personal website.">
-    <meta name="keywords" content="jared, gross, teacher, software, developer">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta content="Jared Gross" property="og:title">
-    <meta content="My personal website." property="og:description">
-    <meta content="https://jared-gross.github.io" property="og:url">
-    <meta content="https://media.licdn.com/dms/image/v2/D4D03AQHXBGExVw7LHQ/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1727455192897?e=1732752000&v=beta&t=pfQThHZHD_TkQ1JpksoP2rO9ke0KU0Jobc395P0aC8o" property="og:image">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <title>Resume | Jared Gross</title>
+
+    <meta name="author" content="Jared Gross">
     <meta name="google" content="notranslate">
-    <link rel="icon" type="image/x-icon" href="/static/picture/Gross Jared.jpg">
-    <link href="https://cdn.jsdelivr.net/npm/beercss@4.0.20/dist/cdn/beer.min.css" rel="stylesheet">
+    <meta name="theme-color" content="#44d8f1">
+
+    <meta property="og:title" content="Resume | Jared Gross">
+    <meta property="og:description"
+        content="Personal website and teaching portfolio for Jared Gross, educator and software developer.">
+    <meta property="og:url" content="https://jared-gross.github.io/resume.html">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://jared-gross.github.io/static/picture/gross-jared.jpg">
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Jared Gross">
+    <meta name="twitter:description"
+        content="Personal website and teaching portfolio for Jared Gross, educator and software developer.">
+    <meta name="twitter:image" content="https://jared-gross.github.io/static/picture/gross-jared.jpg">
+
+    <link rel="icon" type="image/jpeg" href="/static/picture/gross-jared.jpg">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/beercss@4.0.20/dist/cdn/beer.min.css">
+    <link rel="stylesheet" href="/static/css/theme.css">
+    <link rel="stylesheet" href="/static/css/style.css">
+
     <script type="module" src="https://cdn.jsdelivr.net/npm/beercss@4.0.20/dist/cdn/beer.min.js"></script>
-    </script>
-    <link href="/static/css/theme.css" rel="stylesheet">
-    <link href="/static/css/style.css" rel="stylesheet">
+
     <link rel="prefetch" href="/index.html">
+    <link rel="prefetch" href="/resume.html">
     <link rel="prefetch" href="/profile.html">
-    <script src="/static/js/index.js"></script>
-    <title>Jared Gross</title>
-    <meta content="#44d8f1" data-react-helmet="true" name="theme-color">
-    <style>
-        h1 {
-            font-size: clamp(2.5rem, 5vw, 3.5rem);
-        }
-
-        h2 {
-            font-size: 1.5rem;
-            color: var(--primary);
-        }
-
-        h3 {
-            font-size: 1.1rem;
-        }
-
-        /* Print optimization */
-        @media print {
-            body {
-                background: white !important;
-            }
-
-            main.responsive {
-                padding: 0;
-            }
-
-            h2::before {
-                display: none;
-            }
-
-            h3,
-            h3 + p,
-            h3 + p + ul,
-            h3 + p + p {
-                background: none;
-                padding: 0;
-            }
-        }
-    </style>
+    <script>
+        const theme = localStorage.getItem("theme") || "light";
+        document.documentElement.classList.add(theme);
+    </script>
 </head>
 
-<body class="dark">
+<body>
     <script src="https://cdn.jsdelivr.net/npm/marked/lib/marked.umd.js"></script>
     <nav id="top-nav" class="top blur">
         <h4 class="left-align max">Resume</h4>
@@ -75,8 +52,6 @@
             </span>
         </label>
     </nav>
-    <main class="responsive">
-    </main>
     <nav id="left-nav" class="left l blur">
         <a onclick="transitionTo(event, '/')">
             <i>home</i>
@@ -113,70 +88,17 @@
             <span>Projects</span>
         </a>
     </nav>
+    <main class="responsive">
+    </main>
 </body>
+
+<script defer src="/index.js"></script>
+
 <script>
-    function transitionTo(event, url) {
-        event.preventDefault(); // Prevent full reload
-        if (document.startViewTransition) {
-            document.startViewTransition(() => {
-                window.location.href = url; // Navigate with animation
-            });
-        } else {
-            window.location.href = url; // Fallback
-        }
-    }
-
-    document.addEventListener("DOMContentLoaded", function() {
-        function setTheme(theme) {
-            document.body.classList.remove("light", "dark");
-            document.body.classList.add(theme);
-            localStorage.setItem("theme", theme);
-
-            const themeIcon = document.getElementById("theme-icon");
-            themeIcon.innerText = theme === "dark" ? "dark_mode" : "light_mode";
-        }
-
-        const themeToggle = document.getElementById("theme-toggle");
-        themeToggle.addEventListener("click", () => {
-            const currentTheme = document.body.classList.contains("dark") ?
-                "dark" :
-                "light";
-            const newTheme = currentTheme === "dark" ? "light" : "dark";
-            setTheme(newTheme);
-        });
-
-        themeToggle.checked = localStorage.getItem("theme") === "dark";
-
-        const savedTheme = localStorage.getItem("theme") || "light";
-        setTheme(savedTheme);
-
-        // Set theme to light when printing
-        window.onbeforeprint = function() {
-            document.body.classList.remove("light", "dark");
-            document.body.classList.add("light");
-        };
-        window.onafterprint = function() {
-            setTheme(localStorage.getItem("theme") || "light");
-        };
-
-        function prefetch(url) {
-            if (prefetched.has(url)) return;
-            prefetched.add(url);
-
-            fetch(url, { priority: "low" }).catch(() => {});
-        }
-
-        document.querySelectorAll("nav a[onclick]").forEach((a) => {
-            const url = a.getAttribute("onclick").match(/'(.*?)'/)?.[1];
-            if (!url) return;
-
-            a.addEventListener("mouseenter", () => prefetch(url), { passive: true });
-            a.addEventListener("touchstart", () => prefetch(url), { passive: true });
-        });
-    });
-
     document.addEventListener("DOMContentLoaded", async () => {
         const main = document.querySelector("main");
+
+        const section = document.createElement("div");
 
         try {
             const res = await fetch("/RESUME.md");
@@ -187,11 +109,13 @@
             // Remove zero-width chars (marked issue)
             const clean = md.replace(/^[\u200B\u200C\u200D\u200E\u200F\uFEFF]/, "");
 
-            main.innerHTML = marked.parse(clean);
+            section.innerHTML = marked.parse(clean);
         } catch (err) {
-            main.innerHTML = "<p>Failed to load resume.</p>";
+            section.innerHTML = "<p>Failed to load resume.</p>";
             console.error(err);
         }
+
+        main.appendChild(section)
     });
 </script>
 
