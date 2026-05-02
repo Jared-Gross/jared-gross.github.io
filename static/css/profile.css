@@ -44,7 +44,6 @@ main.responsive {
 
     font-size: 0.82rem;
     font-weight: 800;
-    letter-spacing: 0.04em;
     text-transform: uppercase;
 }
 
@@ -54,7 +53,6 @@ main.responsive {
     color: var(--on-surface);
     font-size: clamp(3.25rem, 8vw, 5.75rem);
     line-height: 0.9;
-    letter-spacing: -0.075em;
     text-wrap: balance;
 }
 
@@ -66,7 +64,6 @@ main.responsive {
     font-size: clamp(1.1rem, 2vw, 1.45rem);
     font-weight: 800;
     line-height: 1.25;
-    letter-spacing: -0.03em;
     text-wrap: balance;
 }
 
@@ -113,7 +110,7 @@ main.responsive {
 /* Tab bar */
 .tabs {
     position: sticky;
-    top: 4.5rem;
+    top: 4rem;
     z-index: 4;
     gap: .5rem;
     padding: .65rem;
@@ -247,7 +244,6 @@ main.responsive {
     color: var(--on-surface);
     font-size: clamp(1.55rem, 3vw, 2.2rem);
     line-height: 1.05;
-    letter-spacing: -0.045em;
     text-wrap: balance;
 }
 
@@ -257,7 +253,6 @@ main.responsive {
     color: var(--primary);
     font-size: 1rem;
     font-weight: 800;
-    letter-spacing: .01em;
 }
 
 .page p,
@@ -330,7 +325,6 @@ article aside img {
 .gallery-heading h3 {
     margin: 0;
     font-size: clamp(1.6rem, 3vw, 2.4rem);
-    letter-spacing: -0.05em;
 }
 
 .gallery-count {
@@ -504,7 +498,7 @@ article aside img {
     }
 
     .tabs {
-        top: 4rem;
+        top: 4.5rem;
         border-radius: 1.25rem;
     }
 
