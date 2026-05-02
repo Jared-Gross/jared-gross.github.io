@@ -1,13 +1,11 @@
 function transitionTo(event, url) {
     event.preventDefault();
 
-    if (document.startViewTransition) {
-        document.startViewTransition(() => {
-            window.location.href = url;
-        });
-    } else {
-        window.location.href = url;
-    }
+    if (window.location.pathname === url) return;
+
+    document.documentElement.classList.add("page-leaving");
+
+    window.location.href = url;
 }
 
 document.addEventListener("DOMContentLoaded", function () {

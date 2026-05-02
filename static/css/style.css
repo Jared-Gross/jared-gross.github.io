@@ -20,115 +20,74 @@
     background: color-mix(in srgb, var(--surface) 40%, transparent) !important;
 }
 
-.img-container img {
-    z-index: 1 !important;
-    height: auto;
-    width: 200px;
+main {
+    animation: content-enter 520ms cubic-bezier(.2, .8, .2, 1) both;
 }
 
-.img-container {
-    background-color: var(--primary);
-    border-radius: 2rem 0 3rem 0 !important;
-    width: calc(200px + 16px + 16px);
-    max-width: calc(200px + 16px + 16px);
-    height: calc(200px + 16px + 16px);
-    max-height: calc(200px + 16px + 16px);
-}
-
-.profile-image-wrapper {
-    position: relative;
-    display: inline-block;
-}
-
-.profile-image-wrapper::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 200px;
-    height: 100px;
-    margin: 1rem;
-    border-radius: 2rem 2rem 50% 50%;
-    background: linear-gradient(to bottom, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 0) 100%);
-    filter: blur(5px);
-    z-index: 2;
-}
-
-.profile-image-wrapper::after {
-    content: "";
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 200px;
-    height: 50px;
-    margin: 1rem;
-    border-radius: 2rem 2rem 50% 50%;
-    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.649) 0%, rgba(255, 255, 255, 0) 100%);
-    filter: blur(5px);
-    transform: rotate(180deg);
-    z-index: 2;
-}
-
-.img-container::before,
-.img-container::after {
-    content: "";
-    position: absolute;
-}
-
-.img-container::before {
-    height: 100px;
-    width: 100px;
-    top: 0px;
-    right: -100px;
-    border-radius: 50% 0 0 0;
-    box-shadow: -50px -0.2px 0 -0.2px var(--primary);
-}
-
-.img-container::after {
-    height: 50px;
-    width: 50px;
-    bottom: -50px;
-    left: -0px;
-    border-radius: 50% 0 0 0;
-    box-shadow: -0.4px -25px 0 -0.2px var(--primary);
-}
-
-h1 {
-    font-size: clamp(2.5rem, 5vw, 3.5rem);
-}
-
-h2 {
-    font-size: 1.5rem;
-    color: var(--primary);
-}
-
-h3 {
-    font-size: 1.1rem;
-}
-
-hr {
-    margin: 1rem 0 1rem 0;
-}
-
-/* Print optimization */
-@media print {
-    body {
-        background: white !important;
+@keyframes content-enter {
+    from {
+        opacity: 0;
+        transform: translateY(16px) scale(.99);
     }
 
-    main.responsive {
-        padding: 0;
+    to {
+        opacity: 1;
+        transform: translateY(0) scale(1);
+    }
+}
+
+@view-transition {
+    navigation: auto;
+}
+
+::view-transition-old(root) {
+    animation: page-out 280ms cubic-bezier(.4, 0, .2, 1) both;
+}
+
+::view-transition-new(root) {
+    animation: page-in 520ms cubic-bezier(.2, .8, .2, 1) both;
+}
+
+@keyframes page-out {
+    from {
+        opacity: 1;
+        filter: blur(0);
+        transform: scale(1) translateY(0);
     }
 
-    h2::before {
-        display: none;
+    to {
+        opacity: 0;
+        filter: blur(10px);
+        transform: scale(.985) translateY(-10px);
+    }
+}
+
+@keyframes page-in {
+    from {
+        opacity: 0;
+        filter: blur(14px);
+        transform: scale(.975) translateY(18px);
     }
 
-    h3,
-    h3+p,
-    h3+p+ul,
-    h3+p+p {
-        background: none;
-        padding: 0;
+    60% {
+        opacity: 1;
+        filter: blur(0);
+    }
+
+    to {
+        opacity: 1;
+        filter: blur(0);
+        transform: scale(1) translateY(0);
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    @view-transition {
+        navigation: auto;
+    }
+
+    ::view-transition-old(root),
+    ::view-transition-new(root) {
+        animation-duration: 1ms;
     }
 }

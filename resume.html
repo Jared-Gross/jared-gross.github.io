@@ -1,100 +1,87 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>Resume | Jared Gross</title>
+        <title>Resume | Jared Gross</title>
 
-    <meta name="author" content="Jared Gross">
-    <meta name="google" content="notranslate">
-    <meta name="theme-color" content="#44d8f1">
+        <meta name="author" content="Jared Gross">
+        <meta name="google" content="notranslate">
+        <meta name="theme-color" content="#44d8f1">
 
-    <meta property="og:title" content="Resume | Jared Gross">
-    <meta property="og:description"
-        content="Personal website and teaching portfolio for Jared Gross, educator and software developer.">
-    <meta property="og:url" content="https://jared-gross.github.io/resume.html">
-    <meta property="og:type" content="website">
-    <meta property="og:image" content="https://jared-gross.github.io/static/picture/gross-jared.jpg">
+        <meta property="og:title" content="Resume | Jared Gross">
+        <meta property="og:description"
+            content="Personal website and teaching portfolio for Jared Gross, educator and software developer.">
+        <meta property="og:url" content="https://jared-gross.github.io/resume.html">
+        <meta property="og:type" content="website">
+        <meta property="og:image" content="https://jared-gross.github.io/static/picture/gross-jared-320.jpg">
 
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Jared Gross">
-    <meta name="twitter:description"
-        content="Personal website and teaching portfolio for Jared Gross, educator and software developer.">
-    <meta name="twitter:image" content="https://jared-gross.github.io/static/picture/gross-jared.jpg">
+        <meta name="twitter:card" content="summary_large_image">
+        <meta name="twitter:title" content="Jared Gross">
+        <meta name="twitter:description"
+            content="Personal website and teaching portfolio for Jared Gross, educator and software developer.">
+        <meta name="twitter:image" content="https://jared-gross.github.io/static/picture/gross-jared-320.jpg">
 
-    <link rel="icon" type="image/jpeg" href="/static/picture/gross-jared.jpg">
+        <link rel="icon" type="image/jpeg" href="/static/picture/gross-jared-320.jpg">
 
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/beercss@4.0.20/dist/cdn/beer.min.css">
-    <link rel="stylesheet" href="/static/css/theme.css">
-    <link rel="stylesheet" href="/static/css/style.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/beercss@4.0.20/dist/cdn/beer.min.css">
+        <link rel="stylesheet" href="/static/css/theme.css">
+        <link rel="stylesheet" href="/static/css/style.css">
+        <link rel="stylesheet" href="/static/css/resume.css">
 
-    <script type="module" src="https://cdn.jsdelivr.net/npm/beercss@4.0.20/dist/cdn/beer.min.js"></script>
+        <script type="module" src="https://cdn.jsdelivr.net/npm/beercss@4.0.20/dist/cdn/beer.min.js"></script>
 
-    <link rel="prefetch" href="/index.html">
-    <link rel="prefetch" href="/resume.html">
-    <link rel="prefetch" href="/profile.html">
+        <link rel="prefetch" href="/index.html">
+        <link rel="prefetch" href="/resume.html">
+        <link rel="prefetch" href="/profile.html">
+        <script>
+            const theme = localStorage.getItem("theme") || "light";
+            document.documentElement.classList.add(theme);
+        </script>
+    </head>
+
+    <body>
+        <script src="https://cdn.jsdelivr.net/npm/marked/lib/marked.umd.js"></script>
+        <nav id="top-nav" class="top blur">
+            <a onclick="transitionTo(event, '/')">
+                <i>home</i>
+                <span>Home</span>
+            </a>
+            <h4 class="left-align max">Resume</h4>
+            <label class="fixed top right switch icon margin" style="margin-top: 2rem;">
+                <input type="checkbox" id="theme-toggle">
+                <span>
+                    <i id="theme-icon">dark_mode</i>
+                </span>
+            </label>
+        </nav>
+        <nav id="bottom-nav" class="bottom s m blur">
+            <a onclick="transitionTo(event, '/')">
+                <i>home</i>
+                <span>Home</span>
+            </a>
+            <a class="active" onclick="transitionTo(event, '/resume.html')">
+                <i>article_person</i>
+                <span>Resume</span>
+            </a>
+            <a onclick="transitionTo(event, '/profile.html')">
+                <i>badge</i>
+                <span>Portfolio</span>
+            </a>
+            <a href='https://TheCodingJsoftware.github.io' target="_blank" rel="noopener noreferrer">
+                <i>work</i>
+                <span>Projects</span>
+            </a>
+        </nav>
+        <main class="responsive">
+        </main>
+    </body>
+
+    <script defer src="/index.js"></script>
+
     <script>
-        const theme = localStorage.getItem("theme") || "light";
-        document.documentElement.classList.add(theme);
-    </script>
-</head>
-
-<body>
-    <script src="https://cdn.jsdelivr.net/npm/marked/lib/marked.umd.js"></script>
-    <nav id="top-nav" class="top blur">
-        <h4 class="left-align max">Resume</h4>
-        <label class="fixed top right switch icon margin" style="margin-top: 2rem;">
-            <input type="checkbox" id="theme-toggle">
-            <span>
-                <i id="theme-icon">dark_mode</i>
-            </span>
-        </label>
-    </nav>
-    <nav id="left-nav" class="left l blur">
-        <a onclick="transitionTo(event, '/')">
-            <i>home</i>
-            <span>Home</span>
-        </a>
-        <a class="active" onclick="transitionTo(event, '/resume.html')">
-            <i>article_person</i>
-            <span>Resume</span>
-        </a>
-        <a onclick="transitionTo(event, '/profile.html')">
-            <i>badge</i>
-            <span>Portfolio</span>
-        </a>
-        <a href='https://TheCodingJsoftware.github.io' target="_blank" rel="noopener noreferrer">
-            <i>work</i>
-            <span>Projects</span>
-        </a>
-    </nav>
-    <nav id="bottom-nav" class="bottom s m blur">
-        <a onclick="transitionTo(event, '/')">
-            <i>home</i>
-            <span>Home</span>
-        </a>
-        <a class="active" onclick="transitionTo(event, '/resume.html')">
-            <i>article_person</i>
-            <span>Resume</span>
-        </a>
-        <a onclick="transitionTo(event, '/profile.html')">
-            <i>badge</i>
-            <span>Portfolio</span>
-        </a>
-        <a href='https://TheCodingJsoftware.github.io' target="_blank" rel="noopener noreferrer">
-            <i>work</i>
-            <span>Projects</span>
-        </a>
-    </nav>
-    <main class="responsive">
-    </main>
-</body>
-
-<script defer src="/index.js"></script>
-
-<script>
     document.addEventListener("DOMContentLoaded", async () => {
         const main = document.querySelector("main");
 

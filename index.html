@@ -1,149 +1,167 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>Jared Gross</title>
-    <meta name="author" content="Jared Gross">
-    <meta name="description"
-        content="Personal website and teaching portfolio for Jared Gross, educator and software developer.">
-    <meta name="google" content="notranslate">
-    <meta name="theme-color" content="#44d8f1">
+        <title>Jared Gross</title>
+        <meta name="author" content="Jared Gross">
+        <meta name="description"
+            content="Personal website and teaching portfolio for Jared Gross, educator and software developer.">
+        <meta name="google" content="notranslate">
+        <meta name="theme-color" content="#44d8f1">
 
-    <meta property="og:title" content="Jared Gross">
-    <meta property="og:description"
-        content="Personal website and teaching portfolio for Jared Gross, educator and software developer.">
-    <meta property="og:url" content="https://jared-gross.github.io">
-    <meta property="og:type" content="website">
-    <meta property="og:image" content="https://jared-gross.github.io/static/picture/gross-jared.jpg">
+        <meta property="og:title" content="Jared Gross">
+        <meta property="og:description"
+            content="Personal website and teaching portfolio for Jared Gross, educator and software developer.">
+        <meta property="og:url" content="https://jared-gross.github.io">
+        <meta property="og:type" content="website">
+        <meta property="og:image" content="https://jared-gross.github.io/static/picture/gross-jared-320.jpg">
 
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Jared Gross">
-    <meta name="twitter:description"
-        content="Personal website and teaching portfolio for Jared Gross, educator and software developer.">
-    <meta name="twitter:image" content="https://jared-gross.github.io/static/picture/gross-jared.jpg">
+        <meta name="twitter:card" content="summary_large_image">
+        <meta name="twitter:title" content="Jared Gross">
+        <meta name="twitter:description"
+            content="Personal website and teaching portfolio for Jared Gross, educator and software developer.">
+        <meta name="twitter:image" content="https://jared-gross.github.io/static/picture/gross-jared-320.jpg">
 
-    <link rel="icon" type="image/jpeg" href="/static/picture/gross-jared.jpg">
+        <link rel="icon" type="image/jpeg" href="/static/picture/gross-jared-320.jpg">
 
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/beercss@4.0.20/dist/cdn/beer.min.css">
-    <link rel="stylesheet" href="/static/css/theme.css">
-    <link rel="stylesheet" href="/static/css/style.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/beercss@4.0.20/dist/cdn/beer.min.css">
+        <link rel="stylesheet" href="/static/css/theme.css">
+        <link rel="stylesheet" href="/static/css/style.css">
+        <link rel="stylesheet" href="/static/css/index.css">
 
-    <script type="module" src="https://cdn.jsdelivr.net/npm/beercss@4.0.20/dist/cdn/beer.min.js"></script>
+        <script type="module" src="https://cdn.jsdelivr.net/npm/beercss@4.0.20/dist/cdn/beer.min.js"></script>
 
-    <link rel="prefetch" href="/index.html">
-    <link rel="prefetch" href="/resume.html">
-    <link rel="prefetch" href="/profile.html">
-    <script>
-        const theme = localStorage.getItem("theme") || "light";
-        document.documentElement.classList.add(theme);
-    </script>
-</head>
+        <link rel="prefetch" href="/index.html">
+        <link rel="prefetch" href="/resume.html">
+        <link rel="prefetch" href="/profile.html">
 
-<body>
-    <nav id="top-nav" class="top blur">
-        <h4 class="left-align max">Home</h4>
-        <label class="fixed top right switch icon margin" style="margin-top: 2rem;">
-            <input type="checkbox" id="theme-toggle">
-            <span>
-                <i id="theme-icon">dark_mode</i>
-            </span>
-        </label>
-    </nav>
-    <main class="responsive">
-        <article class="no-padding margin border round">
-            <div class="grid">
-                <div class="medium-round img-container s12 m5 l3">
-                    <picture>
-                        <source srcset="/static/picture/gross-jared.jpg" type="image/jpg">
-                        <img fetchpriority="high" decoding="async" class="medium-round margin large-elevate"
-                            src="/static/picture/gross-jared.jpg" alt="Jared Gross">
-                    </picture>
+        <script>
+            const theme = localStorage.getItem("theme") || "light";
+            document.documentElement.classList.add(theme);
+        </script>
+    </head>
+
+    <body>
+        <main class="responsive padding home-shell">
+            <section class="hero-card border round large-elevate">
+                <div class="hero-grid">
+                    <label class="fixed top right switch icon margin theme-switch">
+                        <input type="checkbox" id="theme-toggle">
+                        <span>
+                            <i id="theme-icon">dark_mode</i>
+                        </span>
+                    </label>
+                    <div class="hero-portrait-wrap">
+                        <div class="hero-blob" aria-hidden="true"></div>
+                            <picture class="profile-image-wrapper">
+                                <!-- AVIF (best) -->
+                                <source
+                                    type="image/avif"
+                                    srcset="
+                                        /static/picture/gross-jared-320.avif 320w,
+                                        /static/picture/gross-jared-480.avif 480w,
+                                        /static/picture/gross-jared-640.avif 640w"
+                                    sizes="(max-width: 600px) 200px, 260px">
+
+                                <!-- WebP (fallback) -->
+                                <source
+                                    type="image/webp"
+                                    srcset="
+                                        /static/picture/gross-jared-320.webp 320w,
+                                        /static/picture/gross-jared-480.webp 480w,
+                                        /static/picture/gross-jared-640.webp 640w"
+                                    sizes="(max-width: 600px) 200px, 260px">
+
+                                <!-- JPEG fallback -->
+                                <img
+                                    src="/static/picture/gross-jared-480.jpg"
+                                    srcset="
+                                        /static/picture/gross-jared-320.jpg 320w,
+                                        /static/picture/gross-jared-480.jpg 480w,
+                                        /static/picture/gross-jared-640.jpg 640w"
+                                    sizes="(max-width: 600px) 200px, 260px"
+                                    width="260"
+                                    height="260"
+                                    fetchpriority="high"
+                                    decoding="async"
+                                    alt="Jared Gross">
+                            </picture>
+                    </div>
+
+                    <div class="hero-content">
+                        <p class="eyebrow">Teaching portfolio & personal website</p>
+                        <h1>Jared Gross</h1>
+                        <p class="hero-subtitle">Teacher & Software Developer</p>
+                        <p class="hero-summary">
+                            I build practical, open-source tools that help teachers save time, reduce workload,
+                            and focus on students.
+                        </p>
+
+                        <div class="hero-actions">
+                            <a class="button large primary" onclick="transitionTo(event, '/resume.html')">
+                                <i>article_person</i>
+                                <span>View Resume</span>
+                            </a>
+                            <a class="button large secondary" onclick="transitionTo(event, '/profile.html')">
+                                <i>badge</i>
+                                <span>Portfolio</span>
+                            </a>
+                        </div>
+                    </div>
                 </div>
-                <div class="small-padding left-align s12 m7 l9" style="margin-top: auto; margin-bottom: auto;">
-                    <h2 class="no-margin">Jared Gross</h2>
-                    <p class="no-margin">Teacher & Software Developer</p>
-                </div>
-                <nav class="s12 toolbar fill margin scroll">
-                    <a href="tel:+1-204-782-1038">
+
+                <nav class="contact-strip scroll" aria-label="Contact links">
+                    <a class="button" href="tel:+1-204-782-1038">
                         <i>phone</i>
                         <span>+1 (204) 782-1038</span>
                     </a>
-                    <a href="mailto:jared@pinelandfarms.ca">
+                    <a class="button" href="mailto:jared@pinelandfarms.ca">
                         <i>mail</i>
-                        <span>jared@pinelandfarms.ca</span>
+                        <span>Email</span>
                     </a>
-                    <a href='https://www.linkedin.com/in/jaredgross12418/' target="_blank" rel="noopener noreferrer">
+                    <a class="button" href="https://www.linkedin.com/in/jaredgross12418/" target="_blank" rel="noopener noreferrer">
+                        <i>open_in_new</i>
                         <span>LinkedIn</span>
                     </a>
-                    <a href='https://github.com/jared-gross' target="_blank" rel="noopener noreferrer">
+                    <a class="button" href="https://github.com/jared-gross" target="_blank" rel="noopener noreferrer">
+                        <i>code</i>
                         <span>GitHub</span>
                     </a>
-                    <a href='https://codeberg.org/jared-gross' target="_blank" rel="noopener noreferrer">
+                    <a class="button" href="https://codeberg.org/jared-gross" target="_blank" rel="noopener noreferrer">
+                        <img src="https://codeberg.org/Codeberg/Design/raw/branch/main/logo/icon/svg/codeberg-logo_icon_blue.svg" class="responsive"></img>
                         <span>Codeberg</span>
                     </a>
                 </nav>
-            </div>
-            <div class="padding">
-                <blockquote>
-                    I am an educator, software developer, and recent Bachelor of Education After Degree student at
-                    <a class="link" href="https://www.brandonu.ca">Brandon University</a>. My work focuses on building
-                    practical,
-                    open-source tools for teachers, including inventory management, automation systems, educational
-                    platforms,
-                    and interactive technologies that help make teaching tasks more efficient.
-                    <br>
-                    <br>
-                    I am currently focused on beginning my teaching career while continuing to develop my personal
-                    projects
-                    <a class="link" href="https://thecodingjsoftware.github.io" target="_blank"
-                        rel="noopener noreferrer">(here)</a>
-                    in my spare time. My goal is to support teachers by saving time, reducing unnecessary workload, and
-                    helping them focus on what matters most: teaching and students.
-                </blockquote>
-            </div>
-        </article>
-    </main>
-    <nav id="left-nav" class="left l m blur">
-        <a class="active" onclick="transitionTo(event, '/')">
-            <i>home</i>
-            <span>Home</span>
-        </a>
-        <a onclick="transitionTo(event, '/resume.html')">
-            <i>article_person</i>
-            <span>Resume</span>
-        </a>
-        <a onclick="transitionTo(event, '/profile.html')">
-            <i>badge</i>
-            <span>Portfolio</span>
-        </a>
-        <a href='https://TheCodingJsoftware.github.io' target="_blank" rel="noopener noreferrer">
-            <i>work</i>
-            <span>Projects</span>
-        </a>
-    </nav>
-    <nav id="bottom-nav" class="bottom s blur">
-        <a class="active" onclick="transitionTo(event, '/')">
-            <i>home</i>
-            <span>Home</span>
-        </a>
-        <a onclick="transitionTo(event, '/resume.html')">
-            <i>article_person</i>
-            <span>Resume</span>
-        </a>
-        <a onclick="transitionTo(event, '/profile.html')">
-            <i>badge</i>
-            <span>Portfolio</span>
-        </a>
-        <a href='https://TheCodingJsoftware.github.io' target="_blank" rel="noopener noreferrer">
-            <i>work</i>
-            <span>Projects</span>
-        </a>
-    </nav>
-</body>
+            </section>
 
-<script defer src="/index.js"></script>
+            <section class="intro-card border round padding">
+                <div class="intro-icon" aria-hidden="true">
+                    <i>school</i>
+                </div>
+                <div>
+                    <h2>Educator. Developer. Builder of useful tools.</h2>
+                    <p>
+                        I am an educator, software developer, and recent Bachelor of Education After Degree student at
+                        <a class="link" href="https://www.brandonu.ca">Brandon University</a>. My work focuses on building
+                        practical, open-source tools for teachers, including inventory management, automation systems,
+                        educational platforms, and interactive technologies that make teaching tasks more efficient.
+                    </p>
+                    <p>
+                        I am currently focused on beginning my teaching career while continuing to develop my personal
+                        projects
+                        <a class="link" href="https://thecodingjsoftware.github.io" target="_blank"
+                            rel="noopener noreferrer">here</a>
+                        in my spare time. My goal is to support teachers by saving time, reducing unnecessary workload,
+                        and helping them focus on what matters most: teaching and students.
+                    </p>
+                </div>
+            </section>
+        </main>
+    </body>
+
+    <script defer src="/index.js"></script>
 
 </html>
